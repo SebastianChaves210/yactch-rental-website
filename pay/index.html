@@ -25,12 +25,30 @@ button.ok{background:#8a6d33;border-color:#8a6d33}a{color:#8a6d33;font-weight:60
   </td>
 </tr>
 <tr>
+  <td><img src="../photos/stripe/deep-blue.jpg" alt="" width="72" height="54"></td>
+  <td><strong>90&#39; Deep Blue with Jacuzzi — $1,000 deposit</strong><br><span class="muted">balance $4,000 due before departure</span></td>
+  <td>
+    <button data-copy="https://miamiyachtcollective.com/pay/deep-blue-deposit-1000.html">Copy pay page</button>
+    <button data-copy="https://book.stripe.com/eVqeVdgIfeTr5Ep0i96Zy0c">Copy Stripe link</button>
+    <a href="deep-blue-deposit-1000.html" target="_blank" rel="noopener">Open</a>
+  </td>
+</tr>
+<tr>
   <td><img src="../photos/stripe/acgua-alberti.jpg" alt="" width="72" height="54"></td>
   <td><strong>90&#39; Acgua Alberti Superyacht</strong><br><span class="muted">$5,000 · 4 hours</span></td>
   <td>
     <button data-copy="https://miamiyachtcollective.com/pay/acgua-alberti.html">Copy pay page</button>
     <button data-copy="https://book.stripe.com/5kQ28reA73aJ7Mxfd36Zy02">Copy Stripe link</button>
     <a href="acgua-alberti.html" target="_blank" rel="noopener">Open</a>
+  </td>
+</tr>
+<tr>
+  <td><img src="../photos/stripe/acgua-alberti.jpg" alt="" width="72" height="54"></td>
+  <td><strong>90&#39; Acgua Alberti Superyacht — $1,000 deposit</strong><br><span class="muted">balance $4,000 due before departure</span></td>
+  <td>
+    <button data-copy="https://miamiyachtcollective.com/pay/acgua-alberti-deposit-1000.html">Copy pay page</button>
+    <button data-copy="https://book.stripe.com/eVqaEX8bJ9z78QB7KB6Zy0d">Copy Stripe link</button>
+    <a href="acgua-alberti-deposit-1000.html" target="_blank" rel="noopener">Open</a>
   </td>
 </tr>
 <tr>
@@ -106,7 +124,7 @@ button.ok{background:#8a6d33;border-color:#8a6d33}a{color:#8a6d33;font-weight:60
   </td>
 </tr>
 </table>
-<div class="note"><strong>Custom amount</strong> (balance, extra hours, custom quote): <button data-copy="https://buy.stripe.com/28EcN5gIfdPn0k55Ct6Zy0b">Copy Stripe link</button> <a href="https://buy.stripe.com/28EcN5gIfdPn0k55Ct6Zy0b" target="_blank" rel="noopener">Open</a></div>
+<div class="note"><strong>Custom amount</strong> (balance, extra hours, custom quote): <button data-copy="https://buy.stripe.com/28EfZh63B12BeaV3ul6Zy0e">Copy Stripe link</button> <a href="https://buy.stripe.com/28EfZh63B12BeaV3ul6Zy0e" target="_blank" rel="noopener">Open</a></div>
 <script>
 document.querySelectorAll("button[data-copy]").forEach(b=>b.addEventListener("click",async()=>{try{await navigator.clipboard.writeText(b.dataset.copy);const t=b.textContent;b.textContent="Copied ✓";b.classList.add("ok");setTimeout(()=>{b.textContent=t;b.classList.remove("ok")},1400)}catch(e){prompt("Copy this link:",b.dataset.copy)}}));
 </script>
