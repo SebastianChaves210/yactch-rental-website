@@ -15,6 +15,9 @@ Disallow: /utility/
 Disallow: /401.html
 Disallow: /logo-preview.html
 
+# Private customer payment pages (sent 1:1, never indexed)
+Disallow: /pay/
+
 # AI crawlers (allow for citation/discoverability)
 User-agent: GPTBot
 Allow: /
