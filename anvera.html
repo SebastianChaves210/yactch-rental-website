@@ -227,6 +227,92 @@
   ]
 }
 </script>
+<style>
+  .myc-content { max-width: 780px; margin: 0 auto; }
+  .myc-content h2 { font-size: 32px; line-height: 1.25; margin: 56px 0 18px; }
+  .myc-content h3 { font-size: 21px; line-height: 1.35; margin: 30px 0 10px; }
+  .myc-content p, .myc-content li { font-size: 17px; line-height: 1.75; color: #3d3d3d; }
+  .myc-content p { margin-bottom: 18px; }
+  .myc-content ul { margin: 0 0 18px 22px; }
+  .myc-content li { margin-bottom: 8px; }
+  .myc-content a { color: #0d1b4b; text-decoration: underline; }
+  .myc-table-wrap { overflow-x: auto; margin: 26px 0; }
+  .myc-table { width: 100%; border-collapse: collapse; font-size: 16px; }
+  .myc-table th { background: #0d1b4b; color: #fff; text-align: left; padding: 14px 16px; font-weight: 700; }
+  .myc-table td { padding: 13px 16px; border-bottom: 1px solid #e6e6e6; color: #333; }
+  .myc-table tr:nth-child(even) td { background: #f7f8fb; }
+  .myc-table a { color: #0d1b4b; font-weight: 600; }
+  .myc-gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; margin: 26px 0; }
+  .myc-gallery img { width: 100%; height: 300px; object-fit: cover; border-radius: 16px; }
+  .myc-cta-band { background: #0d1b4b; border-radius: 20px; padding: 44px 36px; text-align: center; margin: 56px 0 20px; }
+  .myc-cta-band h2 { color: #fff; margin: 0 0 10px; font-size: 30px; }
+  .myc-cta-band p { color: #c9d0e8; margin-bottom: 24px; }
+  .myc-cta-buttons { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  .myc-cta-buttons a { display: inline-block; padding: 16px 34px; border-radius: 999px; font-weight: 700; font-size: 16px; text-decoration: none; }
+  .myc-btn-primary { background: #fff; color: #0d1b4b; }
+  .myc-btn-wa { background: #25D366; color: #fff; }
+  .myc-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 18px; margin: 26px 0; }
+  .myc-step { background: #f7f8fb; border-radius: 16px; padding: 26px 22px; }
+  .myc-step .num { font-size: 14px; font-weight: 800; color: #0d1b4b; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 10px; }
+  .myc-step h3 { margin: 0 0 8px; font-size: 19px; }
+  .myc-step p { margin: 0; font-size: 15.5px; }
+  .myc-faq-item { border-bottom: 1px solid #e6e6e6; padding: 6px 0 18px; }
+  .myc-breadcrumb { font-size: 14px; color: #777; margin-bottom: 28px; }
+  .myc-breadcrumb a { color: #0d1b4b; text-decoration: none; }
+  .myc-hero { padding: 150px 0 10px; }
+  .myc-hero .yacht-details-button { display: inline-block; width: auto; padding: 16px 40px; }
+  .myc-hero h1 { font-size: 52px; line-height: 1.1; margin-bottom: 18px; }
+  .myc-hero .myc-lede { font-size: 19px; line-height: 1.7; color: #444; max-width: 780px; }
+  .myc-facts { display: flex; flex-wrap: wrap; gap: 28px; margin: 30px 0 8px; }
+  .myc-fact { min-width: 140px; }
+  .myc-fact .k { font-size: 13px; text-transform: uppercase; letter-spacing: 1px; color: #888; margin-bottom: 4px; }
+  .myc-fact .v { font-size: 18px; font-weight: 700; color: #111; }
+  @media (max-width: 767px) {
+    .myc-hero { padding-top: 120px; }
+    .myc-hero h1 { font-size: 36px; }
+    .myc-content h2 { font-size: 26px; }
+  }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does the 62' Anvera cost to rent in Miami?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "$1,700 for a 4-hour private charter, licensed captain and crew included. Call or WhatsApp (787) 664-5040 for an exact quote for your date."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the 62' Anvera best for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sunset cruises, day charters, photoshoots and anyone who wants a fast, modern Italian sport yacht rather than a traditional cruiser."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a boating license?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Every Miami Yacht Collective charter comes with a licensed captain and crew, so nobody in your group needs a license or any boating experience."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where does the 62' Anvera depart from?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "From our dock at 668 NW N River Dr on the Miami River, about 10 minutes from Brickell and 15 minutes from Miami Beach. From there you cruise down the river into Biscayne Bay."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
   <div class="page-wrapper">
@@ -356,6 +442,48 @@
               <div class="yacht-gallery-image-block">
                 <h2 id="w-node-_72d54fb9-02dc-867a-7760-7122002c52b2-58b604bd" class="yacht-gallery-title">Gallery</h2><img src="photos/anvera-62/anveras-8.jpg1.jpg" loading="lazy" id="w-node-f3ea5c76-5d3c-f133-9b90-c051b6c5789f-58b604bd" alt="62-foot Anvera luxury yacht charter Miami — sleek exterior profile" class="yacht-gallery-image-01"><img src="photos/anvera-62/anveras-9.jpg" loading="lazy" alt="62-foot Anvera luxury yacht charter Miami" class="yacht-gallery-image-02"><img src="photos/anvera-62/anveras-11.jpg" loading="lazy" alt="62-foot Anvera luxury yacht charter Miami" class="yacht-gallery-image-03"><img src="photos/anvera-62/anveras-12.jpg" loading="lazy" alt="62-foot Anvera luxury yacht charter Miami" class="yacht-gallery-image-04"><img src="photos/anvera-62/anveras-16.jpg" loading="lazy" alt="62-foot Anvera luxury yacht charter Miami" class="yacht-gallery-image-05"><img src="photos/anvera-62/anveras-17.jpg" loading="lazy" alt="62-foot Anvera luxury yacht charter Miami" class="yacht-gallery-image-06"><img src="photos/anvera-62/anveras-23.jpg" loading="lazy" alt="62-foot Anvera luxury yacht charter Miami" class="yacht-gallery-image-07"><img src="photos/anvera-62/anveras-28.jpg" loading="lazy" alt="62-foot Anvera luxury yacht charter Miami" class="yacht-gallery-image-07"><img src="photos/anvera-62/anveras-31.jpg" loading="lazy" alt="62-foot Anvera luxury yacht charter Miami" class="yacht-gallery-image-07"><img src="photos/anvera-62/anveras-35.jpg" loading="lazy" alt="62-foot Anvera luxury yacht charter Miami" class="yacht-gallery-image-07"><img src="photos/anvera-62/anveras-41.jpg" loading="lazy" alt="62-foot Anvera luxury yacht charter Miami" class="yacht-gallery-image-07"><img src="photos/anvera-62/anveras-7.jpg1.jpg" loading="lazy" alt="62-foot Anvera luxury yacht charter Miami" class="yacht-gallery-image-07"></div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="w-layout-blockcontainer container-default w-container">
+          <div class="myc-content">
+
+<h2>The sport yacht of the fleet</h2>
+<p>The 62' Anvera is the yacht for people who care how a boat moves. It's a 62-foot high-performance Italian yacht &mdash; low, sleek and fast &mdash; chartered with a licensed captain and crew from $1,700 for 4 hours.</p>
+<p>Where most yachts this size are built like floating apartments, the Anvera is built like a sports car: clean open deck, sharp lines, and a ride that makes the run across Biscayne Bay part of the day rather than the commute. It photographs better than anything near its price, which is why it's a favorite for content shoots, couples and sunset charters.</p>
+<p>Departures are from our Miami River dock, 10 minutes from Brickell and 15 from Miami Beach. Want a more classic yacht layout at a similar rate? Look at the <a href="azimut.html">55' Azimut</a>. Want more length? The <a href="azimut-lchaim.html">65' Azimut L'chaim</a> and <a href="ferretti.html">75' Ferretti</a> are both $3,000. The Anvera is also our top pick for a <a href="private-sunset-cruise-miami.html">private sunset cruise</a>.</p>
+
+<h2>How booking works</h2>
+<p>Call or WhatsApp (787) 664-5040, any hour. We check the 62' Anvera's availability for your date while you're on the line, confirm the rate, and hold the charter &mdash; most bookings are done in under 10 minutes. No platforms, no booking fees, and you deal directly with the team running the boat.</p>
+
+<h2>Frequently asked questions</h2>
+<div class="myc-faq-item">
+<h3>How much does the 62' Anvera cost to rent in Miami?</h3>
+<p>$1,700 for a 4-hour private charter, licensed captain and crew included. Call or WhatsApp (787) 664-5040 for an exact quote for your date.</p>
+</div>
+<div class="myc-faq-item">
+<h3>What is the 62' Anvera best for?</h3>
+<p>Sunset cruises, day charters, photoshoots and anyone who wants a fast, modern Italian sport yacht rather than a traditional cruiser.</p>
+</div>
+<div class="myc-faq-item">
+<h3>Do I need a boating license?</h3>
+<p>No. Every Miami Yacht Collective charter comes with a licensed captain and crew, so nobody in your group needs a license or any boating experience.</p>
+</div>
+<div class="myc-faq-item">
+<h3>Where does the 62' Anvera depart from?</h3>
+<p>From our dock at 668 NW N River Dr on the Miami River, about 10 minutes from Brickell and 15 minutes from Miami Beach. From there you cruise down the river into Biscayne Bay.</p>
+</div>
+
+<div class="myc-cta-band">
+  <h2>Check the 62' Anvera's availability</h2>
+  <p>One call or WhatsApp message &mdash; captain and crew included, from $1,700 for 4 hours.</p>
+  <div class="myc-cta-buttons">
+    <a href="tel:7876645040" class="myc-btn-primary">Call (787) 664-5040</a>
+    <a href="https://wa.me/17876645040" target="_blank" rel="noopener" class="myc-btn-wa">WhatsApp Us</a>
+  </div>
+</div>
+
           </div>
         </div>
       </section>

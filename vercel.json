@@ -1,0 +1,207 @@
+{
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/bachelorette-yacht-miami.html",
+      "destination": "/bachelorette-yacht-party-miami.html",
+      "permanent": true
+    },
+    {
+      "source": "/yacht-parties-miami.html",
+      "destination": "/yacht-party-miami.html",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-yacht-miami.html",
+      "destination": "/services.html",
+      "permanent": true
+    },
+    {
+      "source": "/boat-tours-miami.html",
+      "destination": "/private-sunset-cruise-miami.html",
+      "permanent": true
+    },
+    {
+      "source": "/yacht-catering-miami.html",
+      "destination": "/services.html",
+      "permanent": true
+    },
+    {
+      "source": "/yacht-details.html",
+      "destination": "/yacht.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blog",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/detail_blog.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-much-does-yacht-rental-miami-cost.html",
+      "destination": "/miami-yacht-rental-prices.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-plan-a-yacht-party-miami.html",
+      "destination": "/yacht-party-miami.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/miami-bachelorette-yacht-party.html",
+      "destination": "/bachelorette-yacht-party-miami.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/best-places-to-anchor-biscayne-bay.html",
+      "destination": "/private-sunset-cruise-miami.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/miami-yacht-charter-vs-boat-rental.html",
+      "destination": "/yacht.html",
+      "permanent": true
+    },
+    {
+      "source": "/services",
+      "destination": "/services.html",
+      "permanent": true
+    },
+    {
+      "source": "/booking",
+      "destination": "/booking.html",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/gallery",
+      "destination": "/gallery.html",
+      "permanent": true
+    },
+    {
+      "source": "/about",
+      "destination": "/about.html",
+      "permanent": true
+    },
+    {
+      "source": "/ferretti",
+      "destination": "/ferretti.html",
+      "permanent": true
+    },
+    {
+      "source": "/azimut",
+      "destination": "/azimut.html",
+      "permanent": true
+    },
+    {
+      "source": "/azimut-lchaim",
+      "destination": "/azimut-lchaim.html",
+      "permanent": true
+    },
+    {
+      "source": "/isabella",
+      "destination": "/isabella.html",
+      "permanent": true
+    },
+    {
+      "source": "/acgua-alberti",
+      "destination": "/acgua-alberti.html",
+      "permanent": true
+    },
+    {
+      "source": "/deep-blue",
+      "destination": "/deep-blue.html",
+      "permanent": true
+    },
+    {
+      "source": "/anvera",
+      "destination": "/anvera.html",
+      "permanent": true
+    },
+    {
+      "source": "/axopar-brabus",
+      "destination": "/axopar-brabus.html",
+      "permanent": true
+    },
+    {
+      "source": "/maxum",
+      "destination": "/maxum.html",
+      "permanent": true
+    },
+    {
+      "source": "/yacht",
+      "destination": "/yacht.html",
+      "permanent": true
+    },
+    {
+      "source": "/yacht-party-miami",
+      "destination": "/yacht-party-miami.html",
+      "permanent": true
+    },
+    {
+      "source": "/birthday-yacht-party-miami",
+      "destination": "/birthday-yacht-party-miami.html",
+      "permanent": true
+    },
+    {
+      "source": "/bachelorette-yacht-party-miami",
+      "destination": "/bachelorette-yacht-party-miami.html",
+      "permanent": true
+    },
+    {
+      "source": "/private-sunset-cruise-miami",
+      "destination": "/private-sunset-cruise-miami.html",
+      "permanent": true
+    },
+    {
+      "source": "/miami-yacht-rental-prices",
+      "destination": "/miami-yacht-rental-prices.html",
+      "permanent": true
+    },
+    {
+      "source": "/yamaha-255xd",
+      "destination": "/yamaha-255xd.html",
+      "permanent": true
+    }
+  ]
+}
