@@ -40,12 +40,12 @@
     },
     {
       "source": "/corporate-yacht-miami.html",
-      "destination": "/services.html",
+      "destination": "/corporate-yacht-charter-miami.html",
       "permanent": true
     },
     {
       "source": "/boat-tours-miami.html",
-      "destination": "/private-sunset-cruise-miami.html",
+      "destination": "/sandbar-yacht-charter-miami.html",
       "permanent": true
     },
     {
@@ -201,6 +201,16 @@
     {
       "source": "/yamaha-255xd",
       "destination": "/yamaha-255xd.html",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-yacht-charter-miami",
+      "destination": "/corporate-yacht-charter-miami.html",
+      "permanent": true
+    },
+    {
+      "source": "/sandbar-yacht-charter-miami",
+      "destination": "/sandbar-yacht-charter-miami.html",
       "permanent": true
     }
   ]
