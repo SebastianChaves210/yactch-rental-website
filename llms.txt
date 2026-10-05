@@ -1,6 +1,6 @@
 # Miami Yacht Collective
 
-> Private yacht charter company in Miami, Florida. Hand-picked fleet of 10 vessels ranging from 25 ft to 90 ft. Available 24/7 for sunset cruises, birthday parties, bachelorette events, corporate charters, and full-day group experiences on Biscayne Bay and the open Atlantic. Direct line to the captain — no third-party platforms, no booking fees.
+> Private yacht charter company in Miami, Florida. Hand-picked fleet of 9 vessels ranging from 25 ft to 90 ft. Available 24/7 for sunset cruises, birthday parties, bachelorette events, corporate charters, and full-day group experiences on Biscayne Bay and the open Atlantic. Direct line to the captain — no third-party platforms, no booking fees.
 
 ## Business Information
 
@@ -14,10 +14,9 @@
 - Departures: From the Miami River dock, 10 minutes from Brickell and 15 minutes from Miami Beach
 - Service area: Miami, Miami Beach, Biscayne Bay, Star Island, Fisher Island, Stiltsville, and offshore Atlantic itineraries
 
-## Fleet (10 vessels)
+## Fleet (9 vessels)
 
 - 90' Deep Blue with Jacuzzi — from $4,999 / 4 hrs
-- 90' Acgua Alberti Superyacht — from $5,000 / 4 hrs
 - 75' Ferretti Italian Motor Yacht — from $3,000 / 4 hrs
 - 65' Azimut L'chaim — from $3,000 / 4 hrs
 - 62' Anvera — from $1,700 / 4 hrs
@@ -39,7 +38,7 @@ All charters include licensed captain and crew. Charters depart from 668 NW N Ri
 - Day trips to Stiltsville
 - Photoshoots and content production
 - Sport boat day with watersports (Axopar)
-- Group celebrations on the 90' superyachts
+- Group celebrations on the 90' Deep Blue
 
 ## How to Book
 
@@ -88,7 +87,6 @@ Lines are open 24 hours, 7 days a week.
 ### Individual yacht pages
 
 - 90' Deep Blue with Jacuzzi: https://miamiyachtcollective.com/deep-blue.html
-- 90' Acgua Alberti Superyacht: https://miamiyachtcollective.com/acgua-alberti.html
 - 75' Ferretti: https://miamiyachtcollective.com/ferretti.html
 - 65' Azimut L'chaim: https://miamiyachtcollective.com/azimut-lchaim.html
 - 62' Anvera: https://miamiyachtcollective.com/anvera.html

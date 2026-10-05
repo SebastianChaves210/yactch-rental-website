@@ -154,7 +154,7 @@
     },
     {
       "source": "/acgua-alberti",
-      "destination": "/acgua-alberti.html",
+      "destination": "/deep-blue.html",
       "permanent": true
     },
     {
@@ -280,6 +280,21 @@
     {
       "source": "/alquiler-de-yates-miami",
       "destination": "/alquiler-de-yates-miami.html",
+      "permanent": true
+    },
+    {
+      "source": "/acgua-alberti.html",
+      "destination": "/deep-blue.html",
+      "permanent": true
+    },
+    {
+      "source": "/pay/acgua-alberti.html",
+      "destination": "/pay/deep-blue.html",
+      "permanent": true
+    },
+    {
+      "source": "/pay/acgua-alberti-deposit-1000.html",
+      "destination": "/pay/deep-blue-deposit-1000.html",
       "permanent": true
     }
   ]

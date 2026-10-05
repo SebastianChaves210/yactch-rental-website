@@ -61,7 +61,7 @@ Every page must include the booking modal markup and JS inline. It's not in an e
 | Page | File | Notes |
 |------|------|-------|
 | Homepage | `index.html` | Hero video (poster only on phones), fleet grid, FAQ, CTA. The H1 holds a `.myc-h1-kicker` span plus the headline |
-| Yacht detail pages | `isabella.html`, `maxum.html`, `ferretti.html`, `azimut.html`, `acgua-alberti.html`, `azimut-lchaim.html`, `deep-blue.html`, `anvera.html`, `axopar-brabus.html`, `yamaha-255xd.html` | 10 boats. Photo galleries, spec rows, an "On board" section written from the photos, FAQ, booking CTAs. `acgua-alberti.html` still shows Deep Blue's photos |
+| Yacht detail pages | `isabella.html`, `maxum.html`, `ferretti.html`, `azimut.html`, `azimut-lchaim.html`, `deep-blue.html`, `anvera.html`, `axopar-brabus.html`, `yamaha-255xd.html` | 9 boats. Photo galleries, spec rows, an "On board" section written from the photos, FAQ, booking CTAs. The 90' Acgua Alberti was removed 2026-10-04 at the owner's request (its page showed Deep Blue's photos); its URLs redirect to `deep-blue.html` and its Stripe links are deactivated. The fleet count is written as "9" or "nine" across the site, and the top price is $4,999 |
 | Gallery | `gallery.html` | Fleet photos (template stock replaced 2026-10-04) |
 | About | `about.html` | Company info |
 | Services | `services.html` | Experiences hub: one card per occasion page, plus links to the guides |

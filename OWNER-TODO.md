@@ -10,11 +10,10 @@ The site itself is in good shape. What holds traffic back now is that the domain
 - [ ] **Update your Google Business Profile.** Add each experience as a service with its page link, and post real charter photos about twice a week.
 - [ ] **Finish the marketplace listings.** GetMyBoat is under review and the Sailo drafts need their Insurance section. Details are in `marketplace-listings/STATUS.md`.
 - [ ] **Read the new pages once.** They are new copy published in your name: the four guides at `/guides.html`, and the seven landing pages (boat rental, party boat, bachelor party, proposal, Miami Beach, Brickell, and the Spanish page at `/alquiler-de-yates-miami.html`).
-- [ ] **Resubmit the sitemap in Search Console.** It now has 36 pages.
+- [ ] **Resubmit the sitemap in Search Console.** It now has 35 pages.
 
 ## This month
 
-- [ ] **Send photos of the Acgua Alberti.** Its page currently shows Deep Blue's photos.
 - [ ] **Send more photos of the Maxum and the 55' Azimut.** Each page has only one.
 - [ ] **Send real specs for each boat**: make, model, year, cabins, bathrooms and anything notable on board. Boat pages describe only what the photos show until then.
 - [ ] **Create TripAdvisor, Yelp, Bing Places and Apple Business Connect listings** with the exact same name, address and phone: Miami Yacht Collective / 668 NW N River Dr / (787) 664-5040.

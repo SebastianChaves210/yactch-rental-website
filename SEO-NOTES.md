@@ -26,10 +26,12 @@ Domain registered 2026-03-04. Vercel Web Analytics showed 53 to 177 unique visit
 - **New pages are generated from `sandbar-yacht-charter-miami.html`** by replacing the head tags, the three JSON-LD blocks and everything between `<section class="myc-hero">` and the footer. The Spanish page's menu and footer were then translated by hand in the file, so regenerating it would lose them.
 - **Correction to my own audit:** homepage testimonials are named, not anonymous, and boat-page main copy was about 45% shared before this work, not 50%.
 
+- **Acgua Alberti removed (same day, owner's decision).** Page deleted, `/acgua-alberti` and `/acgua-alberti.html` redirect to `deep-blue.html`, fleet count changed from 10 to 9 on every page, top price is now $4,999, both Stripe links deactivated and its pay pages removed. If the boat comes back with its own photos, restore it from git history (`git show 3a078a0:acgua-alberti.html`) and reverse those counts.
+
 ### Open
 - Owner: Google reviews, Business Profile posts, TripAdvisor/Yelp/Bing/Apple listings, local links (see OWNER-TODO.md).
-- Owner: real specs per boat, Acgua Alberti photos, more Maxum and 55' Azimut photos (one each today).
-- Resubmit `sitemap.xml` in Search Console (36 URLs now) and export queries and page indexing after 3 to 4 weeks.
+- Owner: real specs per boat, more Maxum and 55' Azimut photos (one each today).
+- Resubmit `sitemap.xml` in Search Console (35 URLs now) and export queries and page indexing after 3 to 4 weeks.
 - "(2026)" in the prices and license titles needs a January 2027 refresh.
 
 ---
