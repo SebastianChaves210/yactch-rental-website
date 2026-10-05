@@ -246,6 +246,41 @@
       "source": "/best-time-yacht-charter-miami",
       "destination": "/best-time-yacht-charter-miami.html",
       "permanent": true
+    },
+    {
+      "source": "/boat-rental-miami",
+      "destination": "/boat-rental-miami.html",
+      "permanent": true
+    },
+    {
+      "source": "/party-boat-rental-miami",
+      "destination": "/party-boat-rental-miami.html",
+      "permanent": true
+    },
+    {
+      "source": "/bachelor-party-yacht-miami",
+      "destination": "/bachelor-party-yacht-miami.html",
+      "permanent": true
+    },
+    {
+      "source": "/proposal-yacht-charter-miami",
+      "destination": "/proposal-yacht-charter-miami.html",
+      "permanent": true
+    },
+    {
+      "source": "/yacht-rental-miami-beach",
+      "destination": "/yacht-rental-miami-beach.html",
+      "permanent": true
+    },
+    {
+      "source": "/yacht-rental-brickell",
+      "destination": "/yacht-rental-brickell.html",
+      "permanent": true
+    },
+    {
+      "source": "/alquiler-de-yates-miami",
+      "destination": "/alquiler-de-yates-miami.html",
+      "permanent": true
     }
   ]
 }

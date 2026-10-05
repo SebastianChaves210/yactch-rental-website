@@ -61,6 +61,7 @@ Every page must include the booking modal markup and JS inline. It's not in an e
 | Booking | `booking.html` | Booking page |
 | Fleet listing | `yacht.html` | Indexable fleet page (de-noindexed 2026-07-08) |
 | SEO landing pages | `yacht-party-miami.html`, `birthday-yacht-party-miami.html`, `bachelorette-yacht-party-miami.html`, `private-sunset-cruise-miami.html`, `miami-yacht-rental-prices.html`, `corporate-yacht-charter-miami.html`, `sandbar-yacht-charter-miami.html` | Intent pages targeting party/sunset/price searches. Keep facts in sync with llms.txt |
+| Search landing pages (2026-10-04) | `boat-rental-miami.html`, `party-boat-rental-miami.html`, `bachelor-party-yacht-miami.html`, `proposal-yacht-charter-miami.html`, `yacht-rental-miami-beach.html`, `yacht-rental-brickell.html`, `alquiler-de-yates-miami.html` (Spanish, `lang="es"`) | Same template and fact rules as the occasion pages. Location pages describe the Miami River dock only — never claim pickup elsewhere. Prices repeat here: update on a reprice |
 | Guides | `guides.html` (hub), `boating-license-miami-boat-rental.html`, `what-to-bring-yacht-charter-miami.html`, `miami-sandbar-guide.html`, `best-time-yacht-charter-miami.html` | Informational articles (Article + FAQPage schema), generated from the sandbar page template 2026-10-04. Same fact rules as the rest of the site |
 | Yamaha detail | `yamaha-255xd.html` | 10th fleet vessel (25' jet boat, $1,000/4hr) |
 | Error pages | `401.html`, `404.html` | Error states |
