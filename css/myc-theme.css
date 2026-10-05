@@ -518,3 +518,28 @@ html .modal-close:hover { color: var(--myc-ink); }
   body .myc-hero h1 { font-size: clamp(2.125rem, 9vw, 2.75rem); }
   html .modal-booking { padding: 40px 26px; }
 }
+
+/* ---------- 17. Performance + heading semantics ----------------------------- */
+
+/* width/height attributes reserve space; keep the rendered ratio fluid */
+:where(img[width][height]) { height: auto; }
+
+/* Testimonial quotes and counter digits are divs now — keep the old h2 look */
+div.testimonial-title,
+div.overview-title {
+  margin-top: 0;
+  font-size: clamp(2.25rem, 4.5vw, 3.4rem);
+  line-height: 1.1;
+}
+div.overview-title { margin-bottom: 0; line-height: 100%; }
+
+.myc-h1-kicker {
+  display: block;
+  margin-bottom: 0.9em;
+  font-family: var(--myc-sans);
+  font-size: clamp(0.8125rem, 1.1vw, 1rem);
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
