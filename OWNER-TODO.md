@@ -22,7 +22,6 @@ The site itself is in good shape. What holds traffic back now is that the domain
 - [ ] **Confirm what is included**: BYOB, fuel, ice, speakers, towels, catering, gratuity, cancellation and late-arrival policy. The site avoids all of these because they were never confirmed. Adding them to the pages and FAQs is a quick follow-up.
 - [ ] **Do you run charters to Haulover Sandbar?** If yes, a Haulover page is worth building. Today the sandbar guide only describes it.
 - [ ] **Replace the party photos with your own.** The images in `photos/party/` came from Pinterest and Instagram.
-- [ ] **Replace the stock images on the homepage and About page** with real fleet or guest photos.
 - [ ] **Set up a business-domain email** such as book@miamiyachtcollective.com. The site and AI assistants currently cite sebastian@mcaiconsulting.com.
 
 ## In 3 to 4 weeks

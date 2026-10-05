@@ -31,7 +31,8 @@ Production serves the committed root-level directories. The untracked `public/` 
 
 - `css/` — Webflow stylesheets plus `myc-theme.css`, the override layer loaded last on every page
 - `js/` — `webflow.js` (Webflow runtime), `tracking.js` (GA4 event tracking)
-- `images/` — Template images (backgrounds, icons) in `.avif`/`.svg`. Most are template stock, not the real fleet
+- `images/` — Template images (backgrounds, icons) in `.avif`/`.svg`. Template stock; no longer shown on the homepage, About or Gallery (replaced 2026-10-04)
+- `photos/site/` — Fleet photos cropped to the exact pixel size of the template slots they replaced (homepage about/marquee/testimonial/overview images, About images, and `hero-bay.webp` behind the About and Gallery heroes via `myc-theme.css`)
 - `photos/<boat>/` — Real fleet photos. Each photo used on a card or landing page also has a `<name>-800.webp` copy (800px wide); `index.html`, `yacht.html`, the guides and the landing pages point at those, the boat detail galleries use the full-size originals
 - `videos/` — Hero and section background videos. Not present in the local working tree by default (`git checkout -- videos/<file>` to restore one)
 - `vercel.json` — security headers, 7-day cache for `photos/`, `images/`, `videos/`, and permanent redirects. Every new page needs an extensionless redirect here
@@ -61,7 +62,7 @@ Every page must include the booking modal markup and JS inline. It's not in an e
 |------|------|-------|
 | Homepage | `index.html` | Hero video (poster only on phones), fleet grid, FAQ, CTA. The H1 holds a `.myc-h1-kicker` span plus the headline |
 | Yacht detail pages | `isabella.html`, `maxum.html`, `ferretti.html`, `azimut.html`, `acgua-alberti.html`, `azimut-lchaim.html`, `deep-blue.html`, `anvera.html`, `axopar-brabus.html`, `yamaha-255xd.html` | 10 boats. Photo galleries, spec rows, an "On board" section written from the photos, FAQ, booking CTAs. `acgua-alberti.html` still shows Deep Blue's photos |
-| Gallery | `gallery.html` | Fleet photos (template stock replaced 2026-10-04; hero background is still a stock CSS image) |
+| Gallery | `gallery.html` | Fleet photos (template stock replaced 2026-10-04) |
 | About | `about.html` | Company info |
 | Services | `services.html` | Experiences hub: one card per occasion page, plus links to the guides |
 | Contact | `contact.html` | Contact info |

@@ -22,7 +22,7 @@ Domain registered 2026-03-04. Vercel Web Analytics showed 53 to 177 unique visit
 - **Location pages are not pickup pages.** Miami Beach and Brickell pages describe travel to the Miami River dock only.
 - **`party-boat-rental-miami.html` overlaps `yacht-party-miami.html`.** It is aimed at smaller boats and the "private, not ticketed" angle, and the two link to each other. Watch Search Console for the two competing on the same queries.
 - **Acgua Alberti's page shows Deep Blue's photos.** Its gallery srcs are `photos/deep-blue-90/*`; only `photos/legacy/acgua-alberti.avif` is its own. No "On board" section was written for it.
-- **Template stock images are still on the homepage and About page** (`images/*.avif` of other yachts and models). Their `alt=""` is intentional. Real photos would be better.
+- **Template stock images on the homepage, About and Gallery were replaced the same day** with fleet photos cropped into `photos/site/`. Still stock: the three background videos on `about.html` (their sections are hidden by the theme) and the `View-Yacht-Showcase` text badge.
 - **New pages are generated from `sandbar-yacht-charter-miami.html`** by replacing the head tags, the three JSON-LD blocks and everything between `<section class="myc-hero">` and the footer. The Spanish page's menu and footer were then translated by hand in the file, so regenerating it would lose them.
 - **Correction to my own audit:** homepage testimonials are named, not anonymous, and boat-page main copy was about 45% shared before this work, not 50%.
 
