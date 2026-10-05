@@ -4,6 +4,36 @@ Running log so future sessions build on this instead of repeating it. One lesson
 
 ---
 
+## 2026-10-04 session (Claude, traffic audit and three rounds of fixes — all live)
+
+### Diagnosis: the site is healthy; the domain is new and has no footprint
+Domain registered 2026-03-04. Vercel Web Analytics showed 53 to 177 unique visitors a month from June to September, with Google sending only 16 to 25 of them. Brand searches return only our own pages: no TripAdvisor, Yelp or third-party reviews. URLs churned for months (11 pages deleted 12 days after launch, occasion pages re-created under new names in July, blog removed in August). On-site work helps, but reviews, listings and links are the larger lever. No Search Console data was available to me; ask the owner for exports before diagnosing rankings.
+
+### Shipped
+- **c6667a8 / a28be9c:** photos recompressed in place (709 MB to 55 MB), `vercel.json` tracked with security headers and redirects for dead URLs, boat pages expanded with unique copy and FAQ, corporate and sandbar pages added.
+- **49c890b (speed, guides, boat pages, titles):** 800px WebP card photos on `index.html` and `yacht.html` (23 MB to 4.8 MB), lazy-loading and image dimensions, hero video recompressed and skipped on phones, 7-day media cache. Guides hub plus four guides. "On board" sections and per-photo alt text on boat pages. Every title at 60 characters or fewer. Boat H1s carry a search term. Homepage testimonials and counter digits demoted from `h2` to `div`. Gallery stock images replaced with fleet photos.
+- **7e74523 (+ Spanish follow-up):** seven landing pages: boat rental, party boat, bachelor party, proposal and anniversary, Miami Beach, Brickell, and a Spanish page.
+
+### Lessons
+- **Titles are now short on purpose.** This reverses the July note that 77 to 91 character titles were deliberate. Keep them at 60 or fewer.
+- **Superseded:** the July note "any new content must say max 13 guests" is void. Numeric guest counts are forbidden (see CLAUDE.md).
+- **`boat-rental-miami.html` exists despite the July finding that the head term is marketplace-walled.** It was built at the owner's request to cover the long tail ("with captain", small-boat prices). Do not expect it to rank for the head term.
+- **No Haulover sales page.** The owner has not confirmed charters go there. The sandbar guide describes Haulover without offering it.
+- **Location pages are not pickup pages.** Miami Beach and Brickell pages describe travel to the Miami River dock only.
+- **`party-boat-rental-miami.html` overlaps `yacht-party-miami.html`.** It is aimed at smaller boats and the "private, not ticketed" angle, and the two link to each other. Watch Search Console for the two competing on the same queries.
+- **Acgua Alberti's page shows Deep Blue's photos.** Its gallery srcs are `photos/deep-blue-90/*`; only `photos/legacy/acgua-alberti.avif` is its own. No "On board" section was written for it.
+- **Template stock images are still on the homepage and About page** (`images/*.avif` of other yachts and models). Their `alt=""` is intentional. Real photos would be better.
+- **New pages are generated from `sandbar-yacht-charter-miami.html`** by replacing the head tags, the three JSON-LD blocks and everything between `<section class="myc-hero">` and the footer. The Spanish page's menu and footer were then translated by hand in the file, so regenerating it would lose them.
+- **Correction to my own audit:** homepage testimonials are named, not anonymous, and boat-page main copy was about 45% shared before this work, not 50%.
+
+### Open
+- Owner: Google reviews, Business Profile posts, TripAdvisor/Yelp/Bing/Apple listings, local links (see OWNER-TODO.md).
+- Owner: real specs per boat, Acgua Alberti photos, more Maxum and 55' Azimut photos (one each today).
+- Resubmit `sitemap.xml` in Search Console (36 URLs now) and export queries and page indexing after 3 to 4 weeks.
+- "(2026)" in the prices and license titles needs a January 2027 refresh.
+
+---
+
 ## 2026-07-09 session (Claude, design overhaul — branch `design-overhaul`)
 
 ### What shipped (commit 1210d8f, NOT yet merged to main)

@@ -1,32 +1,41 @@
-# Your To-Do List — Miami Yacht Collective SEO
+# Your To-Do List — Miami Yacht Collective
 
-Things only you can do, ordered by how much they move bookings. Updated 2026-07-08 after the SEO run (see SEO-NOTES.md for what was already done).
+Things only you can do, ordered by how much they move traffic and bookings. Updated 2026-10-04 after the traffic audit (see SEO-NOTES.md for what was done on the site).
 
-## This week — highest impact
+The site itself is in good shape. What holds traffic back now is that the domain is seven months old and almost nothing outside the site mentions it. The first three items fix that and matter more than any further page edits.
 
-- [ ] **Ask past guests for Google reviews.** Send each recent charter guest a WhatsApp message with your Google review link. Aim for 5 reviews in the next 2–3 weeks, then keep a steady trickle (one every 1–2 weeks beats ten at once). This is the single biggest gap between you and the operators ranking #1. *(~30 min to send the first batch)*
-- [ ] **Update your Google Business Profile services.** Add each experience as a named service — "Private yacht party", "Birthday yacht party", "Bachelorette yacht party", "Private sunset cruise" — and paste the matching page link into each (yacht-party-miami.html, birthday-yacht-party-miami.html, etc.). *(~20 min)*
-- [ ] **Start posting photos to Google Business Profile ~2x per week.** Posting frequency now directly influences map-pack ranking. Real charter photos, not stock. *(5 min per post)*
-- [ ] **Confirm the "what's included" facts** and send them to me (or answer in the next Claude session): BYOB allowed? Fuel included? Ice/coolers? Bluetooth speakers? Towels? Catering arrangeable? Cancellation policy? I deliberately left these off the new pages because they were never confirmed — adding them (with FAQ markup) is a quick, high-converting follow-up. *(10 min)*
+## This week
+
+- [ ] **Ask past guests for Google reviews.** Send each recent guest your Google review link on WhatsApp. Aim for 5 in the next 2 to 3 weeks, then one every week or two.
+- [ ] **Update your Google Business Profile.** Add each experience as a service with its page link, and post real charter photos about twice a week.
+- [ ] **Finish the marketplace listings.** GetMyBoat is under review and the Sailo drafts need their Insurance section. Details are in `marketplace-listings/STATUS.md`.
+- [ ] **Read the new pages once.** They are new copy published in your name: the four guides at `/guides.html`, and the seven landing pages (boat rental, party boat, bachelor party, proposal, Miami Beach, Brickell, and the Spanish page at `/alquiler-de-yates-miami.html`).
+- [ ] **Resubmit the sitemap in Search Console.** It now has 36 pages.
 
 ## This month
 
-- [ ] **Replace the party photos with your own.** The images in `photos/party/` are Pinterest/Instagram-sourced — copyright risk and Google favors original photos. Take phone photos on your next few charters and swap them in (keep the same filenames and no code change is needed). 
-- [ ] **Create a Yelp business listing** with the exact same name/address/phone: Miami Yacht Collective / 668 NW N River Dr / (787) 664-5040. *(~1 hr)*
-- [ ] **Create a TripAdvisor "Things to Do" listing** with the same details. ChatGPT and Perplexity pull heavily from both. *(~1 hr)*
-- [ ] **Bing Places + Apple Business Connect listings.** Bing powers ChatGPT/Copilot answers. *(~1 hr each)*
-- [ ] **Set up a business-domain email** (hello@ or book@miamiyachtcollective.com, forwarded to your inbox), then have Claude swap it into the schema, footer, and contact page. Right now AI assistants cite sebastian@mcaiconsulting.com.
-- [ ] **Check Search Console → Indexing → Pages** (you're verified now): confirm the 6 new pages show as "Indexed" within ~2 weeks. If any are stuck in "Discovered – not indexed" after 3 weeks, flag it in the next session.
+- [ ] **Send photos of the Acgua Alberti.** Its page currently shows Deep Blue's photos.
+- [ ] **Send more photos of the Maxum and the 55' Azimut.** Each page has only one.
+- [ ] **Send real specs for each boat**: make, model, year, cabins, bathrooms and anything notable on board. Boat pages describe only what the photos show until then.
+- [ ] **Create TripAdvisor, Yelp, Bing Places and Apple Business Connect listings** with the exact same name, address and phone: Miami Yacht Collective / 668 NW N River Dr / (787) 664-5040.
+- [ ] **Get a few local links.** Miami event planners, wedding and bachelorette blogs, hotel concierge pages and the marina. Five to ten would be a large change for a domain this new.
+- [ ] **Confirm what is included**: BYOB, fuel, ice, speakers, towels, catering, gratuity, cancellation and late-arrival policy. The site avoids all of these because they were never confirmed. Adding them to the pages and FAQs is a quick follow-up.
+- [ ] **Do you run charters to Haulover Sandbar?** If yes, a Haulover page is worth building. Today the sandbar guide only describes it.
+- [ ] **Replace the party photos with your own.** The images in `photos/party/` came from Pinterest and Instagram.
+- [ ] **Replace the stock images on the homepage and About page** with real fleet or guest photos.
+- [ ] **Set up a business-domain email** such as book@miamiyachtcollective.com. The site and AI assistants currently cite sebastian@mcaiconsulting.com.
 
-## Ongoing / later
+## In 3 to 4 weeks
 
-- [ ] **Check Search Console → Performance in 3–4 weeks.** It shows the exact queries your pages appear for — that data tells the next SEO run where to push (which page to expand, which new page to build).
-- [ ] **Get a 305 or 786 Miami number** (free with Google Voice) as a secondary line on listings — soft local-relevance signal. Don't replace the 787.
-- [ ] **Submit to data aggregators** (Data Axle, Foursquare — free) to spread your name/address/phone to downstream directories.
-- [ ] **Decide the blog strategy.** blog.html is hidden from Google right now. When ready, the two proven article targets are: "Haulover/Nixon's Sandbar by private yacht (guide)" and "Do you need a license to rent a boat in Miami?" — competitors rank with exactly these.
-- [ ] **Every January:** refresh the "(2026)" in the prices page title and re-check rates — year-stamped price pages are what wins that search, but only if the year is current.
+- [ ] **Export Search Console data**: Performance (queries and pages) and Indexing (pages). It shows which of the new pages Google picked up and which searches to push next.
 
-## Housekeeping (not SEO, but flagged)
+## Later
 
-- [ ] **Update the git remote** — GitHub says the repo moved to `SebastianChaves210/yactch-rental-website` (pushes still work via redirect): `git remote set-url origin https://github.com/SebastianChaves210/yactch-rental-website.git`
-- [ ] **Decide the fate of the Next.js experiment** (`app/`, `public/`, package.json changes) — the local folder has ~430 uncommitted file deletions from it. Until decided, never `git add -A` in this repo.
+- [ ] **Get a 305 or 786 number** as a secondary line on listings. Keep the 787.
+- [ ] **Submit to data aggregators** (Data Axle, Foursquare).
+- [ ] **Every January:** refresh "(2026)" in the prices and license page titles and re-check rates.
+- [ ] **Launch the Google Ads campaign** built in `google-ads/` when ready. It is paused and has not been test-imported.
+
+## Housekeeping
+
+- [ ] **Decide the fate of the Next.js experiment** (`app/`, `public/`, the `package.json` changes). Until then, never `git add -A` in this repo.

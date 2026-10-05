@@ -7,7 +7,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 **Miami Yacht Collective** — A static yacht rental lead-generation website for Miami.
 - **Domain**: `https://miamiyachtcollective.com`
 - **Goal**: Convert visitors into booking leads via Call or WhatsApp. No backend, no forms, no payment processing.
-- **Origin**: Migrated from a Webflow "YachtLux" template. Currently in polish phase.
+- **Origin**: Migrated from a Webflow "YachtLux" template. Domain registered 2026-03-04.
+- **Deploy**: Vercel project `yactch-rental-website` builds from `main` of `github.com/SebastianChaves210/yactch-rental-website` (local remote `deploy`). Work on `design-overhaul`, then `git push deploy design-overhaul:main`. The `origin` remote is stale.
 - **Stack**: Pure HTML/CSS/JS — no build tools, no frameworks. The `package.json` and `app/` directory contain an unused Next.js setup; the live site is the root HTML files served statically.
 
 ## Dev Server
@@ -21,17 +22,26 @@ python3 -m http.server 8000
 
 ### Two Layers (only the static layer is live)
 
-1. **Static HTML (root)** — The actual production site. Each page is a standalone `.html` file with inline CSS for the booking modal, Webflow CSS (`public/css/`), and Webflow JS (`public/js/`).
-2. **Next.js app (`app/`)** — Wraps the static HTML via `StaticPage` component that reads from `app/_static-pages/`. Not currently deployed or used. Ignore unless explicitly asked.
+1. **Static HTML (root)** — The actual production site. Each page is a standalone `.html` file with inline CSS for the booking modal, loading the root-level `css/` and `js/` directories.
+2. **Next.js app (`app/`, `public/`)** — A dormant experiment. Untracked, not deployed. Ignore unless explicitly asked.
 
 ### Asset Locations
 
-- `public/css/` — Webflow stylesheets (`miami-yacht-collective.webflow.css`, `normalize.css`, `webflow.css`)
-- `public/js/` — `webflow.js` (Webflow runtime), `tracking.js` (GA4 event tracking)
-- `public/images/` — Template images (backgrounds, avatars, icons) in `.avif`/`.svg`
-- `public/photos/` — Yacht-specific photo galleries organized by boat (e.g., `ferretti-75/`, `isabella-48/`)
-- `public/videos/` — Hero and section background videos (`.mp4`, `.webm` with poster `.jpg`)
-- `Boat Photos/` — Source/legacy yacht photos (`.avif`, `.jpg`)
+Production serves the committed root-level directories. The untracked `public/` copy is not live.
+
+- `css/` — Webflow stylesheets plus `myc-theme.css`, the override layer loaded last on every page
+- `js/` — `webflow.js` (Webflow runtime), `tracking.js` (GA4 event tracking)
+- `images/` — Template images (backgrounds, icons) in `.avif`/`.svg`. Most are template stock, not the real fleet
+- `photos/<boat>/` — Real fleet photos. Each photo used on a card or landing page also has a `<name>-800.webp` copy (800px wide); `index.html`, `yacht.html`, the guides and the landing pages point at those, the boat detail galleries use the full-size originals
+- `videos/` — Hero and section background videos. Not present in the local working tree by default (`git checkout -- videos/<file>` to restore one)
+- `vercel.json` — security headers, 7-day cache for `photos/`, `images/`, `videos/`, and permanent redirects. Every new page needs an extensionless redirect here
+
+### Performance rules
+
+- New photos: resize before committing (Pillow is installed; max 1920px for originals) and generate the `-800.webp` copy for any card or content use.
+- Images on `index.html` and `yacht.html` carry `width`/`height` attributes and rely on `:where(img[width][height]) { height: auto; }` in `myc-theme.css`. Do not long-cache `css/` or `js/`: stale CSS with new HTML stretches those images.
+- The homepage hero video is injected by an inline script only at 768px and wider. Phones get `videos/Yacht-poster-00001.jpg`.
+- Local checks: `python3 -m http.server` plus a browser will serve cached CSS. Force a reload before trusting a layout check.
 
 ### Key Pattern: Booking Modal
 
@@ -39,33 +49,29 @@ Every page must include the booking modal markup and JS inline. It's not in an e
 
 - CTA buttons use `data-modal` attribute to trigger the modal
 - Modal offers: Call (787) 664-5040 or WhatsApp (wa.me/17876645040)
-- `public/js/tracking.js` tracks `modal_open`, `call_click`, `whatsapp_click` via GA4
+- `js/tracking.js` tracks `modal_open`, `call_click`, `whatsapp_click` via GA4
 
 ### SEO Validation
 
-- `seo-reference.json` — Ground truth for titles, meta descriptions, headings, images, and links per page
-- `seo_validate.py` — Validates HTML files in an `output/` directory against `seo-reference.json`
-- Run: `python3 seo_validate.py` (expects files in `output/` subdirectory)
+`seo-reference.json` and `seo_validate.py` predate the July 2026 SEO pass and are stale. Do not validate against them without regenerating the reference first. See `SEO-NOTES.md` for the running log of SEO work.
 
 ## Pages
 
 | Page | File | Notes |
 |------|------|-------|
-| Homepage | `index.html` | Hero video, fleet grid (9 yachts), FAQ, CTA |
-| Yacht detail pages | `isabella.html`, `maxum.html`, `ferretti.html`, `azimut.html`, `acgua-alberti.html`, `azimut-lchaim.html`, `deep-blue.html`, `anvera.html`, `axopar-brabus.html` | Photo galleries, specs, booking CTAs |
-| Gallery | `gallery.html` | Photo grid with lightbox |
-| Blog | `blog.html` | Blog listing |
+| Homepage | `index.html` | Hero video (poster only on phones), fleet grid, FAQ, CTA. The H1 holds a `.myc-h1-kicker` span plus the headline |
+| Yacht detail pages | `isabella.html`, `maxum.html`, `ferretti.html`, `azimut.html`, `acgua-alberti.html`, `azimut-lchaim.html`, `deep-blue.html`, `anvera.html`, `axopar-brabus.html`, `yamaha-255xd.html` | 10 boats. Photo galleries, spec rows, an "On board" section written from the photos, FAQ, booking CTAs. `acgua-alberti.html` still shows Deep Blue's photos |
+| Gallery | `gallery.html` | Fleet photos (template stock replaced 2026-10-04; hero background is still a stock CSS image) |
 | About | `about.html` | Company info |
-| Services | `services.html` | Services overview |
+| Services | `services.html` | Experiences hub: one card per occasion page, plus links to the guides |
 | Contact | `contact.html` | Contact info |
 | Booking | `booking.html` | Booking page |
 | Fleet listing | `yacht.html` | Indexable fleet page (de-noindexed 2026-07-08) |
 | SEO landing pages | `yacht-party-miami.html`, `birthday-yacht-party-miami.html`, `bachelorette-yacht-party-miami.html`, `private-sunset-cruise-miami.html`, `miami-yacht-rental-prices.html`, `corporate-yacht-charter-miami.html`, `sandbar-yacht-charter-miami.html` | Intent pages targeting party/sunset/price searches. Keep facts in sync with llms.txt |
-| Search landing pages (2026-10-04) | `boat-rental-miami.html`, `party-boat-rental-miami.html`, `bachelor-party-yacht-miami.html`, `proposal-yacht-charter-miami.html`, `yacht-rental-miami-beach.html`, `yacht-rental-brickell.html`, `alquiler-de-yates-miami.html` (Spanish, `lang="es"`) | Same template and fact rules as the occasion pages. Location pages describe the Miami River dock only — never claim pickup elsewhere. Prices repeat here: update on a reprice |
+| Search landing pages (2026-10-04) | `boat-rental-miami.html`, `party-boat-rental-miami.html`, `bachelor-party-yacht-miami.html`, `proposal-yacht-charter-miami.html`, `yacht-rental-miami-beach.html`, `yacht-rental-brickell.html`, `alquiler-de-yates-miami.html` (Spanish, `lang="es"`, menu, footer and modal translated by hand in that file) | Same template and fact rules as the occasion pages. Location pages describe the Miami River dock only — never claim pickup elsewhere. Prices repeat here: update on a reprice |
 | Guides | `guides.html` (hub), `boating-license-miami-boat-rental.html`, `what-to-bring-yacht-charter-miami.html`, `miami-sandbar-guide.html`, `best-time-yacht-charter-miami.html` | Informational articles (Article + FAQPage schema), generated from the sandbar page template 2026-10-04. Same fact rules as the rest of the site |
-| Yamaha detail | `yamaha-255xd.html` | 10th fleet vessel (25' jet boat, $1,000/4hr) |
 | Error pages | `401.html`, `404.html` | Error states |
-| Blog articles | None yet (no `blog/` directory with posts) | — |
+| Blog | Removed 2026-08-10 | Old `/blog` URLs redirect to the guides in `vercel.json` |
 
 ## Do NOT
 
@@ -75,10 +81,16 @@ Every page must include the booking modal markup and JS inline. It's not in an e
 - Break the booking modal flow (Call + WhatsApp must remain on every page)
 - Replace existing `.avif` or image references with different paths
 - Modify `sitemap.xml` without keeping it in sync with the real page set (new pages must be added)
-- State unverified amenities in copy (BYOB, fuel, catering, towels) — only captain+crew included, Miami River departure and per-yacht prices are owner-confirmed facts
+- State unverified amenities or policies in copy (BYOB, fuel, catering, towels, gratuity, cancellation, pickup anywhere but the dock, trips to Haulover) — owner-confirmed facts are: captain and crew included, Miami River departure at 668 NW N River Dr, per-yacht prices, 24/7 call/WhatsApp booking, and service in Spanish and English (confirmed 2026-10-04)
+- Invent boat specs (make, model, year, cabins, engines) — the owner has not supplied them; "On board" copy describes only what the photos show
+- Let a `<title>` run past 60 characters (trimmed sitewide 2026-10-04)
 - State a NUMERIC guest / passenger capacity anywhere (2026-07-09: owner had ALL "up to 13 guests"/"Max 13"/guest-count copy, the "Guests" table column, capacity fact tiles, "Max Guests" schema, and the guest-count FAQ removed sitewide — do not reintroduce numeric headcount in copy, schema, tables, or alt text. 2026-08-10: the sanctioned replacement is the "Guests: Based on your needs" spec row now on all 10 yacht pages — keep that line, never swap a number back in)
 - `git add -A` — the working tree carries intentional uncommitted deletions (assets moved to untracked `public/` for a dormant Next.js experiment); stage files explicitly
 - Add payment forms, login, or backend functionality
+
+## Repricing checklist
+
+Prices appear in: the boat detail pages (copy, schema and, since 2026-10-04, the `<title>`), `index.html`, `yacht.html`, `miami-yacht-rental-prices.html`, every occasion and search landing page (tables and FAQ), the guides that quote "from $1,000", `services.html`, `contact.html`, `about.html` and `llms.txt`. Grep for the old figure before calling a reprice done.
 
 ## Image Path Gotcha
 
