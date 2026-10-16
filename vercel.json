@@ -296,6 +296,71 @@
       "source": "/pay/acgua-alberti-deposit-1000.html",
       "destination": "/pay/deep-blue-deposit-1000.html",
       "permanent": true
+    },
+    {
+      "source": "/star-island-boat-tour-miami",
+      "destination": "/star-island-boat-tour-miami.html",
+      "permanent": true
+    },
+    {
+      "source": "/south-beach-yacht-rental",
+      "destination": "/south-beach-yacht-rental.html",
+      "permanent": true
+    },
+    {
+      "source": "/art-basel-yacht-charter-miami",
+      "destination": "/art-basel-yacht-charter-miami.html",
+      "permanent": true
+    },
+    {
+      "source": "/new-years-eve-yacht-miami",
+      "destination": "/new-years-eve-yacht-miami.html",
+      "permanent": true
+    },
+    {
+      "source": "/spring-break-yacht-miami",
+      "destination": "/spring-break-yacht-miami.html",
+      "permanent": true
+    },
+    {
+      "source": "/miami-grand-prix-yacht-charter",
+      "destination": "/miami-grand-prix-yacht-charter.html",
+      "permanent": true
+    },
+    {
+      "source": "/yacht-charter-before-cruise-miami",
+      "destination": "/yacht-charter-before-cruise-miami.html",
+      "permanent": true
+    },
+    {
+      "source": "/yacht-photoshoot-miami",
+      "destination": "/yacht-photoshoot-miami.html",
+      "permanent": true
+    },
+    {
+      "source": "/family-yacht-charter-miami",
+      "destination": "/family-yacht-charter-miami.html",
+      "permanent": true
+    },
+    {
+      "source": "/wedding-yacht-charter-miami",
+      "destination": "/wedding-yacht-charter-miami.html",
+      "permanent": true
+    },
+    {
+      "source": "/quinceanera-yacht-party-miami",
+      "destination": "/quinceanera-yacht-party-miami.html",
+      "permanent": true
+    },
+    {
+      "source": "/fiesta-en-yate-miami",
+      "destination": "/fiesta-en-yate-miami.html",
+      "permanent": true
+    },
+    {
+      "source": "/aluguel-de-iate-em-miami",
+      "destination": "/aluguel-de-iate-em-miami.html",
+      "permanent": true
     }
   ]
 }

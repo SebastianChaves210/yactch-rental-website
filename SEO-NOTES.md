@@ -4,6 +4,43 @@ Running log so future sessions build on this instead of repeating it. One lesson
 
 ---
 
+## 2026-10-16 session (Claude, tourist-SEO branch `seo-tourist-2026-10`, Vercel preview before merge)
+
+### Diagnosis
+Technical SEO was already clean (35 indexable pages, canonicals, titles <= 60, schema, Brotli, redirects, live = repo). The gaps were conversion and coverage: no sticky CTA on phones (70% of traffic), bare `wa.me` links (owner cannot tell which page a lead came from), Lighthouse mobile 71 / LCP 5.6 s on the homepage (Google Fonts CSS blocked render for ~0.8 s), no hreflang, the Miami Beach / Brickell / party-boat pages had 3 to 4 inbound links, and no pages for the tourist calendar (Art Basel, NYE, spring break / Ultra, F1), Star Island sightseeing, South Beach, families, weddings, quinceañeras, photoshoots, pre-cruise days, or Portuguese speakers.
+
+### Owner answers used (2026-10-16)
+Only 4-hour charters; prices identical on every date including events; no Portuguese speaker on the team; commercial photo and video shoots allowed; children welcome with children's life jackets on board; ceremonies on board allowed. Not answered: whether the captain narrates Star Island (page avoids "guided").
+
+### Shipped on the branch
+- **Sticky mobile Call + WhatsApp bar** on every page (`.myc-sticky-cta`, mobile-only CSS in `myc-theme.css`, body padding so the footer clears it).
+- **Prefilled WhatsApp text** on every `wa.me` link, per page (boat name / occasion / language), so the first message identifies the page. `js/tracking.js` now tracks every `tel:` and `wa.me` link with `cta_location` (modal / sticky / inline); before, the CTA-band WhatsApp buttons were not tracked at all.
+- **Speed:** Google Fonts loaded as `preload` + `onload` swap (non-blocking) on all pages; header logo is a 420px WebP (20 KB vs 61 KB PNG); mobile hero poster is WebP (66 KB vs 87 KB). Not done: responsive `srcset` for the homepage cards (gain is marginal at phone DPR) and the Webflow CSS is still render-blocking (layout depends on it).
+- **hreflang** clusters: `/` + `alquiler-de-yates-miami` + `aluguel-de-iate-em-miami` (en / es / pt-BR / x-default) and `yacht-party-miami` + `fiesta-en-yate-miami`, in the HTML heads and as `xhtml:link` in the sitemap.
+- **13 pages** generated from `seo-tools/pages_spec.py` via `seo-tools/generate_pages.py` (template: the sandbar page): Star Island, South Beach, Art Basel, New Year's Eve, spring break / Music Week / Ultra, Grand Prix, before-or-after-cruise, photoshoot, family, wedding, quinceañera, fiesta-en-yate (es), aluguel-de-iate (pt-BR). Each has Service + BreadcrumbList + FAQPage schema, a 4-image gallery from the `-800.webp` set, a boats table, 4 to 5 FAQs, a related-links block and the CTA band.
+- **Internal links:** `.myc-related` block on all 18 existing landing pages and guides; 7 new cards plus a "Miami events on a yacht" section (`services.html#events`) on the hub; homepage explore paragraphs extended; footer gained Star Island Tours, Weddings, Family Charters, Miami Events and a Português link on every page.
+- Spanish page title now "Alquiler y Renta de Yates en Miami | Desde $1,000" (LatAm "renta" wording) with one added sentence in the lede.
+- `sitemap.xml` regenerated (48 URLs, lastmod 2026-10-16), 13 extensionless redirects added to `vercel.json`, `llms.txt` updated, `seo-tools/` and `scripts/` added to `.vercelignore`.
+
+### Lessons
+- `seo-tools/sitewide.py` is idempotent and is the one place for the WhatsApp message map, the hreflang clusters, the related-links map and the footer additions. Re-run it after regenerating pages.
+- `detail_*.html` and `search.html` were touched by the sitewide script (sticky bar, prefill). They are robots-blocked; `detail_*` stays unstaged as before.
+- The Playwright QA script must click a *visible* `[data-modal]` on mobile; the nav "Book Now" is hidden under 768px.
+- PageSpeed Insights' anonymous API quota was exhausted; `npx -y lighthouse@12 <url> --form-factor=mobile --screenEmulation.mobile --chrome-flags="--headless=new"` works with the local Chrome.
+- Event pages carry dates in copy, fact tiles and FAQ. Refresh every January (Art Basel is announced ~a year ahead; the F1 2027 date was not confirmed by F1 at writing, so the page says "early May").
+
+### How to export Search Console data (for the owner)
+1. Open https://search.google.com/search-console, pick the `miamiyachtcollective.com` property.
+2. **Performance > Search results**: set the date range to "Last 3 months", tick Clicks, Impressions, CTR and Position, then click **Export** (top right) > **Download CSV**. The zip holds Queries.csv and Pages.csv.
+3. **Indexing > Pages**: click **Export** > CSV for the indexed / not-indexed breakdown.
+4. Send the files or paste the Queries and Pages tables into the chat.
+
+### Open
+- Owner: preview the branch on a phone, then approve the merge (`git push deploy seo-tourist-2026-10:main` fast-forwards main after merging into `design-overhaul`).
+- Owner: Search Console export; resubmit sitemap after launch; confirm Star Island narration.
+- Watch for cannibalisation between `south-beach-yacht-rental` and `yacht-rental-miami-beach`, and between `spring-break-yacht-miami` and `party-boat-rental-miami`, in Search Console after 4 to 6 weeks.
+
+
 ## 2026-10-04 session (Claude, traffic audit and three rounds of fixes — all live)
 
 ### Diagnosis: the site is healthy; the domain is new and has no footprint

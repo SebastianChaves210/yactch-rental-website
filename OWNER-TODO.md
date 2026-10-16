@@ -6,11 +6,15 @@ The site itself is in good shape. What holds traffic back now is that the domain
 
 ## This week
 
+- [ ] **Preview the October 16 branch before it goes live** (`seo-tourist-2026-10`). 13 new pages, a sticky Call/WhatsApp bar on phones, and prefilled WhatsApp messages. Check a few pages on your phone and tap WhatsApp: the message that opens tells you which page the lead came from.
+- [ ] **Export Search Console data** (how-to in the Oct 16 notes in SEO-NOTES.md): Performance report, last 3 months, Export > CSV, and the Pages report under Indexing.
+- [ ] **Confirm one thing for the Star Island page:** does the captain point out the celebrity homes as you pass? The page currently says "happy to point things out". If you want "guided commentary", say so.
+
 - [ ] **Ask past guests for Google reviews.** Send each recent guest your Google review link on WhatsApp. Aim for 5 in the next 2 to 3 weeks, then one every week or two.
 - [ ] **Update your Google Business Profile.** Add each experience as a service with its page link, and post real charter photos about twice a week.
 - [ ] **Finish the marketplace listings.** GetMyBoat is under review and the Sailo drafts need their Insurance section. Details are in `marketplace-listings/STATUS.md`.
 - [ ] **Read the new pages once.** They are new copy published in your name: the four guides at `/guides.html`, and the seven landing pages (boat rental, party boat, bachelor party, proposal, Miami Beach, Brickell, and the Spanish page at `/alquiler-de-yates-miami.html`).
-- [ ] **Resubmit the sitemap in Search Console.** It now has 35 pages.
+- [ ] **Resubmit the sitemap in Search Console** once the branch is live. It will have 48 pages.
 
 ## This month
 
@@ -31,7 +35,7 @@ The site itself is in good shape. What holds traffic back now is that the domain
 
 - [ ] **Get a 305 or 786 number** as a secondary line on listings. Keep the 787.
 - [ ] **Submit to data aggregators** (Data Axle, Foursquare).
-- [ ] **Every January:** refresh "(2026)" in the prices and license page titles and re-check rates.
+- [ ] **Every January:** refresh "(2026)" in the prices and license page titles and re-check rates. Also refresh the event dates on the Art Basel, spring break / Ultra and Grand Prix pages (they are written into the copy, the fact tiles and the FAQ).
 - [ ] **Launch the Google Ads campaign** built in `google-ads/` when ready. It is paused and has not been test-imported.
 
 ## Housekeeping

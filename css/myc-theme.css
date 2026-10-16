@@ -550,3 +550,21 @@ div.overview-title { margin-bottom: 0; line-height: 100%; }
 .gallery-hero-section {
   background-image: linear-gradient(90deg, rgba(8, 21, 36, 0.7), rgba(8, 21, 36, 0.2) 65%), url('../photos/site/hero-bay.webp');
 }
+
+
+/* ---- Oct 2026: sticky mobile Call / WhatsApp bar + related-links block ---- */
+.myc-sticky-cta { display: none; }
+body .myc-related { margin: 34px 0 10px; padding: 22px 24px; border: 1px solid var(--myc-hairline); border-radius: 16px; background: var(--myc-paper); }
+body .myc-related h2 { font-size: 22px; margin: 0 0 12px; }
+body .myc-related ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; }
+body .myc-related li { margin: 0; }
+body .myc-related a { display: inline-block; padding: 9px 16px; border-radius: 999px; border: 1px solid var(--myc-gold-deep); color: var(--myc-ink); text-decoration: none; font-weight: 600; font-size: 15px; }
+body .myc-related a:hover { background: var(--myc-gold); color: var(--myc-ink-deep); }
+@media (max-width: 767px) {
+  .myc-sticky-cta { position: fixed; left: 0; right: 0; bottom: 0; z-index: 9000; display: flex; gap: 10px; padding: 10px 14px calc(10px + env(safe-area-inset-bottom)); background: rgba(8, 21, 36, 0.96); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border-top: 1px solid rgba(194, 161, 95, 0.35); }
+  .myc-sticky-cta a { flex: 1; text-align: center; padding: 14px 10px; border-radius: 999px; font-family: var(--myc-sans); font-weight: 700; font-size: 16px; letter-spacing: 0.01em; text-decoration: none; }
+  .myc-sticky-cta .myc-sticky-call { background: var(--myc-gold); color: var(--myc-ink-deep); }
+  .myc-sticky-cta .myc-sticky-wa { background: #25D366; color: #fff; }
+  body { padding-bottom: 74px; }
+  html .modal-backdrop { z-index: 9999; }
+}
