@@ -18,20 +18,30 @@ Disallow: /logo-preview.html
 # Private customer payment pages (sent 1:1, never indexed)
 Disallow: /pay/
 
-# AI crawlers (allow for citation/discoverability)
+# AI crawlers (allowed for citation/discoverability; same exclusions as above)
 User-agent: GPTBot
-Allow: /
-
+User-agent: OAI-SearchBot
 User-agent: ChatGPT-User
-Allow: /
-
 User-agent: PerplexityBot
-Allow: /
-
 User-agent: ClaudeBot
-Allow: /
-
 User-agent: Google-Extended
 Allow: /
+
+# Block Webflow template artifacts that should not be indexed
+Disallow: /search.html
+Disallow: /detail_category.html
+Disallow: /detail_guest.html
+Disallow: /detail_length.html
+Disallow: /detail_locations.html
+Disallow: /detail_price.html
+Disallow: /detail_services.html
+Disallow: /detail_type.html
+Disallow: /detail_yacht.html
+Disallow: /utility/
+Disallow: /401.html
+Disallow: /logo-preview.html
+
+# Private customer payment pages (sent 1:1, never indexed)
+Disallow: /pay/
 
 Sitemap: https://miamiyachtcollective.com/sitemap.xml
