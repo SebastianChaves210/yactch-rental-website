@@ -168,11 +168,13 @@
     e.preventDefault();
     backdrop.classList.add('active');
     document.body.style.overflow = 'hidden';
+    if (window.mycLenis) window.mycLenis.stop();
   }
 
   function closeModal() {
     backdrop.classList.remove('active');
     document.body.style.overflow = '';
+    if (window.mycLenis) window.mycLenis.start();
   }
 
   document.querySelectorAll('[data-modal]').forEach(function(btn) {

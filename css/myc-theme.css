@@ -581,3 +581,36 @@ body .myc-related a:hover { background: var(--myc-gold); color: var(--myc-ink-de
   body { padding-bottom: 74px; }
   html .modal-backdrop { z-index: 9999; }
 }
+
+/* ---------- 19. Fit and finish (2026-10-19) ---------------------------------- */
+
+/* Header: solid navy, so it doesn't turn slate-grey over the ivory pages */
+.header-section { background: rgba(8, 21, 36, 0.97); }
+
+/* Mobile menu: full-screen navy panel instead of a short dropdown over the hero */
+@media (max-width: 991px) {
+  /* webflow.js sets the overlay's inline height to the whole page */
+  .w-nav-overlay { height: calc(100vh - 100%) !important; height: calc(100dvh - 100%) !important; background-color: var(--myc-ink-deep); border-top: 1px solid rgba(194, 161, 95, 0.25); }
+  .w-nav-overlay [data-nav-menu-open] { background-color: var(--myc-ink-deep); padding-top: 20px; }
+  .w-nav-overlay .header-menu-block { height: auto; }
+  html:has(.w-nav-button.w--open) { overflow: hidden !important; }
+}
+
+/* Booking modal: lock the page behind it; a full-size close target */
+html:has(.modal-backdrop.active),
+html:has(.modal-backdrop.active) body { overflow: hidden !important; }
+html .modal-close { width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; top: 8px; right: 8px; font-size: 28px; line-height: 1; }
+
+/* Mobile Call / WhatsApp bar: same square, tracked uppercase buttons as the rest of the site */
+@media (max-width: 767px) {
+  body .myc-sticky-cta a { border-radius: 2px; font-size: 0.8125rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; padding: 16px 10px; }
+  body .myc-sticky-cta .myc-sticky-wa { background: #128c4b; }
+  /* the hero's "scroll to discover" cue sits under the bar on phones */
+  .scroll-down-block { display: none; }
+}
+
+/* 404: on-brand serif numeral, navy wash over the photo */
+._404-page-wrapper { position: relative; background-color: var(--myc-ivory); }
+._404-title { font-family: var(--myc-serif); font-weight: 500; color: var(--myc-ink); font-size: clamp(120px, 22vw, 200px); line-height: 1; letter-spacing: 0.02em; }
+._404-title-block::after { content: ""; display: block; width: 56px; height: 1px; margin: 18px auto 0; background: var(--myc-gold); }
+._404-except { color: var(--myc-slate); font-size: 18px; }

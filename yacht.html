@@ -200,10 +200,10 @@
     overflow: visible !important;
   }
 </style>
-      <script defer src="https://unpkg.com/@studio-freight/lenis"></script>
+      <script defer src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
       <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const lenis = new Lenis({
+    const lenis = window.mycLenis = new Lenis({
       duration: 1.2,
       easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       smooth: true,
@@ -958,6 +958,7 @@
     lastTrigger = e.currentTarget;
     backdrop.classList.add('active');
     document.body.style.overflow = 'hidden';
+    if (window.mycLenis) window.mycLenis.stop();
     requestAnimationFrame(function() { setTimeout(function() { modalClose.focus(); }, 60); });
   }
 
@@ -965,6 +966,7 @@
     if (!backdrop.classList.contains('active')) return;
     backdrop.classList.remove('active');
     document.body.style.overflow = '';
+    if (window.mycLenis) window.mycLenis.start();
     if (lastTrigger && typeof lastTrigger.focus === 'function') lastTrigger.focus();
     lastTrigger = null;
   }

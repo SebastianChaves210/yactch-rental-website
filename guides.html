@@ -209,10 +209,10 @@
   }
 </style>
       <!--  Include Lenis via CDN  -->
-      <script defer src="https://unpkg.com/@studio-freight/lenis"></script>
+      <script defer src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
       <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const lenis = new Lenis({
+    const lenis = window.mycLenis = new Lenis({
       duration: 1.2, // duration of animation, valuje in miliseconds
       easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // customize easing values if needed
       smooth: true, // true or false; select if you want smooth scrolling on not.
@@ -391,6 +391,7 @@
     lastTrigger = e.currentTarget;
     backdrop.classList.add('active');
     document.body.style.overflow = 'hidden';
+    if (window.mycLenis) window.mycLenis.stop();
     requestAnimationFrame(function() { setTimeout(function() { modalClose.focus(); }, 60); });
   }
 
@@ -398,6 +399,7 @@
     if (!backdrop.classList.contains('active')) return;
     backdrop.classList.remove('active');
     document.body.style.overflow = '';
+    if (window.mycLenis) window.mycLenis.start();
     if (lastTrigger && typeof lastTrigger.focus === 'function') lastTrigger.focus();
     lastTrigger = null;
   }
