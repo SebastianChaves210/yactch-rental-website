@@ -33,6 +33,21 @@
   ],
   "redirects": [
     {
+      "source": "/utility/:path*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/detail_:name(category|guest|length|locations|price|services|type|yacht).html",
+      "destination": "/yacht.html",
+      "permanent": true
+    },
+    {
+      "source": "/logo-preview.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
       "source": "/index.html",
       "destination": "/",
       "permanent": true
