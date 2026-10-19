@@ -329,6 +329,7 @@ body .home-faq-a { color: var(--myc-slate); line-height: 1.7; }
 
 /* lone lead photo: span the whole row (the template grid kept a column for a video) */
 .yacht-details-card > .yacht-details-image:only-child { grid-column: 1 / -1; aspect-ratio: 16 / 9; height: auto; }
+.yacht-details-card-block { align-content: start; }
 /* spec rows: two even columns so labels and prices stay on one line */
 @media (min-width: 768px) {
   .yacht-details-info-wrap { grid-template-columns: 1fr 1fr; column-gap: 24px; row-gap: 12px; }

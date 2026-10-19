@@ -61,9 +61,9 @@ PAGES = {
     "guides": ("lchaim-bow", "Guides", "Miami yacht charter guides", "Planning tips from the Miami River dock"),
     "404": ("hero", "Miami Yacht Collective", "Private yacht rentals in Miami", "From $1,000 / 4 hours  ·  " + STD),
     # boats
-    "deep-blue": ("deepblue-salon", "90 ft · With jacuzzi", "90' Deep Blue", "From $4,999 / 4 hours  ·  " + STD),
+    "deep-blue": ("deepblue-salon", "90 ft · With Jacuzzi", "90' Deep Blue", "From $4,999 / 4 hours  ·  " + STD),
     "ferretti": ("ferretti", "75 ft · Luxury yacht", "75' Ferretti", "From $3,000 / 4 hours  ·  " + STD),
-    "azimut-lchaim": ("lchaim-run", "65 ft · Luxury yacht", "65' Azimut L’chaim", "From $3,000 / 4 hours  ·  " + STD),
+    "azimut-lchaim": ("lchaim-run", "65 ft · Luxury yacht", "65' Azimut L'chaim", "From $3,000 / 4 hours  ·  " + STD),
     "anvera": ("anvera", "62 ft · Luxury yacht", "62' Anvera", "From $1,700 / 4 hours  ·  " + STD),
     "azimut": ("azimut", "55 ft · Motor yacht", "55' Azimut", "From $1,600 / 4 hours  ·  " + STD),
     "isabella": ("isabella", "48 ft · Jet ski included", "48' Isabella with Jet\u00a0Ski", "From $1,499 / 4 hours  ·  " + STD),

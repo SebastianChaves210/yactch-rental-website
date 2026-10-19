@@ -56,7 +56,7 @@ P = {
     "lchaim_run": ("photos/azimut-lchaim-65/1-800.webp", "65-foot Azimut L'chaim cruising off Miami"),
     "deepblue_aft": ("photos/deep-blue-90/deepblue-1-800.webp", "Aft deck of the 90-foot Deep Blue yacht"),
     "deepblue_2": ("photos/deep-blue-90/deepblue-2-800.webp", "90-foot Deep Blue superyacht in Miami"),
-    "deepblue_10": ("photos/deep-blue-90/deepblue-10-800.webp", "Deck of the 90-foot Deep Blue yacht with jacuzzi"),
+    "deepblue_10": ("photos/deep-blue-90/deepblue-10-800.webp", "Deck of the 90-foot Deep Blue yacht with Jacuzzi"),
     "deepblue_16": ("photos/deep-blue-90/deepblue-16-800.webp", "Interior salon of the Deep Blue 90 yacht"),
     "ferretti_bay": ("photos/ferretti-75/img-20240905-wa0032-800.webp", "Ferretti 75 yacht cruising Biscayne Bay in Miami"),
     "ferretti_fly": ("photos/ferretti-75/img-20240905-wa0034-800.webp", "Flybridge lounge with round table on the Ferretti 75 yacht"),
@@ -196,7 +196,7 @@ PAGES.append(dict(
     table=[("isabella", "Flybridge yacht with a jet ski included"), ("anvera", "Open-deck Italian yacht, loungers at the stern"), ("axopar-brabus", "Sport boat for a couple or small group"), ("azimut-lchaim", "Three decks and a bow sunpad"), ("deep-blue", "The 90-foot superyacht with a jacuzzi")],
     faq=[
         ("Do you pick up in South Beach?", "Charters board at our Miami River dock, about 15 minutes from South Beach by car. We confirm the meeting point with you when you book."),
-        ("How much does a yacht rental near South Beach cost?", "From $1,000 for 4 hours with a licensed captain and crew included. The 48' Isabella with jet ski is $1,499, the 65' Azimut L'chaim is $3,000 and the 90' Deep Blue with jacuzzi is $4,999, all for 4 hours."),
+        ("How much does a yacht rental near South Beach cost?", "From $1,000 for 4 hours with a licensed captain and crew included. The 48' Isabella with Jet Ski is $1,499, the 65' Azimut L'chaim is $3,000 and the 90' Deep Blue with Jacuzzi is $4,999, all for 4 hours."),
         ("Can we do a sunset cruise?", "Yes. Tell us when you book and we schedule the 4 hours so the last hour runs along the skyline at sunset. See the private sunset cruise page for the route."),
         ("Do we need a license or experience?", "No. Every charter comes with a licensed captain and crew."),
     ],
@@ -256,7 +256,7 @@ PAGES.append(dict(
         ("When should we book for Basel week?", "As early as you can. The fair draws a crowd that books boats, and the first weekend of December fills first."),
     ],
     cta=("Lock in your Basel week slot", "December 4 to 6 fills early. Call or WhatsApp and we'll hold the yacht for your date today."),
-    related=[("corporate-yacht-charter-miami.html", "Corporate charters"), ("private-sunset-cruise-miami.html", "Private sunset cruise"), ("new-years-eve-yacht-miami.html", "New Year's Eve on a yacht"), ("deep-blue.html", "90' Deep Blue with jacuzzi")],
+    related=[("corporate-yacht-charter-miami.html", "Corporate charters"), ("private-sunset-cruise-miami.html", "Private sunset cruise"), ("new-years-eve-yacht-miami.html", "New Year's Eve on a yacht"), ("deep-blue.html", "90' Deep Blue with Jacuzzi")],
     service=("Art Basel Yacht Charter Miami", "Private yacht charters during Art Basel Miami Beach, December 2026. Licensed captain and crew included, regular prices from $1,000 for 4 hours.", "1000"),
 ))
 
@@ -275,7 +275,7 @@ PAGES.append(dict(
     body=f"""
 <h2>Your own boat, your own countdown</h2>
 <p>New Year's Eve in Miami means ticketed cruises that sell hundreds of seats and sell out early. A private charter is the opposite: one yacht, your group, your music, and a crew whose only job that night is you. The skyline, the causeway lights and the bay are the same view the big boats sell by the seat, and you get the deck to yourselves.</p>
-<p>We charge the same price on December 31 as on any other night: every charter is 4 hours with a licensed captain and crew included, from $1,000 on the 46' Maxum to $4,999 on the 90' Deep Blue with jacuzzi.</p>
+<p>We charge the same price on December 31 as on any other night: every charter is 4 hours with a licensed captain and crew included, from $1,000 on the 46' Maxum to $4,999 on the 90' Deep Blue with Jacuzzi.</p>
 
 <h2>Two ways to spend the night</h2>
 <ul>
@@ -532,7 +532,7 @@ PAGES.append(dict(
         ("Is 4 hours enough for a shoot?", "Every charter is 4 hours, which covers two or three locations and a golden-hour finish. Book two charters on separate days for a bigger production."),
     ],
     cta=("Book your yacht as a set", "Golden-hour slots go first. Call or WhatsApp with your shoot date and we'll hold the boat today."),
-    related=[("private-sunset-cruise-miami.html", "Private sunset cruise"), ("proposal-yacht-charter-miami.html", "Proposals and anniversaries"), ("deep-blue.html", "90' Deep Blue with jacuzzi"), ("azimut-lchaim.html", "65' Azimut L'chaim")],
+    related=[("private-sunset-cruise-miami.html", "Private sunset cruise"), ("proposal-yacht-charter-miami.html", "Proposals and anniversaries"), ("deep-blue.html", "90' Deep Blue with Jacuzzi"), ("azimut-lchaim.html", "65' Azimut L'chaim")],
     service=("Yacht Photoshoot and Video Shoot Rental Miami", "Private yacht rental in Miami for commercial and personal photo and video shoots. Licensed captain and crew included. From $1,000 for 4 hours.", "1000"),
 ))
 
@@ -646,7 +646,7 @@ PAGES.append(dict(
         ("Can we bring a photographer?", "Yes. Photo and video on board are welcome, and the captain will position the boat for the shots you want."),
     ],
     cta=("Set the date on the water", "Sunset slots book months out for weddings. Call or WhatsApp with your date and we'll hold the yacht today."),
-    related=[("proposal-yacht-charter-miami.html", "Proposals and anniversaries"), ("yacht-photoshoot-miami.html", "Photoshoots on board"), ("private-sunset-cruise-miami.html", "Private sunset cruise"), ("deep-blue.html", "90' Deep Blue with jacuzzi")],
+    related=[("proposal-yacht-charter-miami.html", "Proposals and anniversaries"), ("yacht-photoshoot-miami.html", "Photoshoots on board"), ("private-sunset-cruise-miami.html", "Private sunset cruise"), ("deep-blue.html", "90' Deep Blue with Jacuzzi")],
     service=("Wedding Yacht Charter Miami", "Private yacht charters for wedding ceremonies, elopements, vow renewals and receptions in Miami. Ceremonies on board welcome. Licensed captain and crew included. From $1,000 for 4 hours.", "1000"),
 ))
 
