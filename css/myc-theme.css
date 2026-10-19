@@ -327,6 +327,19 @@ body .home-faq-a { color: var(--myc-slate); line-height: 1.7; }
 
 .yacht-gallery-title { font-family: var(--myc-serif); font-weight: 600; }
 
+/* lone lead photo: span the whole row (the template grid kept a column for a video) */
+.yacht-details-card > .yacht-details-image:only-child { grid-column: 1 / -1; aspect-ratio: 16 / 9; height: auto; }
+/* spec rows: two even columns so labels and prices stay on one line */
+@media (min-width: 768px) {
+  .yacht-details-info-wrap { grid-template-columns: 1fr 1fr; column-gap: 24px; row-gap: 12px; }
+  .yacht-details-info-title { white-space: nowrap; }
+}
+.yacht-details-button { display: flex; align-items: center; justify-content: center; text-align: center; }
+/* stacked layout: lead with the photos, not the spec card */
+@media (max-width: 991px) {
+  .yacht-details-card-block { order: -1; }
+}
+
 /* ---------- 12. Occasion / experience pages (myc-*) ------------------------ */
 
 /* white hero band → midnight hero panel (also fixes white-on-white nav) */
