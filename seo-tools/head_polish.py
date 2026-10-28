@@ -12,7 +12,7 @@ sys.path.insert(0, "seo-tools")
 from make_og import PAGES  # noqa: E402
 
 SITE = "https://miamiyachtcollective.com"
-SKIP = ("utility/", "detail_", "logo-preview.html")
+SKIP = ("utility/", "detail_", "logo-preview.html", "seo-tools/")
 OG_FALLBACK = {"401": "404", "search": "404"}
 LOCALE = {"es": "es_US", "pt-BR": "pt_BR"}
 
@@ -47,7 +47,7 @@ def process(f):
     s = open(f, encoding="utf-8").read()
     head_end = s.index("</head>")
     head, rest = s[:head_end], s[head_end:]
-    prefix = "../" if "/" in f else ""
+    prefix = "/"  # every page uses root-absolute asset paths since the 2026-10 IA change
     m = ICON_RE.search(head)
     indent = re.match(r"[ \t]*", head[m.start():]).group(0) if m else "  "
     pos = m.start() if m else head.rfind("\n", 0, len(head)) + 1
@@ -56,7 +56,9 @@ def process(f):
     head = THEME_RE.sub("", head)
     head = head.replace("\x00", icon_block(prefix, indent))
 
-    slug = f[:-5]
+    slug = f[:-5].split("/")[-1]
+    if slug == "index" and "/" in f:
+        slug = f.split("/")[0]  # yachts/index.html -> "yachts" card
     if not f.startswith("pay/"):
         card = OG_FALLBACK.get(slug, slug)
         if card in PAGES:

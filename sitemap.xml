@@ -2,212 +2,224 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://miamiyachtcollective.com/</loc>
-    <lastmod>2026-10-16</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://miamiyachtcollective.com/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://miamiyachtcollective.com/alquiler-de-yates-miami.html"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://miamiyachtcollective.com/aluguel-de-iate-em-miami.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://miamiyachtcollective.com/alquiler-de-yates-miami"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://miamiyachtcollective.com/aluguel-de-iate-em-miami"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://miamiyachtcollective.com/"/>
   </url>
   <url>
-    <loc>https://miamiyachtcollective.com/services.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <loc>https://miamiyachtcollective.com/yachts</loc>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
-    <loc>https://miamiyachtcollective.com/booking.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <loc>https://miamiyachtcollective.com/yachts/90-deep-blue</loc>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
-    <loc>https://miamiyachtcollective.com/contact.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <loc>https://miamiyachtcollective.com/yachts/75-ferretti</loc>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
-    <loc>https://miamiyachtcollective.com/gallery.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <loc>https://miamiyachtcollective.com/yachts/65-azimut-lchaim</loc>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
-    <loc>https://miamiyachtcollective.com/about.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <loc>https://miamiyachtcollective.com/yachts/62-anvera</loc>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
-    <loc>https://miamiyachtcollective.com/ferretti.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <loc>https://miamiyachtcollective.com/yachts/55-azimut</loc>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
-    <loc>https://miamiyachtcollective.com/azimut.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <loc>https://miamiyachtcollective.com/yachts/48-isabella</loc>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
-    <loc>https://miamiyachtcollective.com/azimut-lchaim.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <loc>https://miamiyachtcollective.com/yachts/46-maxum</loc>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
-    <loc>https://miamiyachtcollective.com/isabella.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <loc>https://miamiyachtcollective.com/yachts/28-axopar-brabus</loc>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
-    <loc>https://miamiyachtcollective.com/deep-blue.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <loc>https://miamiyachtcollective.com/yachts/25-yamaha-255xd</loc>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
-    <loc>https://miamiyachtcollective.com/anvera.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <loc>https://miamiyachtcollective.com/experiences</loc>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
-    <loc>https://miamiyachtcollective.com/axopar-brabus.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <loc>https://miamiyachtcollective.com/experiences/birthday-yacht-party-miami</loc>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
-    <loc>https://miamiyachtcollective.com/maxum.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <loc>https://miamiyachtcollective.com/experiences/bachelorette-yacht-party-miami</loc>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
-    <loc>https://miamiyachtcollective.com/yacht.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <loc>https://miamiyachtcollective.com/experiences/bachelor-party-yacht-miami</loc>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
-    <loc>https://miamiyachtcollective.com/yacht-party-miami.html</loc>
-    <lastmod>2026-10-16</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://miamiyachtcollective.com/yacht-party-miami.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://miamiyachtcollective.com/fiesta-en-yate-miami.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://miamiyachtcollective.com/yacht-party-miami.html"/>
+    <loc>https://miamiyachtcollective.com/experiences/quinceanera-yacht-party-miami</loc>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
-    <loc>https://miamiyachtcollective.com/birthday-yacht-party-miami.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <loc>https://miamiyachtcollective.com/experiences/yacht-party-miami</loc>
+    <lastmod>2026-10-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://miamiyachtcollective.com/experiences/yacht-party-miami"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://miamiyachtcollective.com/fiesta-en-yate-miami"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://miamiyachtcollective.com/experiences/yacht-party-miami"/>
   </url>
   <url>
-    <loc>https://miamiyachtcollective.com/bachelorette-yacht-party-miami.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <loc>https://miamiyachtcollective.com/experiences/party-boat-rental-miami</loc>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
-    <loc>https://miamiyachtcollective.com/private-sunset-cruise-miami.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <loc>https://miamiyachtcollective.com/experiences/proposal-yacht-charter-miami</loc>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
-    <loc>https://miamiyachtcollective.com/miami-yacht-rental-prices.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <loc>https://miamiyachtcollective.com/experiences/wedding-yacht-charter-miami</loc>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
-    <loc>https://miamiyachtcollective.com/yamaha-255xd.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <loc>https://miamiyachtcollective.com/experiences/private-sunset-cruise-miami</loc>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
-    <loc>https://miamiyachtcollective.com/corporate-yacht-charter-miami.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <loc>https://miamiyachtcollective.com/experiences/corporate-yacht-charter-miami</loc>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
-    <loc>https://miamiyachtcollective.com/sandbar-yacht-charter-miami.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <loc>https://miamiyachtcollective.com/experiences/family-yacht-charter-miami</loc>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
-    <loc>https://miamiyachtcollective.com/guides.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <loc>https://miamiyachtcollective.com/experiences/yacht-photoshoot-miami</loc>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
-    <loc>https://miamiyachtcollective.com/boating-license-miami-boat-rental.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <loc>https://miamiyachtcollective.com/experiences/yacht-charter-before-cruise-miami</loc>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
-    <loc>https://miamiyachtcollective.com/what-to-bring-yacht-charter-miami.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <loc>https://miamiyachtcollective.com/boat-rental-miami</loc>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
-    <loc>https://miamiyachtcollective.com/miami-sandbar-guide.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <loc>https://miamiyachtcollective.com/destinations</loc>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
-    <loc>https://miamiyachtcollective.com/best-time-yacht-charter-miami.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <loc>https://miamiyachtcollective.com/destinations/sandbar-yacht-charter-miami</loc>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
-    <loc>https://miamiyachtcollective.com/boat-rental-miami.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <loc>https://miamiyachtcollective.com/destinations/star-island-boat-tour-miami</loc>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
-    <loc>https://miamiyachtcollective.com/party-boat-rental-miami.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <loc>https://miamiyachtcollective.com/destinations/yacht-rental-miami-beach</loc>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
-    <loc>https://miamiyachtcollective.com/bachelor-party-yacht-miami.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <loc>https://miamiyachtcollective.com/destinations/south-beach-yacht-rental</loc>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
-    <loc>https://miamiyachtcollective.com/proposal-yacht-charter-miami.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <loc>https://miamiyachtcollective.com/destinations/yacht-rental-brickell</loc>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
-    <loc>https://miamiyachtcollective.com/yacht-rental-miami-beach.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <loc>https://miamiyachtcollective.com/events</loc>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
-    <loc>https://miamiyachtcollective.com/yacht-rental-brickell.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <loc>https://miamiyachtcollective.com/events/art-basel-yacht-charter-miami</loc>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
-    <loc>https://miamiyachtcollective.com/alquiler-de-yates-miami.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <loc>https://miamiyachtcollective.com/events/new-years-eve-yacht-miami</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://miamiyachtcollective.com/events/spring-break-yacht-miami</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://miamiyachtcollective.com/events/miami-grand-prix-yacht-charter</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://miamiyachtcollective.com/prices</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://miamiyachtcollective.com/guides</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://miamiyachtcollective.com/guides/boating-license-miami-boat-rental</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://miamiyachtcollective.com/guides/what-to-bring-yacht-charter-miami</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://miamiyachtcollective.com/guides/miami-sandbar-guide</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://miamiyachtcollective.com/guides/best-time-yacht-charter-miami</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://miamiyachtcollective.com/faq</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://miamiyachtcollective.com/gallery</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://miamiyachtcollective.com/about</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://miamiyachtcollective.com/contact</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://miamiyachtcollective.com/book</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://miamiyachtcollective.com/alquiler-de-yates-miami</loc>
+    <lastmod>2026-10-28</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://miamiyachtcollective.com/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://miamiyachtcollective.com/alquiler-de-yates-miami.html"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://miamiyachtcollective.com/aluguel-de-iate-em-miami.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://miamiyachtcollective.com/alquiler-de-yates-miami"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://miamiyachtcollective.com/aluguel-de-iate-em-miami"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://miamiyachtcollective.com/"/>
   </url>
   <url>
-    <loc>https://miamiyachtcollective.com/star-island-boat-tour-miami.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <loc>https://miamiyachtcollective.com/fiesta-en-yate-miami</loc>
+    <lastmod>2026-10-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://miamiyachtcollective.com/experiences/yacht-party-miami"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://miamiyachtcollective.com/fiesta-en-yate-miami"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://miamiyachtcollective.com/experiences/yacht-party-miami"/>
   </url>
   <url>
-    <loc>https://miamiyachtcollective.com/south-beach-yacht-rental.html</loc>
-    <lastmod>2026-10-16</lastmod>
-  </url>
-  <url>
-    <loc>https://miamiyachtcollective.com/art-basel-yacht-charter-miami.html</loc>
-    <lastmod>2026-10-16</lastmod>
-  </url>
-  <url>
-    <loc>https://miamiyachtcollective.com/new-years-eve-yacht-miami.html</loc>
-    <lastmod>2026-10-16</lastmod>
-  </url>
-  <url>
-    <loc>https://miamiyachtcollective.com/spring-break-yacht-miami.html</loc>
-    <lastmod>2026-10-16</lastmod>
-  </url>
-  <url>
-    <loc>https://miamiyachtcollective.com/miami-grand-prix-yacht-charter.html</loc>
-    <lastmod>2026-10-16</lastmod>
-  </url>
-  <url>
-    <loc>https://miamiyachtcollective.com/yacht-charter-before-cruise-miami.html</loc>
-    <lastmod>2026-10-16</lastmod>
-  </url>
-  <url>
-    <loc>https://miamiyachtcollective.com/yacht-photoshoot-miami.html</loc>
-    <lastmod>2026-10-16</lastmod>
-  </url>
-  <url>
-    <loc>https://miamiyachtcollective.com/family-yacht-charter-miami.html</loc>
-    <lastmod>2026-10-16</lastmod>
-  </url>
-  <url>
-    <loc>https://miamiyachtcollective.com/wedding-yacht-charter-miami.html</loc>
-    <lastmod>2026-10-16</lastmod>
-  </url>
-  <url>
-    <loc>https://miamiyachtcollective.com/quinceanera-yacht-party-miami.html</loc>
-    <lastmod>2026-10-16</lastmod>
-  </url>
-  <url>
-    <loc>https://miamiyachtcollective.com/fiesta-en-yate-miami.html</loc>
-    <lastmod>2026-10-16</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://miamiyachtcollective.com/yacht-party-miami.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://miamiyachtcollective.com/fiesta-en-yate-miami.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://miamiyachtcollective.com/yacht-party-miami.html"/>
-  </url>
-  <url>
-    <loc>https://miamiyachtcollective.com/aluguel-de-iate-em-miami.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <loc>https://miamiyachtcollective.com/aluguel-de-iate-em-miami</loc>
+    <lastmod>2026-10-28</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://miamiyachtcollective.com/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://miamiyachtcollective.com/alquiler-de-yates-miami.html"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://miamiyachtcollective.com/aluguel-de-iate-em-miami.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://miamiyachtcollective.com/alquiler-de-yates-miami"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://miamiyachtcollective.com/aluguel-de-iate-em-miami"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://miamiyachtcollective.com/"/>
   </url>
 </urlset>
