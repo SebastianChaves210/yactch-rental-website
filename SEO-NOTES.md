@@ -4,6 +4,49 @@ Running log so future sessions build on this instead of repeating it. One lesson
 
 ---
 
+## 2026-10-28 session (Claude, information-architecture rebuild — branch `ia-overhaul-2026-10`, local dev server only, not pushed)
+
+### Summary
+The flat Webflow export (every page a root `.html`) became a sectioned site with clean URLs: `/yachts/<length>-<name>`, `/experiences/<slug>`, `/destinations/<slug>`, `/events/<slug>`, `/guides/<slug>`, plus `/prices`, `/book`, `/faq`, `/add-ons` and three legal drafts. One shared header (Yachts / Experiences / Destinations dropdowns, Prices, Guides, About, Contact, EN·ES·PT, call icon, "Book a Yacht" → WhatsApp) and one four-column footer are rendered from `seo-tools/chrome.py` onto every page. The nine yacht pages were rebuilt on a new template (stat strip, lightbox gallery, pricing tiers, `<dl>` specs, included/amenities, sample itinerary, occasion chips, FAQ, WhatsApp booking widget with a form fallback, similar yachts, sticky price bar). Every old URL 301s once to its final URL; `cleanUrls` and `trailingSlash:false` are on.
+
+### URL map (old → final)
+- `/` stays. `yacht.html` → `/yachts`. `services.html` → `/experiences` (`services.html#events` → `/events`). `guides.html` → `/guides`.
+- Yachts: `deep-blue` → `/yachts/90-deep-blue`, `ferretti` → `/yachts/75-ferretti`, `azimut-lchaim` → `/yachts/65-azimut-lchaim`, `anvera` → `/yachts/62-anvera`, `azimut` → `/yachts/55-azimut`, `isabella` → `/yachts/48-isabella`, `maxum` → `/yachts/46-maxum`, `axopar-brabus` → `/yachts/28-axopar-brabus`, `yamaha-255xd` → `/yachts/25-yamaha-255xd`.
+- Experiences (slug kept, nested): birthday, bachelorette, bachelor, quinceañera, yacht-party, party-boat-rental, proposal, wedding, private-sunset-cruise, corporate, family, yacht-photoshoot, yacht-charter-before-cruise → `/experiences/<slug>`.
+- Destinations: sandbar-yacht-charter-miami, star-island-boat-tour-miami, yacht-rental-miami-beach, south-beach-yacht-rental, yacht-rental-brickell → `/destinations/<slug>` (breadcrumbs and BreadcrumbList now say Destinations, not Experiences).
+- Events: art-basel, new-years-eve, spring-break, miami-grand-prix → `/events/<slug>`.
+- Guides: the four guides → `/guides/<slug>`.
+- `miami-yacht-rental-prices.html` → `/prices`; `booking.html` → `/book`; `about`, `contact`, `gallery` → extensionless.
+- **Kept at the root, by design:** `boat-rental-miami` (a head-term landing page, not an occasion), and the Spanish/Portuguese pages at their keyword slugs (`/alquiler-de-yates-miami`, `/fiesta-en-yate-miami`, `/aluguel-de-iate-em-miami`). `/es` and `/pt` 301 to the ES/PT home pages for the language switcher's benefit.
+- Share cards moved with their pages (`photos/og/48-isabella.jpg` etc.; `make_og.py` keys renamed, 7 new cards rendered).
+
+### Redirects
+`vercel.json` now has 124 redirects, all `statusCode: 301`, every destination a final URL (the old 308 chains such as `/detail_yacht.html → /yacht.html → /yachts` were flattened). Both the `.html` and the old extensionless spelling of every page redirect. Template artifacts (`detail_*`, `utility/`, `logo-preview`, `yacht-details`) and the dead March/August slugs are covered in both spellings. `seo-tools/sitemap-before-ia-2026-10-28.xml` is the frozen list of old URLs that `seo_validate.py --base` curls (each must be 200 or exactly one 301 to a 200).
+
+### Titles and descriptions
+- **Titles changed: none.** Every existing title was kept (price-in-title boat titles, 2026 price/guide titles, the ES/PT titles). New pages: "Yacht Charter Destinations in Miami | Miami Yacht Collective", "Miami Event Week Yacht Charters | Miami Yacht Collective", "Miami Yacht Charter FAQ | Miami Yacht Collective", "Yacht Charter Add-Ons in Miami | Miami Yacht Collective", "Privacy Policy | …", "Terms of Service | …", "Cancellation Policy | …". The yacht H1s keep the existing "{len}' {Name} — Yacht Rental in Miami" wording (it carries the jet-ski / Jacuzzi USP and matches the title keyword) rather than the "{len}' {Name}: Yacht Charter in Miami" pattern.
+- **Descriptions: all 46 existing pages were over 155 characters (156–236).** Each was rewritten to ≤155 keeping the facts and voice; the canonical list is `DESCRIPTIONS` in `seo-tools/ia.py`, old values are in `git show ac3c47c:<old file>`.
+
+### Schema
+Service (not Product) kept on yacht pages — it is what was live and what a charter is — but enriched: `serviceType`, image array, `availableChannel`, `UnitPriceSpecification` with `referenceQuantity` 4 HUR, `seller`. Site-wide `@graph` of Organization + LocalBusiness (same `#business` @id as before; pages that already define the LocalBusiness only get the Organization), WebSite on the home page, BreadcrumbList on every page but home (added to about/contact/gallery), ItemList on `/yachts`, `/experiences`, `/destinations`, `/events`, `/guides`, FAQPage wherever FAQs are visible, Article on the guides unchanged. No AggregateRating anywhere.
+
+### Internal linking (enforced by `seo_validate.py`)
+Yacht pages link `/yachts`, 3 similar yachts, 4 occasions and `/prices`. Every experience/destination/event page got a 3-card "recommended yachts" block (from its own boat table) and its related block now carries ≥2 experiences and a guide. Guides link ≥2 yachts and ≥2 experiences with descriptive anchors. Hubs list all children. Footer carries every yacht, the top occasions and destinations, Boat rentals, Events, Prices, Guides, Company links and the legal/language rows, so no sitemap URL is an orphan (long-tail experience pages are reachable from the nav via their hub).
+
+### Performance / accessibility
+Generated pages (yacht pages, hubs, FAQ, book, legal, 404) and the 30 landing pages no longer load jQuery + `webflow.js` (≈790 KB) or the custom cursor; only `index`, `about`, `contact` and `gallery` keep them for their Webflow interactions. Yacht galleries render five 800-px WebP thumbnails (made on demand by `build_site.py`) with the full-size originals only in the lightbox; the old pages loaded every original (7.3 MB on the Isabella page → 0.9 MB). Heading outlines were fixed without visual change (re-tagged Webflow headings keep their size via class rules; hidden legacy sections demoted to `<p>`). Lighthouse numbers are in the final report of this session (local before/after on the same machine; live before: home 68/91/100/100, Isabella 70/94/100/100).
+
+### Tooling (all in `seo-tools/`)
+`ia.py` (URL map, fleet data, descriptions, WhatsApp map, link rewriting) · `chrome.py` (header, footer, sticky bar, modal, cards, document shell, translations) · `build_site.py` (generated pages) · `ia_migrate.py` (legacy page migration, idempotent re-link, patches, vercel.json/robots/sitemap/llms, theme CSS block from `ia_block.css`) · `devserver.py` (Vercel-like local server) · `check_ui.py` (Playwright keyboard/touch checks) · root `seo_validate.py` (acceptance checks). `sitewide.py` is retired; `generate_pages.py` now writes from the frozen `landing-legacy-template.html` and must be followed by `ia_migrate.py --write`.
+
+### Lessons
+- `backdrop-filter` on a fixed header makes it the containing block for a fixed child: the full-screen mobile panel collapsed until the filter was removed.
+- A `body`-level "on light" class leaked into the dark hero breadcrumbs; scope such modifiers to sections.
+- The generated pages have no inline `.myc-*` styles, so the landing-page component CSS (facts, tables, CTA band…) now lives in the theme block.
+- Playwright `expect_popup` on a `wa.me` link resolves after WhatsApp's redirect to `api.whatsapp.com/send/?phone=…&text=…` (spaces as `+`).
+
+---
+
 ## 2026-10-16 session (Claude, tourist-SEO branch `seo-tourist-2026-10`, Vercel preview before merge)
 
 ### Diagnosis

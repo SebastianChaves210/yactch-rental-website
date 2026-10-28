@@ -1,5 +1,34 @@
 # Your To-Do List — Miami Yacht Collective
 
+## Information architecture rebuild (2026-10-28) — placeholders that need you
+
+The site was restructured on branch `ia-overhaul-2026-10` (not pushed, not live). Every item below is a `<!-- TODO(owner) -->` placeholder in the code or a decision only you can make. Nothing was invented: where a fact was missing, the page says "ask us" and this list has the gap.
+
+### Decisions
+- [ ] **Are the 55' Azimut and the 46' Maxum still in the fleet?** Both pages are live at `/yachts/55-azimut` and `/yachts/46-maxum` with one photo each. Say the word and they come out of the fleet, the menus, the schema and the sitemap in one run.
+- [ ] **Approve the three legal drafts** at `/privacy-policy`, `/terms` and `/cancellation-policy`. They are marked "DRAFT – owner to review", are `noindex`, and are not in the sitemap. The bracketed items need your real terms: deposit amount and when the balance is due, accepted payment methods, the cancellation tiers (days and percentages), the weather/rescheduling rule, late-arrival grace period, alcohol policy and minimum age, data retention period, and any other tracking tools you use. Once approved I remove `noindex` and add them to the sitemap.
+- [ ] **Which add-ons do you actually offer?** `/add-ons` lists only what is confirmed (jet ski on the Isabella, Jacuzzi on the Deep Blue, L'chaim slide and water toys at extra cost). Candidates to confirm with prices: catering, decorations, photographer, DJ or sound, extra hours, towels and ice. Sub-pages are created only for confirmed services; the page is `noindex` until then.
+- [ ] **Branded email address.** The footer, the schema, the legal drafts and `llms.txt` still cite `sebastian@mcaiconsulting.com`. A `@miamiyachtcollective.com` address (for example `book@`) is recommended; give me the address and it changes everywhere in one run.
+- [ ] **Reviews.** No reviews page or ratings were created because there is no verified source. Send real guest reviews or your Google Business Profile URL and `/reviews`, a reviews block on the homepage and yacht pages, and the footer link go in. The four homepage testimonials (Ariana Del Toro, Jake Holloway, Sofia Castaneda, Ethan Calloway) predate this work: confirm they are real guests or they should come down.
+
+### Facts missing from the yacht pages (every yacht shows "ask us" until supplied)
+- [ ] **6-hour and 8-hour rates** per yacht (the pricing block shows 4 hours with the price, 6h and 8h as "Ask for quote").
+- [ ] **What is not included**: fuel, gratuity, dockage, water toys. The pages only say the 4-hour rate is the same on every date.
+- [ ] **Builder, model, year, cabins and heads** per yacht for the Specifications list (only what the photos show is published; the Isabella, L'chaim and Deep Blue cabin lines come from the existing "On board" copy).
+- [ ] **Maximum guests per yacht.** The stat strip says "Based on your needs", the booking widget's guest field is uncapped and the fleet filter has no "guests" option until you supply the numbers (CLAUDE.md still forbids numeric capacities).
+- [ ] **A real form handler.** The "Prefer to send your details?" forms on the yacht pages and `/book` compose a WhatsApp message because the site has no backend. If you want email leads, pick a handler (Formspree, a Vercel function, your CRM) and I wire it in.
+
+### Copy you should read once (pre-existing, flagged — not changed)
+- [ ] **Homepage "Why book with Miami Yacht Collective" cards** list Air conditioning, Bathroom, Free wifi, Entertainment, Sauna and Bar & lounges. These are template claims, not confirmed amenities ("Sauna" especially). Say which to keep and the rest come out.
+- [ ] **Contact page card "On the day"** ends with "Tell us if you'd like catering or extras" — catering is not a confirmed service.
+- [ ] **About page** — a team/story section is reserved as a placeholder. Send names, roles, years on the water and a crew photo and it goes in; nothing is published until then.
+- [ ] **Social profiles.** Only Instagram is linked. Send Facebook, TikTok, YouTube or Google Business Profile URLs if they exist.
+
+### When you approve the branch and it goes live
+- [ ] Resubmit `sitemap.xml` in Google Search Console and Bing Webmaster Tools (51 URLs now, all clean URLs). Run `scripts/indexnow.sh` once.
+- [ ] Update the website link on Google Business Profile, Instagram and any marketplace listing if it points at a page other than the homepage (old links keep working through a single 301, but new links should go to the final URL).
+- [ ] Share previews refresh on their own; a link shared before the change may show the old card until WhatsApp/iMessage re-fetch it.
+
 Things only you can do, ordered by how much they move traffic and bookings. Updated 2026-10-04 after the traffic audit (see SEO-NOTES.md for what was done on the site).
 
 The site itself is in good shape. What holds traffic back now is that the domain is seven months old and almost nothing outside the site mentions it. The first three items fix that and matter more than any further page edits.
