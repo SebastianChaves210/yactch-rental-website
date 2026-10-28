@@ -3,6 +3,7 @@ Allow: /
 
 # Block Webflow template artifacts that should not be indexed
 Disallow: /search.html
+Disallow: /search
 Disallow: /detail_category.html
 Disallow: /detail_guest.html
 Disallow: /detail_length.html
@@ -11,9 +12,12 @@ Disallow: /detail_price.html
 Disallow: /detail_services.html
 Disallow: /detail_type.html
 Disallow: /detail_yacht.html
+Disallow: /detail_
 Disallow: /utility/
 Disallow: /401.html
+Disallow: /401
 Disallow: /logo-preview.html
+Disallow: /logo-preview
 
 # Private customer payment pages (sent 1:1, never indexed)
 Disallow: /pay/
@@ -29,6 +33,7 @@ Allow: /
 
 # Block Webflow template artifacts that should not be indexed
 Disallow: /search.html
+Disallow: /search
 Disallow: /detail_category.html
 Disallow: /detail_guest.html
 Disallow: /detail_length.html
@@ -37,9 +42,12 @@ Disallow: /detail_price.html
 Disallow: /detail_services.html
 Disallow: /detail_type.html
 Disallow: /detail_yacht.html
+Disallow: /detail_
 Disallow: /utility/
 Disallow: /401.html
+Disallow: /401
 Disallow: /logo-preview.html
+Disallow: /logo-preview
 
 # Private customer payment pages (sent 1:1, never indexed)
 Disallow: /pay/

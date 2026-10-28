@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TRVB7SJPJY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TRVB7SJPJY');
+  </script>
+  <title>Miami Yacht Charter Experiences | Parties, Sunsets &amp; Events</title>
+  <meta name="description" content="Private yacht experiences in Miami: parties, birthdays, bachelorettes, sunset cruises, sandbar days and corporate events. Crew included, from $1,000.">
+  <link rel="canonical" href="https://miamiyachtcollective.com/experiences">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Miami Yacht Charter Experiences | Parties, Sunsets &amp; Events">
+  <meta property="og:description" content="Private yacht experiences in Miami: parties, birthdays, bachelorettes, sunset cruises, sandbar days and corporate events. Crew included, from $1,000.">
+  <meta property="og:url" content="https://miamiyachtcollective.com/experiences">
+  <meta property="og:image" content="https://miamiyachtcollective.com/photos/og/experiences.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Every Miami celebration, on the water — Miami Yacht Collective">
+  <meta name="twitter:image:alt" content="Every Miami celebration, on the water — Miami Yacht Collective">
+  <meta property="og:site_name" content="Miami Yacht Collective">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Miami Yacht Charter Experiences | Parties, Sunsets &amp; Events">
+  <meta name="twitter:description" content="Private yacht experiences in Miami: parties, birthdays, bachelorettes, sunset cruises, sandbar days and corporate events. Crew included, from $1,000.">
+  <meta name="twitter:image" content="https://miamiyachtcollective.com/photos/og/experiences.jpg">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="/css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="/css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="/css/miami-yacht-collective.webflow.css" rel="stylesheet" type="text/css">
+  <link href="/css/myc-theme.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter+Tight:wght@300;400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter+Tight:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#081524">
+
+<style>
+  .modal-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+  }
+  .modal-backdrop.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  .modal-booking {
+    background: #fff;
+    border-radius: 20px;
+    max-width: 480px;
+    width: 90%;
+    padding: 48px 40px;
+    position: relative;
+    transform: scale(0.95);
+    transition: transform 0.2s ease;
+  }
+  .modal-backdrop.active .modal-booking {
+    transform: scale(1);
+  }
+  .modal-close {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #555;
+    cursor: pointer;
+    line-height: 1;
+    padding: 4px;
+    transition: color 0.2s ease;
+  }
+  .modal-close:hover { color: #000; }
+  .modal-heading {
+    font-weight: 800;
+    font-size: 30px;
+    color: #111;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  .modal-subtext {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 36px;
+  }
+  .modal-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .modal-btn {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .modal-btn:hover { transform: translateY(-1px); }
+  .modal-btn-call { background: #0d1b4b; color: #fff; }
+  .modal-btn-call:hover { box-shadow: 0 6px 20px rgba(13, 27, 75, 0.35); }
+  .modal-btn-wa { background: #25D366; color: #fff; }
+  .modal-btn-wa:hover { box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35); }
+</style>
+
+<style>
+  .myc-content { max-width: 780px; margin: 0 auto; }
+  .myc-content h2 { font-size: 32px; line-height: 1.25; margin: 56px 0 18px; }
+  .myc-content h3 { font-size: 21px; line-height: 1.35; margin: 30px 0 10px; }
+  .myc-content p, .myc-content li { font-size: 17px; line-height: 1.75; color: #3d3d3d; }
+  .myc-content p { margin-bottom: 18px; }
+  .myc-content ul { margin: 0 0 18px 22px; }
+  .myc-content li { margin-bottom: 8px; }
+  .myc-content a { color: #0d1b4b; text-decoration: underline; }
+  .myc-table-wrap { overflow-x: auto; margin: 26px 0; }
+  .myc-table { width: 100%; border-collapse: collapse; font-size: 16px; }
+  .myc-table th { background: #0d1b4b; color: #fff; text-align: left; padding: 14px 16px; font-weight: 700; }
+  .myc-table td { padding: 13px 16px; border-bottom: 1px solid #e6e6e6; color: #333; }
+  .myc-table tr:nth-child(even) td { background: #f7f8fb; }
+  .myc-table a { color: #0d1b4b; font-weight: 600; }
+  .myc-gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; margin: 26px 0; }
+  .myc-gallery img { width: 100%; height: 300px; object-fit: cover; border-radius: 16px; }
+  .myc-cta-band { background: #0d1b4b; border-radius: 20px; padding: 44px 36px; text-align: center; margin: 56px 0 20px; }
+  .myc-cta-band h2 { color: #fff; margin: 0 0 10px; font-size: 30px; }
+  .myc-cta-band p { color: #c9d0e8; margin-bottom: 24px; }
+  .myc-cta-buttons { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  .myc-cta-buttons a { display: inline-block; padding: 16px 34px; border-radius: 999px; font-weight: 700; font-size: 16px; text-decoration: none; }
+  .myc-btn-primary { background: #fff; color: #0d1b4b; }
+  .myc-btn-wa { background: #25D366; color: #fff; }
+  .myc-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 18px; margin: 26px 0; }
+  .myc-step { background: #f7f8fb; border-radius: 16px; padding: 26px 22px; }
+  .myc-step .num { font-size: 14px; font-weight: 800; color: #0d1b4b; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 10px; }
+  .myc-step h3 { margin: 0 0 8px; font-size: 19px; }
+  .myc-step p { margin: 0; font-size: 15.5px; }
+  .myc-faq-item { border-bottom: 1px solid #e6e6e6; padding: 6px 0 18px; }
+  .myc-breadcrumb { font-size: 14px; color: #777; margin-bottom: 28px; }
+  .myc-breadcrumb a { color: #0d1b4b; text-decoration: none; }
+  .myc-hero { padding: 150px 0 10px; }
+  .myc-hero .yacht-details-button { display: inline-block; width: auto; padding: 16px 40px; }
+  .myc-hero h1 { font-size: 52px; line-height: 1.1; margin-bottom: 18px; }
+  .myc-hero .myc-lede { font-size: 19px; line-height: 1.7; color: #444; max-width: 780px; }
+  .myc-facts { display: flex; flex-wrap: wrap; gap: 28px; margin: 30px 0 8px; }
+  .myc-fact { min-width: 140px; }
+  .myc-fact .k { font-size: 13px; text-transform: uppercase; letter-spacing: 1px; color: #888; margin-bottom: 4px; }
+  .myc-fact .v { font-size: 18px; font-weight: 700; color: #111; }
+  @media (max-width: 767px) {
+    .myc-hero { padding-top: 120px; }
+    .myc-hero h1 { font-size: 36px; }
+    .myc-content h2 { font-size: 26px; }
+  }
+</style>
+
+
+<style>
+  .myc-exp-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 22px; margin: 30px 0 10px; }
+  .myc-exp-card { display: block; border-radius: 18px; overflow: hidden; background: #f7f8fb; text-decoration: none; color: inherit; transition: transform .2s ease, box-shadow .2s ease; }
+  .myc-exp-card:hover { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(13,27,75,.12); }
+  .myc-exp-card img { width: 100%; height: 220px; object-fit: cover; display: block; }
+  .myc-exp-body { padding: 20px 22px 24px; }
+  .myc-exp-body h3 { margin: 0 0 8px; font-size: 20px; color: #111; }
+  .myc-exp-body p { margin: 0 0 12px; font-size: 15.5px; line-height: 1.6; color: #555; }
+  .myc-exp-link { font-weight: 700; color: #0d1b4b; font-size: 15px; }
+  .myc-content a.myc-exp-card { text-decoration: none; }
+</style>
+  <script defer src="/_vercel/insights/script.js"></script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "ItemList",
+ "name": "Miami Yacht Charter Experiences",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "Private Yacht Parties",
+   "url": "https://miamiyachtcollective.com/experiences/yacht-party-miami"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "Birthday Yacht Parties",
+   "url": "https://miamiyachtcollective.com/experiences/birthday-yacht-party-miami"
+  },
+  {
+   "@type": "ListItem",
+   "position": 3,
+   "name": "Bachelorette Yacht Parties",
+   "url": "https://miamiyachtcollective.com/experiences/bachelorette-yacht-party-miami"
+  },
+  {
+   "@type": "ListItem",
+   "position": 4,
+   "name": "Private Sunset Cruises",
+   "url": "https://miamiyachtcollective.com/experiences/private-sunset-cruise-miami"
+  },
+  {
+   "@type": "ListItem",
+   "position": 5,
+   "name": "Corporate Yacht Charters",
+   "url": "https://miamiyachtcollective.com/experiences/corporate-yacht-charter-miami"
+  },
+  {
+   "@type": "ListItem",
+   "position": 6,
+   "name": "Sandbar Charters",
+   "url": "https://miamiyachtcollective.com/destinations/sandbar-yacht-charter-miami"
+  },
+  {
+   "@type": "ListItem",
+   "position": 7,
+   "name": "Boat Rentals",
+   "url": "https://miamiyachtcollective.com/boat-rental-miami"
+  },
+  {
+   "@type": "ListItem",
+   "position": 8,
+   "name": "Party Boat Rentals",
+   "url": "https://miamiyachtcollective.com/experiences/party-boat-rental-miami"
+  },
+  {
+   "@type": "ListItem",
+   "position": 9,
+   "name": "Bachelor Party Charters",
+   "url": "https://miamiyachtcollective.com/experiences/bachelor-party-yacht-miami"
+  },
+  {
+   "@type": "ListItem",
+   "position": 10,
+   "name": "Proposal and Anniversary Charters",
+   "url": "https://miamiyachtcollective.com/experiences/proposal-yacht-charter-miami"
+  }
+ ]
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "Home",
+   "item": "https://miamiyachtcollective.com/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "Experiences",
+   "item": "https://miamiyachtcollective.com/experiences"
+  }
+ ]
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "What kinds of events can you host on board?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Anything a group celebrates: birthdays, bachelorette and bachelor parties, engagements and proposals, anniversaries, corporate outings, photoshoots and content days, or a no-occasion sandbar Saturday."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Is every experience on a private boat?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Yes — we don't sell tickets. Every experience is a private charter of one of our 9 yachts with a licensed captain and crew included."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "What does an experience cost?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Charters start at $1,000 for 4 hours and run to $4,999 for the 90-foot Deep Blue. Every rate is listed on the price guide."
+   }
+  }
+ ]
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://miamiyachtcollective.com/#organization",
+   "name": "Miami Yacht Collective",
+   "url": "https://miamiyachtcollective.com/",
+   "logo": "https://miamiyachtcollective.com/images/main-boat-logo-transparent.png",
+   "telephone": "+1-787-664-5040",
+   "email": "sebastian@mcaiconsulting.com",
+   "sameAs": [
+    "https://www.instagram.com/miamiyachtcollective/",
+    "https://maps.app.goo.gl/7bYMugMBFHaZruoW8"
+   ],
+   "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+1-787-664-5040",
+    "contactType": "reservations",
+    "availableLanguage": [
+     "English",
+     "Spanish"
+    ],
+    "areaServed": "US"
+   }
+  },
+  {
+   "@type": "LocalBusiness",
+   "@id": "https://miamiyachtcollective.com/#business",
+   "name": "Miami Yacht Collective",
+   "url": "https://miamiyachtcollective.com/",
+   "image": "https://miamiyachtcollective.com/images/main-boat-logo-transparent.png",
+   "telephone": "+1-787-664-5040",
+   "email": "sebastian@mcaiconsulting.com",
+   "priceRange": "$1,000 - $4,999",
+   "parentOrganization": {
+    "@id": "https://miamiyachtcollective.com/#organization"
+   },
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "668 NW N River Dr",
+    "addressLocality": "Miami",
+    "addressRegion": "FL",
+    "postalCode": "33136",
+    "addressCountry": "US"
+   },
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.7802006,
+    "longitude": -80.2090659
+   },
+   "sameAs": [
+    "https://www.instagram.com/miamiyachtcollective/",
+    "https://maps.app.goo.gl/7bYMugMBFHaZruoW8"
+   ],
+   "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+     "Monday",
+     "Tuesday",
+     "Wednesday",
+     "Thursday",
+     "Friday",
+     "Saturday",
+     "Sunday"
+    ],
+    "opens": "00:00",
+    "closes": "23:59"
+   }
+  }
+ ]
+}
+</script>
+</head>
+<body>
+  <div data-w-id="2f0252fb-a19d-e982-6b09-ced6797fc228" class="page-wrapper">
+    <div class="global-scripts w-embed w-script"><!--  Include Lenis via HTML  -->
+      <style>
+  html, body {
+    height: auto !important;
+    overflow: visible !important;
+  }
+</style>
+      <!--  Include Lenis via CDN  -->
+      <script defer src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+      <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const lenis = window.mycLenis = new Lenis({
+      duration: 1.2, // duration of animation, valuje in miliseconds
+      easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // customize easing values if needed
+      smooth: true, // true or false; select if you want smooth scrolling on not.
+    });
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+  });
+</script>
+    </div>
+    <a class="myc-skip" href="#main">Skip to content</a>
+    <header class="myc-header" id="myc-header">
+      <div class="myc-header-inner">
+        <a class="myc-logo" href="/" aria-label="Miami Yacht Collective"><img src="/images/main-boat-logo-420.webp" width="420" height="420" alt="Miami Yacht Collective" loading="eager" decoding="async"></a>
+        <nav class="myc-nav" aria-label="Main">
+          <ul class="myc-nav-list">
+        <li class="myc-nav-item myc-has-menu">
+          <button type="button" class="myc-nav-link myc-nav-toggle" aria-expanded="false" aria-controls="myc-menu-yachts">Yachts<svg class="myc-chev" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <div class="myc-menu myc-menu-yachts" id="myc-menu-yachts">
+            <ul class="myc-menu-list">
+<li><a href="/yachts/90-deep-blue"><span class="myc-menu-name">90&#x27; Deep Blue with Jacuzzi</span><span class="myc-menu-meta">from $4,999</span></a></li>
+<li><a href="/yachts/75-ferretti"><span class="myc-menu-name">75&#x27; Ferretti</span><span class="myc-menu-meta">from $3,000</span></a></li>
+<li><a href="/yachts/65-azimut-lchaim"><span class="myc-menu-name">65&#x27; Azimut L&#x27;chaim</span><span class="myc-menu-meta">from $3,000</span></a></li>
+<li><a href="/yachts/62-anvera"><span class="myc-menu-name">62&#x27; Anvera</span><span class="myc-menu-meta">from $1,700</span></a></li>
+<li><a href="/yachts/55-azimut"><span class="myc-menu-name">55&#x27; Azimut</span><span class="myc-menu-meta">from $1,600</span></a></li>
+<li><a href="/yachts/48-isabella"><span class="myc-menu-name">48&#x27; Isabella with Jet Ski</span><span class="myc-menu-meta">from $1,499</span></a></li>
+<li><a href="/yachts/46-maxum"><span class="myc-menu-name">46&#x27; Maxum</span><span class="myc-menu-meta">from $1,000</span></a></li>
+<li><a href="/yachts/28-axopar-brabus"><span class="myc-menu-name">28&#x27; Axopar Brabus Edition</span><span class="myc-menu-meta">from $1,200</span></a></li>
+<li><a href="/yachts/25-yamaha-255xd"><span class="myc-menu-name">25&#x27; Yamaha 255XD</span><span class="myc-menu-meta">from $1,000</span></a></li>
+            </ul>
+            <a class="myc-menu-all" href="/yachts">View the full fleet <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </li>
+        <li class="myc-nav-item myc-has-menu">
+          <button type="button" class="myc-nav-link myc-nav-toggle" aria-expanded="false" aria-controls="myc-menu-experiences">Experiences<svg class="myc-chev" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <div class="myc-menu " id="myc-menu-experiences">
+            <ul class="myc-menu-list">
+<li><a href="/experiences/birthday-yacht-party-miami">Birthday</a></li>
+<li><a href="/experiences/bachelorette-yacht-party-miami">Bachelorette</a></li>
+<li><a href="/experiences/bachelor-party-yacht-miami">Bachelor</a></li>
+<li><a href="/experiences/proposal-yacht-charter-miami">Proposal</a></li>
+<li><a href="/experiences/corporate-yacht-charter-miami">Corporate</a></li>
+<li><a href="/experiences/wedding-yacht-charter-miami">Wedding</a></li>
+<li><a href="/experiences/private-sunset-cruise-miami">Sunset Cruise</a></li>
+<li><a href="/experiences/yacht-party-miami">Yacht Party</a></li>
+            </ul>
+            <a class="myc-menu-all" href="/experiences">All experiences <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </li>
+        <li class="myc-nav-item myc-has-menu">
+          <button type="button" class="myc-nav-link myc-nav-toggle" aria-expanded="false" aria-controls="myc-menu-destinations">Destinations<svg class="myc-chev" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <div class="myc-menu " id="myc-menu-destinations">
+            <ul class="myc-menu-list">
+<li><a href="/destinations/sandbar-yacht-charter-miami">Sandbar</a></li>
+<li><a href="/destinations/star-island-boat-tour-miami">Star Island</a></li>
+<li><a href="/destinations/yacht-rental-miami-beach">Miami Beach</a></li>
+<li><a href="/destinations/south-beach-yacht-rental">South Beach</a></li>
+<li><a href="/destinations/yacht-rental-brickell">Brickell</a></li>
+            </ul>
+            <a class="myc-menu-all" href="/destinations">All destinations <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </li>
+        <li class="myc-nav-item"><a class="myc-nav-link" href="/prices">Prices</a></li>
+        <li class="myc-nav-item"><a class="myc-nav-link" href="/guides">Guides</a></li>
+        <li class="myc-nav-item"><a class="myc-nav-link" href="/about">About</a></li>
+        <li class="myc-nav-item"><a class="myc-nav-link" href="/contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="myc-header-actions">
+          <nav class="myc-lang" aria-label="Language"><a href="/" lang="en" hreflang="en" aria-current="true">EN</a><span class="myc-lang-sep" aria-hidden="true">·</span><a href="/alquiler-de-yates-miami" lang="es" hreflang="es">ES</a><span class="myc-lang-sep" aria-hidden="true">·</span><a href="/aluguel-de-iate-em-miami" lang="pt-BR" hreflang="pt-BR">PT</a></nav>
+          <a class="myc-call" href="tel:+17876645040" aria-label="Call (787) 664-5040" title="Call (787) 664-5040"><svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.51 13.21l-2.51-2.51c-.9-.9-2.42-.54-2.78.63-.27.8-1.17 1.25-1.97 1.07-1.8-.45-4.22-2.78-4.66-4.66-.27-.81.27-1.7 1.07-1.97 1.17-.36 1.53-1.88.63-2.78l-2.51-2.51c-.72-.63-1.8-.63-2.42 0L.81 2.18c-1.7 1.79.18 6.55 4.4 10.76 4.21 4.21 8.97 6.19 10.76 4.4l1.7-1.7c.63-.72.63-1.79 0-2.42z"/></svg></a>
+          <a class="myc-cta" href="https://wa.me/17876645040?text=Hi%21%20I%27d%20like%20to%20plan%20a%20yacht%20experience%20in%20Miami.%20My%20date%3A" target="_blank" rel="noopener">Book a Yacht</a>
+          <button type="button" class="myc-burger" aria-expanded="false" aria-controls="myc-mobile" aria-label="Open menu" data-label-open="Open menu" data-label-close="Close menu"><span></span><span></span><span></span></button>
+        </div>
+      </div>
+      <div class="myc-mobile" id="myc-mobile" hidden>
+        <nav aria-label="Mobile">
+          <ul class="myc-m-list">
+        <li class="myc-m-item">
+          <button type="button" class="myc-m-toggle" aria-expanded="false" aria-controls="myc-m-yachts">Yachts<svg class="myc-chev" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <ul class="myc-m-sub" id="myc-m-yachts" hidden>
+<li><a href="/yachts/90-deep-blue"><span class="myc-menu-name">90&#x27; Deep Blue with Jacuzzi</span><span class="myc-menu-meta">from $4,999</span></a></li>
+<li><a href="/yachts/75-ferretti"><span class="myc-menu-name">75&#x27; Ferretti</span><span class="myc-menu-meta">from $3,000</span></a></li>
+<li><a href="/yachts/65-azimut-lchaim"><span class="myc-menu-name">65&#x27; Azimut L&#x27;chaim</span><span class="myc-menu-meta">from $3,000</span></a></li>
+<li><a href="/yachts/62-anvera"><span class="myc-menu-name">62&#x27; Anvera</span><span class="myc-menu-meta">from $1,700</span></a></li>
+<li><a href="/yachts/55-azimut"><span class="myc-menu-name">55&#x27; Azimut</span><span class="myc-menu-meta">from $1,600</span></a></li>
+<li><a href="/yachts/48-isabella"><span class="myc-menu-name">48&#x27; Isabella with Jet Ski</span><span class="myc-menu-meta">from $1,499</span></a></li>
+<li><a href="/yachts/46-maxum"><span class="myc-menu-name">46&#x27; Maxum</span><span class="myc-menu-meta">from $1,000</span></a></li>
+<li><a href="/yachts/28-axopar-brabus"><span class="myc-menu-name">28&#x27; Axopar Brabus Edition</span><span class="myc-menu-meta">from $1,200</span></a></li>
+<li><a href="/yachts/25-yamaha-255xd"><span class="myc-menu-name">25&#x27; Yamaha 255XD</span><span class="myc-menu-meta">from $1,000</span></a></li>
+            <li class="myc-m-all"><a href="/yachts">View the full fleet <span aria-hidden="true">&rarr;</span></a></li>
+          </ul>
+        </li>
+        <li class="myc-m-item">
+          <button type="button" class="myc-m-toggle" aria-expanded="false" aria-controls="myc-m-experiences">Experiences<svg class="myc-chev" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <ul class="myc-m-sub" id="myc-m-experiences" hidden>
+<li><a href="/experiences/birthday-yacht-party-miami">Birthday</a></li>
+<li><a href="/experiences/bachelorette-yacht-party-miami">Bachelorette</a></li>
+<li><a href="/experiences/bachelor-party-yacht-miami">Bachelor</a></li>
+<li><a href="/experiences/proposal-yacht-charter-miami">Proposal</a></li>
+<li><a href="/experiences/corporate-yacht-charter-miami">Corporate</a></li>
+<li><a href="/experiences/wedding-yacht-charter-miami">Wedding</a></li>
+<li><a href="/experiences/private-sunset-cruise-miami">Sunset Cruise</a></li>
+<li><a href="/experiences/yacht-party-miami">Yacht Party</a></li>
+            <li class="myc-m-all"><a href="/experiences">All experiences <span aria-hidden="true">&rarr;</span></a></li>
+          </ul>
+        </li>
+        <li class="myc-m-item">
+          <button type="button" class="myc-m-toggle" aria-expanded="false" aria-controls="myc-m-destinations">Destinations<svg class="myc-chev" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <ul class="myc-m-sub" id="myc-m-destinations" hidden>
+<li><a href="/destinations/sandbar-yacht-charter-miami">Sandbar</a></li>
+<li><a href="/destinations/star-island-boat-tour-miami">Star Island</a></li>
+<li><a href="/destinations/yacht-rental-miami-beach">Miami Beach</a></li>
+<li><a href="/destinations/south-beach-yacht-rental">South Beach</a></li>
+<li><a href="/destinations/yacht-rental-brickell">Brickell</a></li>
+            <li class="myc-m-all"><a href="/destinations">All destinations <span aria-hidden="true">&rarr;</span></a></li>
+          </ul>
+        </li>
+        <li class="myc-m-item"><a class="myc-m-link" href="/prices">Prices</a></li>
+        <li class="myc-m-item"><a class="myc-m-link" href="/guides">Guides</a></li>
+        <li class="myc-m-item"><a class="myc-m-link" href="/about">About</a></li>
+        <li class="myc-m-item"><a class="myc-m-link" href="/contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="myc-m-foot">
+          <a class="myc-btn myc-btn-wa" href="https://wa.me/17876645040?text=Hi%21%20I%27d%20like%20to%20plan%20a%20yacht%20experience%20in%20Miami.%20My%20date%3A" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.5-.5.1-.2.2-.3.3-.5.1-.2 0-.4-.1-.6-.1-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4s-1.1 1-1.1 2.5 1.1 2.9 1.3 3.1c.2.2 2.2 3.3 5.3 4.6 2.5 1 3 .8 3.6.8.6 0 1.8-.7 2-1.5.3-.7.3-1.4.2-1.5-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.7.4 3.4 1.3 4.9L2 22l5.3-1.4c1.4.8 3.1 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>WhatsApp</a>
+          <a class="myc-btn myc-btn-ghost" href="tel:+17876645040"><svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.51 13.21l-2.51-2.51c-.9-.9-2.42-.54-2.78.63-.27.8-1.17 1.25-1.97 1.07-1.8-.45-4.22-2.78-4.66-4.66-.27-.81.27-1.7 1.07-1.97 1.17-.36 1.53-1.88.63-2.78l-2.51-2.51c-.72-.63-1.8-.63-2.42 0L.81 2.18c-1.7 1.79.18 6.55 4.4 10.76 4.21 4.21 8.97 6.19 10.76 4.4l1.7-1.7c.63-.72.63-1.79 0-2.42z"/></svg>Call (787) 664-5040</a>
+          <nav class="myc-lang myc-lang-mobile" aria-label="Language"><a href="/" lang="en" hreflang="en" aria-current="true">EN</a><span class="myc-lang-sep" aria-hidden="true">·</span><a href="/alquiler-de-yates-miami" lang="es" hreflang="es">ES</a><span class="myc-lang-sep" aria-hidden="true">·</span><a href="/aluguel-de-iate-em-miami" lang="pt-BR" hreflang="pt-BR">PT</a></nav>
+        </div>
+      </div>
+    </header>
+    <main id="main" class="main-wrapper">
+      <section class="myc-hero">
+        <div class="w-layout-blockcontainer container-default w-container">
+          <div class="myc-breadcrumb"><a href="/">Home</a> &nbsp;&rsaquo;&nbsp; <span>Experiences</span></div>
+          <h1>Miami Yacht Charter Experiences</h1>
+          <p class="myc-lede">One fleet, every occasion. Private, captained charters for parties, sunsets, sandbar days and corporate events &mdash; from $1,000 for 4 hours.</p>
+          <div class="myc-facts">
+<div class="myc-fact"><div class="k">Experiences</div><div class="v">Parties, sunsets & more</div></div>
+<div class="myc-fact"><div class="k">From</div><div class="v">$1,000 / 4 hrs</div></div>
+<div class="myc-fact"><div class="k">Fleet</div><div class="v">9 yachts, 25'–90'</div></div>
+<div class="myc-fact"><div class="k">Booking</div><div class="v">Call or WhatsApp, 24/7</div></div>
+          </div>
+          <div style="margin:26px 0 10px;"><a href="https://wa.me/17876645040?text=Hi%21%20I%27d%20like%20to%20plan%20a%20yacht%20experience%20in%20Miami.%20My%20date%3A" class="yacht-details-button w-button" data-modal>Check Availability</a></div>
+        </div>
+      </section>
+      <section>
+        <div class="w-layout-blockcontainer container-default w-container">
+          <div class="myc-content">
+
+<h2>Choose your experience</h2>
+<div class="myc-exp-grid">
+<a href="/experiences/yacht-party-miami" class="myc-exp-card">
+  <img src="/photos/party/night-cruise.jpg" loading="lazy" alt="Private yacht party in Miami at night">
+  <div class="myc-exp-body"><h3>Private Yacht Parties</h3><p>The whole yacht for your celebration — your music, your people, your route through Biscayne Bay.</p><span class="myc-exp-link">Explore &rsaquo;</span></div>
+</a>
+<a href="/experiences/birthday-yacht-party-miami" class="myc-exp-card">
+  <img src="/photos/party/party-time.jpg" loading="lazy" alt="Birthday yacht party celebration in Miami">
+  <div class="myc-exp-body"><h3>Birthday Parties</h3><p>Skyline cruise, sandbar swim and cake on deck — birthdays from $1,000 for 4 hours.</p><span class="myc-exp-link">Explore &rsaquo;</span></div>
+</a>
+<a href="/experiences/bachelorette-yacht-party-miami" class="myc-exp-card">
+  <img src="/photos/party/besties-on-a-boat.jpg" loading="lazy" alt="Bachelorette party group on a Miami yacht">
+  <div class="myc-exp-body"><h3>Bachelorette Parties</h3><p>The boat day the whole weekend is built around, with the bride front and center.</p><span class="myc-exp-link">Explore &rsaquo;</span></div>
+</a>
+<a href="/experiences/private-sunset-cruise-miami" class="myc-exp-card">
+  <img src="/photos/party/this-night-is-sparkling.jpg" loading="lazy" alt="Private sunset cruise on Biscayne Bay Miami">
+  <div class="myc-exp-body"><h3>Private Sunset Cruises</h3><p>Golden hour on open water — date nights, anniversaries and the proposal spot of choice.</p><span class="myc-exp-link">Explore &rsaquo;</span></div>
+</a>
+<a href="/yachts/48-isabella" class="myc-exp-card">
+  <img src="/photos/isabella-48/1.jpeg" loading="lazy" alt="Isabella 48 yacht with Jet Ski in Miami">
+  <div class="myc-exp-body"><h3>Jet Ski & Watersports Days</h3><p>The 48' Isabella brings a jet ski along; the Yamaha 255XD and Axopar add pace for thrill-seekers.</p><span class="myc-exp-link">Explore &rsaquo;</span></div>
+</a>
+<a href="/destinations/sandbar-yacht-charter-miami" class="myc-exp-card">
+  <img src="/photos/yamaha-255xd-25/easyfowey-9.jpg" loading="lazy" alt="Boat anchored at a Miami sandbar on a private charter">
+  <div class="myc-exp-body"><h3>Sandbar Charters</h3><p>Anchor at Nixon's Sandbar, cruise out to Stiltsville and spend the day in the water.</p><span class="myc-exp-link">Explore &rsaquo;</span></div>
+</a>
+<a href="/experiences/corporate-yacht-charter-miami" class="myc-exp-card">
+  <img src="/photos/deep-blue-90/deepblue-1.jpg" loading="lazy" alt="90-foot superyacht for corporate events in Miami">
+  <div class="myc-exp-body"><h3>Corporate & Group Events</h3><p>Client days, team outings and launches on the water — tell us the brief and we'll build it.</p><span class="myc-exp-link">Explore &rsaquo;</span></div>
+</a>
+<a href="/boat-rental-miami" class="myc-exp-card">
+  <img src="/photos/axopar-brabus-28/photo-feb-17-2026-3-18-28-pm-2-800.webp" loading="lazy" alt="Axopar 28 Brabus sport boat for rent in Miami">
+  <div class="myc-exp-body"><h3>Boat Rentals</h3><p>Jet boats, sport boats and yachts with a captain included, from $1,000 for 4 hours.</p><span class="myc-exp-link">Explore &rsaquo;</span></div>
+</a>
+<a href="/experiences/party-boat-rental-miami" class="myc-exp-card">
+  <img src="/photos/anvera-62/anveras-12-800.webp" loading="lazy" alt="Aft sun loungers on the Anvera 62 party boat in Miami">
+  <div class="myc-exp-body"><h3>Party Boats</h3><p>Your own boat, your playlist and only your group. No tickets, no strangers.</p><span class="myc-exp-link">Explore &rsaquo;</span></div>
+</a>
+<a href="/experiences/bachelor-party-yacht-miami" class="myc-exp-card">
+  <img src="/photos/isabella-48/1-800.webp" loading="lazy" alt="Isabella 48 yacht with Jet Ski for a Miami bachelor party">
+  <div class="myc-exp-body"><h3>Bachelor Parties</h3><p>The jet ski yacht, the fast boat or the 90-footer for the groom's crew.</p><span class="myc-exp-link">Explore &rsaquo;</span></div>
+</a>
+<a href="/experiences/proposal-yacht-charter-miami" class="myc-exp-card">
+  <img src="/photos/ferretti-75/img-20240905-wa0032-800.webp" loading="lazy" alt="Ferretti 75 yacht for a proposal or anniversary cruise in Miami">
+  <div class="myc-exp-body"><h3>Proposals &amp; Anniversaries</h3><p>A private deck, the skyline at sunset and a captain who knows the plan.</p><span class="myc-exp-link">Explore &rsaquo;</span></div>
+</a>
+<a href="/destinations/star-island-boat-tour-miami" class="myc-exp-card">
+  <img src="/photos/azimut-lchaim-65/4-800.webp" loading="lazy" alt="Azimut L'chaim cruising past Fisher Island">
+  <div class="myc-exp-body"><h3>Star Island Boat Tours</h3><p>The celebrity homes of Star, Palm and Hibiscus Islands from your own private yacht, not a tour boat.</p><span class="myc-exp-link">Explore &rsaquo;</span></div>
+</a>
+<a href="/experiences/family-yacht-charter-miami" class="myc-exp-card">
+  <img src="/photos/isabella-48/7-800.webp" loading="lazy" alt="Isabella 48 anchored on Biscayne Bay with downtown Miami behind">
+  <div class="myc-exp-body"><h3>Family Charters</h3><p>Children welcome, children's life jackets on board, calm bay water and a sandbar swim stop.</p><span class="myc-exp-link">Explore &rsaquo;</span></div>
+</a>
+<a href="/experiences/wedding-yacht-charter-miami" class="myc-exp-card">
+  <img src="/photos/ferretti-75/img-20250613-wa0054-800.webp" loading="lazy" alt="Champagne and appetizers on the Ferretti 75 aft deck table">
+  <div class="myc-exp-body"><h3>Weddings on Board</h3><p>Ceremonies on the water are welcome: elopements, vow renewals and small weddings with the skyline behind you.</p><span class="myc-exp-link">Explore &rsaquo;</span></div>
+</a>
+<a href="/experiences/quinceanera-yacht-party-miami" class="myc-exp-card">
+  <img src="/photos/azimut-lchaim-65/2-800.webp" loading="lazy" alt="Guests on the bow of the Azimut L'chaim off Fisher Island">
+  <div class="myc-exp-body"><h3>Quinceañeras</h3><p>The whole yacht for the family, the city for the photos, and a team that plans it in Spanish or English.</p><span class="myc-exp-link">Explore &rsaquo;</span></div>
+</a>
+<a href="/experiences/yacht-photoshoot-miami" class="myc-exp-card">
+  <img src="/photos/azimut-lchaim-65/60_AZI_WEB-13-800.webp" loading="lazy" alt="Bow sunpad of the Azimut L'chaim facing downtown Miami">
+  <div class="myc-exp-body"><h3>Photo &amp; Video Shoots</h3><p>Commercial shoots welcome. Skyline, islands and open water in one 4-hour session.</p><span class="myc-exp-link">Explore &rsaquo;</span></div>
+</a>
+<a href="/experiences/yacht-charter-before-cruise-miami" class="myc-exp-card">
+  <img src="/photos/anvera-62/anveras-41-800.webp" loading="lazy" alt="Anvera 62 running through downtown Miami near Brickell">
+  <div class="myc-exp-body"><h3>Before or After Your Cruise</h3><p>Sailing from PortMiami? Turn the day before or after into four hours on the water.</p><span class="myc-exp-link">Explore &rsaquo;</span></div>
+</a>
+<a href="/destinations/south-beach-yacht-rental" class="myc-exp-card">
+  <img src="/photos/isabella-48/4-800.webp" loading="lazy" alt="Aerial view of the Isabella 48-foot yacht on Biscayne Bay">
+  <div class="myc-exp-body"><h3>South Beach Yacht Rental</h3><p>Staying on the beach? The dock is 15 minutes away and the islands are right off the causeway.</p><span class="myc-exp-link">Explore &rsaquo;</span></div>
+</a>
+</div>
+
+<h2>Choose by destination</h2>
+<p>Prefer to pick the place first? The <a href="/destinations">destinations</a> pages cover the <a href="/destinations/sandbar-yacht-charter-miami">sandbar</a>, <a href="/destinations/star-island-boat-tour-miami">Star Island</a>, and the easiest way to the dock from <a href="/destinations/yacht-rental-miami-beach">Miami Beach</a>, <a href="/destinations/south-beach-yacht-rental">South Beach</a> and <a href="/destinations/yacht-rental-brickell">Brickell</a>.</p>
+
+<h2>The yachts groups book most</h2>
+<div class="myc-cards">
+<article class="myc-card" data-length="48" data-price="1499" data-feature="jet ski included">
+  <a class="myc-card-media" href="/yachts/48-isabella" tabindex="-1" aria-hidden="true"><img src="/photos/isabella-48/4-800.webp" width="800" height="480" alt="48&#x27; Isabella with Jet Ski" loading="lazy" decoding="async"></a>
+  <div class="myc-card-body">
+    <h3 class="myc-card-title"><a href="/yachts/48-isabella">48&#x27; Isabella with Jet Ski</a></h3>
+    <p class="myc-card-meta">48 ft &middot; Motor yacht &middot; Jet ski included</p>
+    <p class="myc-card-price"><span>from</span> $1,499 <span>/ 4 hours</span></p>
+    <p class="myc-card-blurb">The yacht that comes with a jet ski included in the charter.</p>
+    <div class="myc-card-actions"><a class="myc-link" href="/yachts/48-isabella">View yacht <span aria-hidden="true">&rarr;</span></a><a class="myc-btn myc-btn-sm" href="https://wa.me/17876645040?text=Hi%21%20I%27m%20interested%20in%20the%2048%27%20Isabella%20with%20Jet%20Ski.%20My%20date%3A" target="_blank" rel="noopener">Book now</a></div>
+  </div>
+</article>
+<article class="myc-card" data-length="65" data-price="3000" data-feature="three decks">
+  <a class="myc-card-media" href="/yachts/65-azimut-lchaim" tabindex="-1" aria-hidden="true"><img src="/photos/azimut-lchaim-65/1-800.webp" width="800" height="450" alt="65&#x27; Azimut L&#x27;chaim" loading="lazy" decoding="async"></a>
+  <div class="myc-card-body">
+    <h3 class="myc-card-title"><a href="/yachts/65-azimut-lchaim">65&#x27; Azimut L&#x27;chaim</a></h3>
+    <p class="myc-card-meta">65 ft &middot; Motor yacht &middot; Three decks</p>
+    <p class="myc-card-price"><span>from</span> $3,000 <span>/ 4 hours</span></p>
+    <p class="myc-card-blurb">A full-size Italian motor yacht built for celebrations.</p>
+    <div class="myc-card-actions"><a class="myc-link" href="/yachts/65-azimut-lchaim">View yacht <span aria-hidden="true">&rarr;</span></a><a class="myc-btn myc-btn-sm" href="https://wa.me/17876645040?text=Hi%21%20I%27m%20interested%20in%20the%2065%27%20Azimut%20L%27chaim.%20My%20date%3A" target="_blank" rel="noopener">Book now</a></div>
+  </div>
+</article>
+<article class="myc-card" data-length="90" data-price="4999" data-feature="jacuzzi on board">
+  <a class="myc-card-media" href="/yachts/90-deep-blue" tabindex="-1" aria-hidden="true"><img src="/photos/deep-blue-90/deepblue-1-800.webp" width="800" height="533" alt="90&#x27; Deep Blue with Jacuzzi" loading="lazy" decoding="async"></a>
+  <div class="myc-card-body">
+    <h3 class="myc-card-title"><a href="/yachts/90-deep-blue">90&#x27; Deep Blue with Jacuzzi</a></h3>
+    <p class="myc-card-meta">90 ft &middot; Motor yacht &middot; Jacuzzi on board</p>
+    <p class="myc-card-price"><span>from</span> $4,999 <span>/ 4 hours</span></p>
+    <p class="myc-card-blurb">The headline yacht: 90 feet, an onboard Jacuzzi, captain and crew.</p>
+    <div class="myc-card-actions"><a class="myc-link" href="/yachts/90-deep-blue">View yacht <span aria-hidden="true">&rarr;</span></a><a class="myc-btn myc-btn-sm" href="https://wa.me/17876645040?text=Hi%21%20I%27m%20interested%20in%20the%2090%27%20Deep%20Blue%20with%20Jacuzzi.%20My%20date%3A" target="_blank" rel="noopener">Book now</a></div>
+  </div>
+</article>
+<article class="myc-card" data-length="46" data-price="1000" data-feature="">
+  <a class="myc-card-media" href="/yachts/46-maxum" tabindex="-1" aria-hidden="true"><img src="/photos/legacy/maxum-800.webp" width="800" height="552" alt="46&#x27; Maxum" loading="lazy" decoding="async"></a>
+  <div class="myc-card-body">
+    <h3 class="myc-card-title"><a href="/yachts/46-maxum">46&#x27; Maxum</a></h3>
+    <p class="myc-card-meta">46 ft &middot; Motor yacht</p>
+    <p class="myc-card-price"><span>from</span> $1,000 <span>/ 4 hours</span></p>
+    <p class="myc-card-blurb">Where the yacht fleet starts: the lowest 4-hour rate of any yacht we run.</p>
+    <div class="myc-card-actions"><a class="myc-link" href="/yachts/46-maxum">View yacht <span aria-hidden="true">&rarr;</span></a><a class="myc-btn myc-btn-sm" href="https://wa.me/17876645040?text=Hi%21%20I%27m%20interested%20in%20the%2046%27%20Maxum.%20My%20date%3A" target="_blank" rel="noopener">Book now</a></div>
+  </div>
+</article>
+</div>
+<p style="margin-top:16px">Compare all nine on the <a href="/yachts">fleet page</a> or the <a href="/prices">price guide</a>.</p>
+
+<h2>Sandbar &amp; Stiltsville day trips</h2>
+<p>Miami's signature boat day: cruise out of the Miami River, loop the mansions of Star Island and Fisher Island, then anchor in waist-deep turquoise water at Nixon's Sandbar &mdash; or push further to the historic stilt houses of Stiltsville on the edge of the open Atlantic. Every day trip is private, captained and tailored to your group. Pick a boat on the <a href="/prices">price guide</a> and we'll handle the route.</p>
+
+<h2 id="events">Miami events on a yacht</h2>
+<p>The big weeks on the Miami calendar are the best weeks to be on the water, and we charge the same prices every week of the year. Each page below has the dates and how a 4-hour charter fits around them &mdash; or see <a href="/events">all event weeks</a>.</p>
+<div class="myc-exp-grid">
+<a href="/events/art-basel-yacht-charter-miami" class="myc-exp-card">
+  <img src="/photos/deep-blue-90/deepblue-1-800.webp" loading="lazy" alt="Aft deck of the 90-foot Deep Blue yacht">
+  <div class="myc-exp-body"><h3>Art Basel Week</h3><p>December 4 to 6, 2026. Client hospitality and sunset escapes 15 minutes from the Convention Center.</p><span class="myc-exp-link">Explore &rsaquo;</span></div>
+</a>
+<a href="/events/new-years-eve-yacht-miami" class="myc-exp-card">
+  <img src="/photos/azimut-lchaim-65/32-800.webp" loading="lazy" alt="Crew serving drinks to guests on the Azimut L'chaim">
+  <div class="myc-exp-body"><h3>New Year's Eve</h3><p>December 31 on your own yacht instead of a ticketed party boat. No holiday surcharge.</p><span class="myc-exp-link">Explore &rsaquo;</span></div>
+</a>
+<a href="/events/spring-break-yacht-miami" class="myc-exp-card">
+  <img src="/photos/isabella-48/1-800.webp" loading="lazy" alt="Isabella 48 yacht with its jet ski in Miami">
+  <div class="myc-exp-body"><h3>Spring Break &amp; Music Week</h3><p>March 2027, including Miami Music Week and Ultra weekend. Your group's own boat with a sandbar stop.</p><span class="myc-exp-link">Explore &rsaquo;</span></div>
+</a>
+<a href="/events/miami-grand-prix-yacht-charter" class="myc-exp-card">
+  <img src="/photos/anvera-62/anveras-9-800.webp" loading="lazy" alt="Aerial view of the 62-foot Anvera with the Miami skyline behind">
+  <div class="myc-exp-body"><h3>Grand Prix Weekend</h3><p>F1 week in early May. A private 4-hour charter between the sessions, at regular prices.</p><span class="myc-exp-link">Explore &rsaquo;</span></div>
+</a>
+</div>
+<p>Prefer another language? See <a href="/alquiler-de-yates-miami" lang="es">alquiler de yates en Miami</a> and <a href="/fiesta-en-yate-miami" lang="es">fiestas en yate</a> in Spanish, or <a href="/aluguel-de-iate-em-miami" lang="pt-BR">aluguel de iate em Miami</a> in Portuguese.</p>
+
+<h2>How booking works</h2>
+<div class="myc-steps">
+  <div class="myc-step"><div class="num">Step 1</div><h3>Call or WhatsApp</h3><p>Tell us your date, group size and the occasion. We answer 24/7 and check live availability while you&rsquo;re on the line.</p></div>
+  <div class="myc-step"><div class="num">Step 2</div><h3>We match the yacht</h3><p>We recommend the right boat from our 9-vessel fleet for your group and budget &mdash; no platforms, no broker markup.</p></div>
+  <div class="myc-step"><div class="num">Step 3</div><h3>Step aboard</h3><p>Meet us at our Miami River dock &mdash; about 10 minutes from Brickell and 15 from Miami Beach &mdash; and your captain takes it from there.</p></div>
+</div>
+
+<h2>Guides for first-time charterers</h2>
+<p>New to chartering? Start here: <a href="/guides/boating-license-miami-boat-rental">do you need a license to rent a boat in Miami</a>, <a href="/guides/what-to-bring-yacht-charter-miami">what to bring on a charter</a>, the <a href="/guides/miami-sandbar-guide">Miami sandbar guide</a> and <a href="/guides/best-time-yacht-charter-miami">the best time to go</a>.</p>
+
+<h2>Frequently asked questions</h2>
+<div class="myc-faq-item">
+<h3>What kinds of events can you host on board?</h3>
+<p>Anything a group celebrates: birthdays, bachelorette and bachelor parties, engagements and proposals, anniversaries, corporate outings, photoshoots and content days, or a no-occasion sandbar Saturday.</p>
+</div>
+<div class="myc-faq-item">
+<h3>Is every experience on a private boat?</h3>
+<p>Yes — we don't sell tickets. Every experience is a private charter of one of our 9 yachts with a licensed captain and crew included.</p>
+</div>
+<div class="myc-faq-item">
+<h3>What does an experience cost?</h3>
+<p>Charters start at $1,000 for 4 hours and run to $4,999 for the 90-foot Deep Blue. Every rate is listed on the <a href="/prices">price guide</a>.</p>
+</div>
+
+<div class="myc-cta-band">
+  <h2>Tell us the occasion</h2>
+  <p>Call or WhatsApp with your date and group size — we'll match the yacht and the route to the moment, 24/7.</p>
+  <div class="myc-cta-buttons">
+    <a href="tel:+17876645040" class="myc-btn-primary">Call (787) 664-5040</a>
+    <a href="https://wa.me/17876645040?text=Hi%21%20I%27d%20like%20to%20plan%20a%20yacht%20experience%20in%20Miami.%20My%20date%3A" target="_blank" rel="noopener" class="myc-btn-wa">WhatsApp Us</a>
+  </div>
+</div>
+
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="myc-footer" id="myc-footer">
+      <div class="myc-footer-cta">
+        <div class="myc-wrap myc-footer-cta-inner">
+          <h2>Let’s plan your private voyage now</h2>
+          <p>Call or WhatsApp with your date and group size. Captain and crew included, from $1,000 for 4 hours.</p>
+          <div class="myc-btn-row">
+            <a class="myc-btn myc-btn-wa" href="https://wa.me/17876645040?text=Hi%21%20I%27d%20like%20to%20plan%20a%20yacht%20experience%20in%20Miami.%20My%20date%3A" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.5-.5.1-.2.2-.3.3-.5.1-.2 0-.4-.1-.6-.1-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4s-1.1 1-1.1 2.5 1.1 2.9 1.3 3.1c.2.2 2.2 3.3 5.3 4.6 2.5 1 3 .8 3.6.8.6 0 1.8-.7 2-1.5.3-.7.3-1.4.2-1.5-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.7.4 3.4 1.3 4.9L2 22l5.3-1.4c1.4.8 3.1 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>WhatsApp</a>
+            <a class="myc-btn myc-btn-ghost" href="tel:+17876645040"><svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.51 13.21l-2.51-2.51c-.9-.9-2.42-.54-2.78.63-.27.8-1.17 1.25-1.97 1.07-1.8-.45-4.22-2.78-4.66-4.66-.27-.81.27-1.7 1.07-1.97 1.17-.36 1.53-1.88.63-2.78l-2.51-2.51c-.72-.63-1.8-.63-2.42 0L.81 2.18c-1.7 1.79.18 6.55 4.4 10.76 4.21 4.21 8.97 6.19 10.76 4.4l1.7-1.7c.63-.72.63-1.79 0-2.42z"/></svg>Call (787) 664-5040</a>
+          </div>
+        </div>
+      </div>
+      <div class="myc-wrap myc-footer-grid">
+        <div class="myc-footer-brand">
+          <a href="/" class="myc-footer-logo" aria-label="Miami Yacht Collective"><img src="/images/main-boat-logo-420.webp" width="420" height="420" alt="Miami Yacht Collective" loading="lazy" decoding="async"></a>
+          <p class="myc-footer-tagline">Private yacht charters in Miami with captain and crew included. One dock on the Miami River, nine yachts from 25 to 90 feet, booked direct.</p>
+          <address class="myc-footer-address">
+            <a href="https://maps.app.goo.gl/7bYMugMBFHaZruoW8" target="_blank" rel="noopener">668 NW N River Dr<br>Miami, FL 33136</a>
+            <a href="tel:+17876645040">(787) 664-5040</a>
+            <a href="https://wa.me/17876645040?text=Hi%21%20I%27d%20like%20to%20plan%20a%20yacht%20experience%20in%20Miami.%20My%20date%3A" target="_blank" rel="noopener">WhatsApp</a>
+            <a href="mailto:sebastian@mcaiconsulting.com">sebastian@mcaiconsulting.com</a>
+            <!-- TODO(owner): a branded @miamiyachtcollective.com address is recommended over the current one -->
+          </address>
+        </div>
+        <nav class="myc-footer-col" aria-labelledby="myc-f-fleet">
+          <h2 id="myc-f-fleet">Fleet</h2>
+          <ul>
+<li><a href="/yachts/90-deep-blue">90&#x27; Deep Blue with Jacuzzi</a></li>
+<li><a href="/yachts/75-ferretti">75&#x27; Ferretti</a></li>
+<li><a href="/yachts/65-azimut-lchaim">65&#x27; Azimut L&#x27;chaim</a></li>
+<li><a href="/yachts/62-anvera">62&#x27; Anvera</a></li>
+<li><a href="/yachts/55-azimut">55&#x27; Azimut</a></li>
+<li><a href="/yachts/48-isabella">48&#x27; Isabella with Jet Ski</a></li>
+<li><a href="/yachts/46-maxum">46&#x27; Maxum</a></li>
+<li><a href="/yachts/28-axopar-brabus">28&#x27; Axopar Brabus Edition</a></li>
+<li><a href="/yachts/25-yamaha-255xd">25&#x27; Yamaha 255XD</a></li>
+            <li><a href="/yachts" class="myc-footer-more">All yachts &amp; prices <span aria-hidden="true">&rarr;</span></a></li>
+          </ul>
+        </nav>
+        <nav class="myc-footer-col" aria-labelledby="myc-f-exp">
+          <h2 id="myc-f-exp">Experiences &amp; Destinations</h2>
+          <ul>
+<li><a href="/experiences/birthday-yacht-party-miami">Birthday</a></li>
+<li><a href="/experiences/bachelorette-yacht-party-miami">Bachelorette</a></li>
+<li><a href="/experiences/bachelor-party-yacht-miami">Bachelor</a></li>
+<li><a href="/experiences/proposal-yacht-charter-miami">Proposal</a></li>
+<li><a href="/experiences/corporate-yacht-charter-miami">Corporate</a></li>
+<li><a href="/experiences/wedding-yacht-charter-miami">Wedding</a></li>
+<li><a href="/experiences/private-sunset-cruise-miami">Sunset Cruise</a></li>
+<li><a href="/experiences/yacht-party-miami">Yacht Party</a></li>
+<li><a href="/destinations/sandbar-yacht-charter-miami">Sandbar</a></li>
+<li><a href="/destinations/star-island-boat-tour-miami">Star Island</a></li>
+<li><a href="/destinations/yacht-rental-miami-beach">Miami Beach</a></li>
+<li><a href="/destinations/south-beach-yacht-rental">South Beach</a></li>
+<li><a href="/destinations/yacht-rental-brickell">Brickell</a></li>
+            <li><a href="/boat-rental-miami">Boat rentals</a></li>
+            <li><a href="/events">Miami events</a></li>
+            <li><a href="/prices">Prices</a></li>
+            <li><a href="/guides">Guides</a></li>
+          </ul>
+        </nav>
+        <nav class="myc-footer-col" aria-labelledby="myc-f-co">
+          <h2 id="myc-f-co">Company</h2>
+          <ul>
+            <li><a href="/about">About</a></li>
+            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="/faq">FAQ</a></li>
+            <li><a href="/add-ons">Add-ons</a></li>
+            <!-- TODO(owner): Reviews page link goes here once real reviews or a Google Business Profile URL are supplied -->
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/book">Book a yacht</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="myc-wrap myc-footer-bottom">
+        <p class="myc-footer-copy">&copy; 2026 Miami Yacht Collective</p>
+        <ul class="myc-footer-legal">
+          <li><a href="/privacy-policy">Privacy</a></li>
+          <li><a href="/terms">Terms</a></li>
+          <li><a href="/cancellation-policy">Cancellation Policy</a></li>
+        </ul>
+        <ul class="myc-footer-langs">
+<li><a href="/" lang="en" hreflang="en" aria-current="true">English</a></li>
+<li><a href="/alquiler-de-yates-miami" lang="es" hreflang="es">Español</a></li>
+<li><a href="/aluguel-de-iate-em-miami" lang="pt-BR" hreflang="pt-BR">Português</a></li>
+        </ul>
+        <ul class="myc-footer-social">
+          <li><a href="https://www.instagram.com/miamiyachtcollective/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a></li>
+          <!-- TODO(owner): add Facebook / TikTok / YouTube / Google Business Profile links here once confirmed -->
+        </ul>
+      </div>
+      <p class="myc-footer-watermark" aria-hidden="true">Collective</p>
+    </footer>
+  </div>
+
+<div class="myc-sticky-cta" aria-label="Book now">
+  <a href="tel:+17876645040" class="myc-sticky-call"><svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.51 13.21l-2.51-2.51c-.9-.9-2.42-.54-2.78.63-.27.8-1.17 1.25-1.97 1.07-1.8-.45-4.22-2.78-4.66-4.66-.27-.81.27-1.7 1.07-1.97 1.17-.36 1.53-1.88.63-2.78l-2.51-2.51c-.72-.63-1.8-.63-2.42 0L.81 2.18c-1.7 1.79.18 6.55 4.4 10.76 4.21 4.21 8.97 6.19 10.76 4.4l1.7-1.7c.63-.72.63-1.79 0-2.42z"/></svg><span>Call</span></a>
+  <a href="https://wa.me/17876645040?text=Hi%21%20I%27d%20like%20to%20plan%20a%20yacht%20experience%20in%20Miami.%20My%20date%3A" target="_blank" rel="noopener" class="myc-sticky-wa"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.5-.5.1-.2.2-.3.3-.5.1-.2 0-.4-.1-.6-.1-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4s-1.1 1-1.1 2.5 1.1 2.9 1.3 3.1c.2.2 2.2 3.3 5.3 4.6 2.5 1 3 .8 3.6.8.6 0 1.8-.7 2-1.5.3-.7.3-1.4.2-1.5-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.7.4 3.4 1.3 4.9L2 22l5.3-1.4c1.4.8 3.1 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg><span>WhatsApp</span></a>
+</div>
+<div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalHeading">
+  <div class="modal-booking">
+    <button class="modal-close" id="modalClose" aria-label="Close booking dialog">&times;</button>
+    <div class="modal-heading" id="modalHeading">How Would You Like to Book?</div>
+    <p class="modal-subtext">We'll confirm your booking right away!</p>
+    <div class="modal-buttons">
+      <a href="tel:+17876645040" class="modal-btn modal-btn-call">Call us at (787) 664-5040</a>
+      <a href="https://wa.me/17876645040?text=Hi%21%20I%27d%20like%20to%20plan%20a%20yacht%20experience%20in%20Miami.%20My%20date%3A" target="_blank" rel="noopener" class="modal-btn modal-btn-wa">WhatsApp Direct</a>
+    </div>
+  </div>
+</div>
+
+<script>
+(function() {
+  var backdrop = document.getElementById('modalBackdrop');
+  var modalClose = document.getElementById('modalClose');
+  if (!backdrop || !modalClose) return;
+  var lastTrigger = null;
+
+  function openModal(e) {
+    e.preventDefault();
+    lastTrigger = e.currentTarget;
+    backdrop.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    if (window.mycLenis) window.mycLenis.stop();
+    requestAnimationFrame(function() { setTimeout(function() { modalClose.focus(); }, 60); });
+  }
+
+  function closeModal() {
+    if (!backdrop.classList.contains('active')) return;
+    backdrop.classList.remove('active');
+    document.body.style.overflow = '';
+    if (window.mycLenis) window.mycLenis.start();
+    if (lastTrigger && typeof lastTrigger.focus === 'function') lastTrigger.focus();
+    lastTrigger = null;
+  }
+
+  document.querySelectorAll('[data-modal]').forEach(function(btn) {
+    btn.addEventListener('click', openModal);
+  });
+
+  modalClose.addEventListener('click', closeModal);
+
+  backdrop.addEventListener('click', function(e) {
+    if (e.target === backdrop) closeModal();
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') { closeModal(); return; }
+    if (e.key === 'Tab' && backdrop.classList.contains('active')) {
+      var focusables = backdrop.querySelectorAll('a[href], button');
+      if (!focusables.length) return;
+      var first = focusables[0], last = focusables[focusables.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
+  });
+})();
+</script>
+<script src="/js/tracking.js"></script>
+<script defer src="/js/myc-site.js"></script>
+</body>
+</html>

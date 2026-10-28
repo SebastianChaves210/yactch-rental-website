@@ -60,58 +60,58 @@ Lines are open 24 hours, 7 days a week.
 
 ### Experience pages
 
-- Private yacht parties: https://miamiyachtcollective.com/yacht-party-miami.html
-- Birthday yacht parties: https://miamiyachtcollective.com/birthday-yacht-party-miami.html
-- Bachelorette yacht parties: https://miamiyachtcollective.com/bachelorette-yacht-party-miami.html
-- Private sunset cruises: https://miamiyachtcollective.com/private-sunset-cruise-miami.html
-- Corporate yacht charters: https://miamiyachtcollective.com/corporate-yacht-charter-miami.html
-- Sandbar charters (Nixon's Sandbar, Stiltsville): https://miamiyachtcollective.com/sandbar-yacht-charter-miami.html
-- Boat rentals with captain: https://miamiyachtcollective.com/boat-rental-miami.html
-- Private party boats: https://miamiyachtcollective.com/party-boat-rental-miami.html
-- Bachelor party charters: https://miamiyachtcollective.com/bachelor-party-yacht-miami.html
-- Proposals and anniversaries: https://miamiyachtcollective.com/proposal-yacht-charter-miami.html
-- For Miami Beach visitors: https://miamiyachtcollective.com/yacht-rental-miami-beach.html
-- Near Brickell and Downtown: https://miamiyachtcollective.com/yacht-rental-brickell.html
-- En español (alquiler de yates): https://miamiyachtcollective.com/alquiler-de-yates-miami.html
-- Private Star Island / celebrity homes boat tours: https://miamiyachtcollective.com/star-island-boat-tour-miami.html
-- For South Beach visitors: https://miamiyachtcollective.com/south-beach-yacht-rental.html
-- Family charters (children welcome, children's life jackets on board): https://miamiyachtcollective.com/family-yacht-charter-miami.html
-- Weddings, elopements and vow renewals (ceremonies on board welcome): https://miamiyachtcollective.com/wedding-yacht-charter-miami.html
-- Quinceañera and sweet sixteen yacht parties: https://miamiyachtcollective.com/quinceanera-yacht-party-miami.html
-- Photo and video shoots (commercial shoots welcome): https://miamiyachtcollective.com/yacht-photoshoot-miami.html
-- A yacht day before or after a cruise from PortMiami: https://miamiyachtcollective.com/yacht-charter-before-cruise-miami.html
-- Art Basel week (Dec 4-6, 2026; regular prices): https://miamiyachtcollective.com/art-basel-yacht-charter-miami.html
-- New Year's Eve (regular prices): https://miamiyachtcollective.com/new-years-eve-yacht-miami.html
-- Spring break, Miami Music Week and Ultra (Mar 22-28, 2027; regular prices): https://miamiyachtcollective.com/spring-break-yacht-miami.html
-- Miami Grand Prix weekend (early May; regular prices): https://miamiyachtcollective.com/miami-grand-prix-yacht-charter.html
-- En español (fiestas en yate): https://miamiyachtcollective.com/fiesta-en-yate-miami.html
-- Em português (aluguel de iate): https://miamiyachtcollective.com/aluguel-de-iate-em-miami.html
-- 2026 rental prices for every yacht: https://miamiyachtcollective.com/miami-yacht-rental-prices.html
+- Private yacht parties: https://miamiyachtcollective.com/experiences/yacht-party-miami
+- Birthday yacht parties: https://miamiyachtcollective.com/experiences/birthday-yacht-party-miami
+- Bachelorette yacht parties: https://miamiyachtcollective.com/experiences/bachelorette-yacht-party-miami
+- Private sunset cruises: https://miamiyachtcollective.com/experiences/private-sunset-cruise-miami
+- Corporate yacht charters: https://miamiyachtcollective.com/experiences/corporate-yacht-charter-miami
+- Sandbar charters (Nixon's Sandbar, Stiltsville): https://miamiyachtcollective.com/destinations/sandbar-yacht-charter-miami
+- Boat rentals with captain: https://miamiyachtcollective.com/boat-rental-miami
+- Private party boats: https://miamiyachtcollective.com/experiences/party-boat-rental-miami
+- Bachelor party charters: https://miamiyachtcollective.com/experiences/bachelor-party-yacht-miami
+- Proposals and anniversaries: https://miamiyachtcollective.com/experiences/proposal-yacht-charter-miami
+- For Miami Beach visitors: https://miamiyachtcollective.com/destinations/yacht-rental-miami-beach
+- Near Brickell and Downtown: https://miamiyachtcollective.com/destinations/yacht-rental-brickell
+- En español (alquiler de yates): https://miamiyachtcollective.com/alquiler-de-yates-miami
+- Private Star Island / celebrity homes boat tours: https://miamiyachtcollective.com/destinations/star-island-boat-tour-miami
+- For South Beach visitors: https://miamiyachtcollective.com/destinations/south-beach-yacht-rental
+- Family charters (children welcome, children's life jackets on board): https://miamiyachtcollective.com/experiences/family-yacht-charter-miami
+- Weddings, elopements and vow renewals (ceremonies on board welcome): https://miamiyachtcollective.com/experiences/wedding-yacht-charter-miami
+- Quinceañera and sweet sixteen yacht parties: https://miamiyachtcollective.com/experiences/quinceanera-yacht-party-miami
+- Photo and video shoots (commercial shoots welcome): https://miamiyachtcollective.com/experiences/yacht-photoshoot-miami
+- A yacht day before or after a cruise from PortMiami: https://miamiyachtcollective.com/experiences/yacht-charter-before-cruise-miami
+- Art Basel week (Dec 4-6, 2026; regular prices): https://miamiyachtcollective.com/events/art-basel-yacht-charter-miami
+- New Year's Eve (regular prices): https://miamiyachtcollective.com/events/new-years-eve-yacht-miami
+- Spring break, Miami Music Week and Ultra (Mar 22-28, 2027; regular prices): https://miamiyachtcollective.com/events/spring-break-yacht-miami
+- Miami Grand Prix weekend (early May; regular prices): https://miamiyachtcollective.com/events/miami-grand-prix-yacht-charter
+- En español (fiestas en yate): https://miamiyachtcollective.com/fiesta-en-yate-miami
+- Em português (aluguel de iate): https://miamiyachtcollective.com/aluguel-de-iate-em-miami
+- 2026 rental prices for every yacht: https://miamiyachtcollective.com/prices
 
 ### Guides
 
-- All guides: https://miamiyachtcollective.com/guides.html
-- Do you need a license to rent a boat in Miami: https://miamiyachtcollective.com/boating-license-miami-boat-rental.html
-- What to bring on a yacht charter: https://miamiyachtcollective.com/what-to-bring-yacht-charter-miami.html
-- Miami sandbar guide (Nixon's, Haulover, Stiltsville): https://miamiyachtcollective.com/miami-sandbar-guide.html
-- Best time for a yacht charter in Miami: https://miamiyachtcollective.com/best-time-yacht-charter-miami.html
+- All guides: https://miamiyachtcollective.com/guides
+- Do you need a license to rent a boat in Miami: https://miamiyachtcollective.com/guides/boating-license-miami-boat-rental
+- What to bring on a yacht charter: https://miamiyachtcollective.com/guides/what-to-bring-yacht-charter-miami
+- Miami sandbar guide (Nixon's, Haulover, Stiltsville): https://miamiyachtcollective.com/guides/miami-sandbar-guide
+- Best time for a yacht charter in Miami: https://miamiyachtcollective.com/guides/best-time-yacht-charter-miami
 
 - Homepage: https://miamiyachtcollective.com/
-- Fleet listing: https://miamiyachtcollective.com/yacht.html
-- About: https://miamiyachtcollective.com/about.html
-- Contact: https://miamiyachtcollective.com/contact.html
-- Booking: https://miamiyachtcollective.com/booking.html
-- All experiences (hub): https://miamiyachtcollective.com/services.html
-- Photo gallery: https://miamiyachtcollective.com/gallery.html
+- Fleet listing (filter by size and budget): https://miamiyachtcollective.com/yachts
+- About: https://miamiyachtcollective.com/about
+- Contact: https://miamiyachtcollective.com/contact
+- Booking: https://miamiyachtcollective.com/book
+- All experiences (hub): https://miamiyachtcollective.com/experiences
+- Photo gallery: https://miamiyachtcollective.com/gallery
 
 ### Individual yacht pages
 
-- 90' Deep Blue with Jacuzzi: https://miamiyachtcollective.com/deep-blue.html
-- 75' Ferretti: https://miamiyachtcollective.com/ferretti.html
-- 65' Azimut L'chaim: https://miamiyachtcollective.com/azimut-lchaim.html
-- 62' Anvera: https://miamiyachtcollective.com/anvera.html
-- 55' Azimut: https://miamiyachtcollective.com/azimut.html
-- 48' Isabella with Jet Ski: https://miamiyachtcollective.com/isabella.html
-- 46' Maxum: https://miamiyachtcollective.com/maxum.html
-- 28' Axopar Brabus Edition: https://miamiyachtcollective.com/axopar-brabus.html
-- 25' Yamaha 255XD: https://miamiyachtcollective.com/yamaha-255xd.html
+- 90' Deep Blue with Jacuzzi: https://miamiyachtcollective.com/yachts/90-deep-blue
+- 75' Ferretti: https://miamiyachtcollective.com/yachts/75-ferretti
+- 65' Azimut L'chaim: https://miamiyachtcollective.com/yachts/65-azimut-lchaim
+- 62' Anvera: https://miamiyachtcollective.com/yachts/62-anvera
+- 55' Azimut: https://miamiyachtcollective.com/yachts/55-azimut
+- 48' Isabella with Jet Ski: https://miamiyachtcollective.com/yachts/48-isabella
+- 46' Maxum: https://miamiyachtcollective.com/yachts/46-maxum
+- 28' Axopar Brabus Edition: https://miamiyachtcollective.com/yachts/28-axopar-brabus
+- 25' Yamaha 255XD: https://miamiyachtcollective.com/yachts/25-yamaha-255xd

@@ -1,5 +1,11 @@
 # -*- coding: utf-8 -*-
-"""Sitewide changes for the Oct 2026 tourist-SEO branch. Idempotent: safe to re-run."""
+"""RETIRED 2026-10-28. Sitewide changes for the Oct 2026 tourist-SEO branch (flat .html layout).
+
+The site moved to clean URLs in sub-folders; the WhatsApp map, hreflang clusters, related links, sitemap and
+vercel.json are now owned by seo-tools/ia.py + ia_migrate.py. Re-running this script would rewrite vercel.json
+and sitemap.xml for the old layout, so it refuses to run."""
+import sys as _sys
+_sys.exit("sitewide.py is retired: use python3 seo-tools/ia_migrate.py --write (see CLAUDE.md)")
 import json, re, sys
 from pathlib import Path
 from urllib.parse import quote

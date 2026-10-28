@@ -1,12 +1,18 @@
 # -*- coding: utf-8 -*-
-"""Generate the Oct 2026 landing pages from sandbar-yacht-charter-miami.html."""
+"""Generate the Oct 2026 landing pages (legacy flat-layout format).
+
+Since the 2026-10-28 IA change the pages live in sub-folders with the shared chrome. Workflow to regenerate one:
+  1. python3 seo-tools/generate_pages.py .      (writes <slug>.html at the root in the legacy format, from the
+     frozen template seo-tools/landing-legacy-template.html)
+  2. python3 seo-tools/ia_migrate.py --write    (moves it to its final path, swaps the chrome, rewrites links)
+Edits made directly in the migrated HTML are lost when a page is regenerated; prefer editing pages_spec.py."""
 import json, re, sys, html as H
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 from pages_spec import PAGES, BOATS, BOATS_ES, BOATS_PT, P, SITE
 
 REPO = Path(sys.argv[1])
-TEMPLATE = (REPO / "sandbar-yacht-charter-miami.html").read_text(encoding="utf-8")
+TEMPLATE = (Path(__file__).parent / "landing-legacy-template.html").read_text(encoding="utf-8")
 
 CHROME = {
     "es": [

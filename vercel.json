@@ -35,347 +35,624 @@
     {
       "source": "/utility/:path*",
       "destination": "/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/detail_:name(category|guest|length|locations|price|services|type|yacht).html",
-      "destination": "/yacht.html",
-      "permanent": true
+      "destination": "/yachts",
+      "statusCode": 301
+    },
+    {
+      "source": "/detail_:name(category|guest|length|locations|price|services|type|yacht)",
+      "destination": "/yachts",
+      "statusCode": 301
     },
     {
       "source": "/logo-preview.html",
       "destination": "/",
-      "permanent": true
+      "statusCode": 301
+    },
+    {
+      "source": "/logo-preview",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/yacht-details.html",
+      "destination": "/yachts",
+      "statusCode": 301
+    },
+    {
+      "source": "/yacht-details",
+      "destination": "/yachts",
+      "statusCode": 301
     },
     {
       "source": "/index.html",
       "destination": "/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/bachelorette-yacht-miami.html",
-      "destination": "/bachelorette-yacht-party-miami.html",
-      "permanent": true
+      "destination": "/experiences/bachelorette-yacht-party-miami",
+      "statusCode": 301
+    },
+    {
+      "source": "/bachelorette-yacht-miami",
+      "destination": "/experiences/bachelorette-yacht-party-miami",
+      "statusCode": 301
     },
     {
       "source": "/yacht-parties-miami.html",
-      "destination": "/yacht-party-miami.html",
-      "permanent": true
+      "destination": "/experiences/yacht-party-miami",
+      "statusCode": 301
+    },
+    {
+      "source": "/yacht-parties-miami",
+      "destination": "/experiences/yacht-party-miami",
+      "statusCode": 301
     },
     {
       "source": "/corporate-yacht-miami.html",
-      "destination": "/corporate-yacht-charter-miami.html",
-      "permanent": true
+      "destination": "/experiences/corporate-yacht-charter-miami",
+      "statusCode": 301
+    },
+    {
+      "source": "/corporate-yacht-miami",
+      "destination": "/experiences/corporate-yacht-charter-miami",
+      "statusCode": 301
     },
     {
       "source": "/boat-tours-miami.html",
-      "destination": "/sandbar-yacht-charter-miami.html",
-      "permanent": true
+      "destination": "/destinations/sandbar-yacht-charter-miami",
+      "statusCode": 301
+    },
+    {
+      "source": "/boat-tours-miami",
+      "destination": "/destinations/sandbar-yacht-charter-miami",
+      "statusCode": 301
     },
     {
       "source": "/yacht-catering-miami.html",
-      "destination": "/services.html",
-      "permanent": true
+      "destination": "/experiences",
+      "statusCode": 301
     },
     {
-      "source": "/yacht-details.html",
-      "destination": "/yacht.html",
-      "permanent": true
+      "source": "/yacht-catering-miami",
+      "destination": "/experiences",
+      "statusCode": 301
     },
     {
       "source": "/blog.html",
-      "destination": "/guides.html",
-      "permanent": true
+      "destination": "/guides",
+      "statusCode": 301
     },
     {
       "source": "/blog",
-      "destination": "/guides.html",
-      "permanent": true
+      "destination": "/guides",
+      "statusCode": 301
     },
     {
       "source": "/detail_blog.html",
-      "destination": "/guides.html",
-      "permanent": true
+      "destination": "/guides",
+      "statusCode": 301
+    },
+    {
+      "source": "/detail_blog",
+      "destination": "/guides",
+      "statusCode": 301
     },
     {
       "source": "/blog/how-much-does-yacht-rental-miami-cost.html",
-      "destination": "/miami-yacht-rental-prices.html",
-      "permanent": true
+      "destination": "/prices",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/how-much-does-yacht-rental-miami-cost",
+      "destination": "/prices",
+      "statusCode": 301
     },
     {
       "source": "/blog/how-to-plan-a-yacht-party-miami.html",
-      "destination": "/yacht-party-miami.html",
-      "permanent": true
+      "destination": "/experiences/yacht-party-miami",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/how-to-plan-a-yacht-party-miami",
+      "destination": "/experiences/yacht-party-miami",
+      "statusCode": 301
     },
     {
       "source": "/blog/miami-bachelorette-yacht-party.html",
-      "destination": "/bachelorette-yacht-party-miami.html",
-      "permanent": true
+      "destination": "/experiences/bachelorette-yacht-party-miami",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/miami-bachelorette-yacht-party",
+      "destination": "/experiences/bachelorette-yacht-party-miami",
+      "statusCode": 301
     },
     {
       "source": "/blog/best-places-to-anchor-biscayne-bay.html",
-      "destination": "/miami-sandbar-guide.html",
-      "permanent": true
+      "destination": "/guides/miami-sandbar-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/best-places-to-anchor-biscayne-bay",
+      "destination": "/guides/miami-sandbar-guide",
+      "statusCode": 301
     },
     {
       "source": "/blog/miami-yacht-charter-vs-boat-rental.html",
-      "destination": "/yacht.html",
-      "permanent": true
+      "destination": "/yachts",
+      "statusCode": 301
     },
     {
-      "source": "/services",
-      "destination": "/services.html",
-      "permanent": true
-    },
-    {
-      "source": "/booking",
-      "destination": "/booking.html",
-      "permanent": true
-    },
-    {
-      "source": "/contact",
-      "destination": "/contact.html",
-      "permanent": true
-    },
-    {
-      "source": "/gallery",
-      "destination": "/gallery.html",
-      "permanent": true
-    },
-    {
-      "source": "/about",
-      "destination": "/about.html",
-      "permanent": true
-    },
-    {
-      "source": "/ferretti",
-      "destination": "/ferretti.html",
-      "permanent": true
-    },
-    {
-      "source": "/azimut",
-      "destination": "/azimut.html",
-      "permanent": true
-    },
-    {
-      "source": "/azimut-lchaim",
-      "destination": "/azimut-lchaim.html",
-      "permanent": true
-    },
-    {
-      "source": "/isabella",
-      "destination": "/isabella.html",
-      "permanent": true
-    },
-    {
-      "source": "/acgua-alberti",
-      "destination": "/deep-blue.html",
-      "permanent": true
-    },
-    {
-      "source": "/deep-blue",
-      "destination": "/deep-blue.html",
-      "permanent": true
-    },
-    {
-      "source": "/anvera",
-      "destination": "/anvera.html",
-      "permanent": true
-    },
-    {
-      "source": "/axopar-brabus",
-      "destination": "/axopar-brabus.html",
-      "permanent": true
-    },
-    {
-      "source": "/maxum",
-      "destination": "/maxum.html",
-      "permanent": true
-    },
-    {
-      "source": "/yacht",
-      "destination": "/yacht.html",
-      "permanent": true
-    },
-    {
-      "source": "/yacht-party-miami",
-      "destination": "/yacht-party-miami.html",
-      "permanent": true
-    },
-    {
-      "source": "/birthday-yacht-party-miami",
-      "destination": "/birthday-yacht-party-miami.html",
-      "permanent": true
-    },
-    {
-      "source": "/bachelorette-yacht-party-miami",
-      "destination": "/bachelorette-yacht-party-miami.html",
-      "permanent": true
-    },
-    {
-      "source": "/private-sunset-cruise-miami",
-      "destination": "/private-sunset-cruise-miami.html",
-      "permanent": true
-    },
-    {
-      "source": "/miami-yacht-rental-prices",
-      "destination": "/miami-yacht-rental-prices.html",
-      "permanent": true
-    },
-    {
-      "source": "/yamaha-255xd",
-      "destination": "/yamaha-255xd.html",
-      "permanent": true
-    },
-    {
-      "source": "/corporate-yacht-charter-miami",
-      "destination": "/corporate-yacht-charter-miami.html",
-      "permanent": true
-    },
-    {
-      "source": "/sandbar-yacht-charter-miami",
-      "destination": "/sandbar-yacht-charter-miami.html",
-      "permanent": true
-    },
-    {
-      "source": "/guides",
-      "destination": "/guides.html",
-      "permanent": true
-    },
-    {
-      "source": "/boating-license-miami-boat-rental",
-      "destination": "/boating-license-miami-boat-rental.html",
-      "permanent": true
-    },
-    {
-      "source": "/what-to-bring-yacht-charter-miami",
-      "destination": "/what-to-bring-yacht-charter-miami.html",
-      "permanent": true
-    },
-    {
-      "source": "/miami-sandbar-guide",
-      "destination": "/miami-sandbar-guide.html",
-      "permanent": true
-    },
-    {
-      "source": "/best-time-yacht-charter-miami",
-      "destination": "/best-time-yacht-charter-miami.html",
-      "permanent": true
-    },
-    {
-      "source": "/boat-rental-miami",
-      "destination": "/boat-rental-miami.html",
-      "permanent": true
-    },
-    {
-      "source": "/party-boat-rental-miami",
-      "destination": "/party-boat-rental-miami.html",
-      "permanent": true
-    },
-    {
-      "source": "/bachelor-party-yacht-miami",
-      "destination": "/bachelor-party-yacht-miami.html",
-      "permanent": true
-    },
-    {
-      "source": "/proposal-yacht-charter-miami",
-      "destination": "/proposal-yacht-charter-miami.html",
-      "permanent": true
-    },
-    {
-      "source": "/yacht-rental-miami-beach",
-      "destination": "/yacht-rental-miami-beach.html",
-      "permanent": true
-    },
-    {
-      "source": "/yacht-rental-brickell",
-      "destination": "/yacht-rental-brickell.html",
-      "permanent": true
-    },
-    {
-      "source": "/alquiler-de-yates-miami",
-      "destination": "/alquiler-de-yates-miami.html",
-      "permanent": true
+      "source": "/blog/miami-yacht-charter-vs-boat-rental",
+      "destination": "/yachts",
+      "statusCode": 301
     },
     {
       "source": "/acgua-alberti.html",
-      "destination": "/deep-blue.html",
-      "permanent": true
+      "destination": "/yachts/90-deep-blue",
+      "statusCode": 301
+    },
+    {
+      "source": "/acgua-alberti",
+      "destination": "/yachts/90-deep-blue",
+      "statusCode": 301
     },
     {
       "source": "/pay/acgua-alberti.html",
-      "destination": "/pay/deep-blue.html",
-      "permanent": true
+      "destination": "/pay/deep-blue",
+      "statusCode": 301
     },
     {
       "source": "/pay/acgua-alberti-deposit-1000.html",
-      "destination": "/pay/deep-blue-deposit-1000.html",
-      "permanent": true
+      "destination": "/pay/deep-blue-deposit-1000",
+      "statusCode": 301
     },
     {
-      "source": "/star-island-boat-tour-miami",
-      "destination": "/star-island-boat-tour-miami.html",
-      "permanent": true
+      "source": "/yacht.html",
+      "destination": "/yachts",
+      "statusCode": 301
     },
     {
-      "source": "/south-beach-yacht-rental",
-      "destination": "/south-beach-yacht-rental.html",
-      "permanent": true
+      "source": "/yacht",
+      "destination": "/yachts",
+      "statusCode": 301
     },
     {
-      "source": "/art-basel-yacht-charter-miami",
-      "destination": "/art-basel-yacht-charter-miami.html",
-      "permanent": true
+      "source": "/services.html",
+      "destination": "/experiences",
+      "statusCode": 301
     },
     {
-      "source": "/new-years-eve-yacht-miami",
-      "destination": "/new-years-eve-yacht-miami.html",
-      "permanent": true
+      "source": "/services",
+      "destination": "/experiences",
+      "statusCode": 301
     },
     {
-      "source": "/spring-break-yacht-miami",
-      "destination": "/spring-break-yacht-miami.html",
-      "permanent": true
+      "source": "/guides.html",
+      "destination": "/guides",
+      "statusCode": 301
     },
     {
-      "source": "/miami-grand-prix-yacht-charter",
-      "destination": "/miami-grand-prix-yacht-charter.html",
-      "permanent": true
+      "source": "/deep-blue.html",
+      "destination": "/yachts/90-deep-blue",
+      "statusCode": 301
     },
     {
-      "source": "/yacht-charter-before-cruise-miami",
-      "destination": "/yacht-charter-before-cruise-miami.html",
-      "permanent": true
+      "source": "/deep-blue",
+      "destination": "/yachts/90-deep-blue",
+      "statusCode": 301
     },
     {
-      "source": "/yacht-photoshoot-miami",
-      "destination": "/yacht-photoshoot-miami.html",
-      "permanent": true
+      "source": "/ferretti.html",
+      "destination": "/yachts/75-ferretti",
+      "statusCode": 301
     },
     {
-      "source": "/family-yacht-charter-miami",
-      "destination": "/family-yacht-charter-miami.html",
-      "permanent": true
+      "source": "/ferretti",
+      "destination": "/yachts/75-ferretti",
+      "statusCode": 301
     },
     {
-      "source": "/wedding-yacht-charter-miami",
-      "destination": "/wedding-yacht-charter-miami.html",
-      "permanent": true
+      "source": "/azimut-lchaim.html",
+      "destination": "/yachts/65-azimut-lchaim",
+      "statusCode": 301
+    },
+    {
+      "source": "/azimut-lchaim",
+      "destination": "/yachts/65-azimut-lchaim",
+      "statusCode": 301
+    },
+    {
+      "source": "/anvera.html",
+      "destination": "/yachts/62-anvera",
+      "statusCode": 301
+    },
+    {
+      "source": "/anvera",
+      "destination": "/yachts/62-anvera",
+      "statusCode": 301
+    },
+    {
+      "source": "/azimut.html",
+      "destination": "/yachts/55-azimut",
+      "statusCode": 301
+    },
+    {
+      "source": "/azimut",
+      "destination": "/yachts/55-azimut",
+      "statusCode": 301
+    },
+    {
+      "source": "/isabella.html",
+      "destination": "/yachts/48-isabella",
+      "statusCode": 301
+    },
+    {
+      "source": "/isabella",
+      "destination": "/yachts/48-isabella",
+      "statusCode": 301
+    },
+    {
+      "source": "/maxum.html",
+      "destination": "/yachts/46-maxum",
+      "statusCode": 301
+    },
+    {
+      "source": "/maxum",
+      "destination": "/yachts/46-maxum",
+      "statusCode": 301
+    },
+    {
+      "source": "/axopar-brabus.html",
+      "destination": "/yachts/28-axopar-brabus",
+      "statusCode": 301
+    },
+    {
+      "source": "/axopar-brabus",
+      "destination": "/yachts/28-axopar-brabus",
+      "statusCode": 301
+    },
+    {
+      "source": "/yamaha-255xd.html",
+      "destination": "/yachts/25-yamaha-255xd",
+      "statusCode": 301
+    },
+    {
+      "source": "/yamaha-255xd",
+      "destination": "/yachts/25-yamaha-255xd",
+      "statusCode": 301
+    },
+    {
+      "source": "/birthday-yacht-party-miami.html",
+      "destination": "/experiences/birthday-yacht-party-miami",
+      "statusCode": 301
+    },
+    {
+      "source": "/birthday-yacht-party-miami",
+      "destination": "/experiences/birthday-yacht-party-miami",
+      "statusCode": 301
+    },
+    {
+      "source": "/bachelorette-yacht-party-miami.html",
+      "destination": "/experiences/bachelorette-yacht-party-miami",
+      "statusCode": 301
+    },
+    {
+      "source": "/bachelorette-yacht-party-miami",
+      "destination": "/experiences/bachelorette-yacht-party-miami",
+      "statusCode": 301
+    },
+    {
+      "source": "/bachelor-party-yacht-miami.html",
+      "destination": "/experiences/bachelor-party-yacht-miami",
+      "statusCode": 301
+    },
+    {
+      "source": "/bachelor-party-yacht-miami",
+      "destination": "/experiences/bachelor-party-yacht-miami",
+      "statusCode": 301
+    },
+    {
+      "source": "/quinceanera-yacht-party-miami.html",
+      "destination": "/experiences/quinceanera-yacht-party-miami",
+      "statusCode": 301
     },
     {
       "source": "/quinceanera-yacht-party-miami",
-      "destination": "/quinceanera-yacht-party-miami.html",
-      "permanent": true
+      "destination": "/experiences/quinceanera-yacht-party-miami",
+      "statusCode": 301
     },
     {
-      "source": "/fiesta-en-yate-miami",
-      "destination": "/fiesta-en-yate-miami.html",
-      "permanent": true
+      "source": "/yacht-party-miami.html",
+      "destination": "/experiences/yacht-party-miami",
+      "statusCode": 301
     },
     {
-      "source": "/aluguel-de-iate-em-miami",
-      "destination": "/aluguel-de-iate-em-miami.html",
-      "permanent": true
+      "source": "/yacht-party-miami",
+      "destination": "/experiences/yacht-party-miami",
+      "statusCode": 301
+    },
+    {
+      "source": "/party-boat-rental-miami.html",
+      "destination": "/experiences/party-boat-rental-miami",
+      "statusCode": 301
+    },
+    {
+      "source": "/party-boat-rental-miami",
+      "destination": "/experiences/party-boat-rental-miami",
+      "statusCode": 301
+    },
+    {
+      "source": "/proposal-yacht-charter-miami.html",
+      "destination": "/experiences/proposal-yacht-charter-miami",
+      "statusCode": 301
+    },
+    {
+      "source": "/proposal-yacht-charter-miami",
+      "destination": "/experiences/proposal-yacht-charter-miami",
+      "statusCode": 301
+    },
+    {
+      "source": "/wedding-yacht-charter-miami.html",
+      "destination": "/experiences/wedding-yacht-charter-miami",
+      "statusCode": 301
+    },
+    {
+      "source": "/wedding-yacht-charter-miami",
+      "destination": "/experiences/wedding-yacht-charter-miami",
+      "statusCode": 301
+    },
+    {
+      "source": "/private-sunset-cruise-miami.html",
+      "destination": "/experiences/private-sunset-cruise-miami",
+      "statusCode": 301
+    },
+    {
+      "source": "/private-sunset-cruise-miami",
+      "destination": "/experiences/private-sunset-cruise-miami",
+      "statusCode": 301
+    },
+    {
+      "source": "/corporate-yacht-charter-miami.html",
+      "destination": "/experiences/corporate-yacht-charter-miami",
+      "statusCode": 301
+    },
+    {
+      "source": "/corporate-yacht-charter-miami",
+      "destination": "/experiences/corporate-yacht-charter-miami",
+      "statusCode": 301
+    },
+    {
+      "source": "/family-yacht-charter-miami.html",
+      "destination": "/experiences/family-yacht-charter-miami",
+      "statusCode": 301
+    },
+    {
+      "source": "/family-yacht-charter-miami",
+      "destination": "/experiences/family-yacht-charter-miami",
+      "statusCode": 301
+    },
+    {
+      "source": "/yacht-photoshoot-miami.html",
+      "destination": "/experiences/yacht-photoshoot-miami",
+      "statusCode": 301
+    },
+    {
+      "source": "/yacht-photoshoot-miami",
+      "destination": "/experiences/yacht-photoshoot-miami",
+      "statusCode": 301
+    },
+    {
+      "source": "/yacht-charter-before-cruise-miami.html",
+      "destination": "/experiences/yacht-charter-before-cruise-miami",
+      "statusCode": 301
+    },
+    {
+      "source": "/yacht-charter-before-cruise-miami",
+      "destination": "/experiences/yacht-charter-before-cruise-miami",
+      "statusCode": 301
+    },
+    {
+      "source": "/sandbar-yacht-charter-miami.html",
+      "destination": "/destinations/sandbar-yacht-charter-miami",
+      "statusCode": 301
+    },
+    {
+      "source": "/sandbar-yacht-charter-miami",
+      "destination": "/destinations/sandbar-yacht-charter-miami",
+      "statusCode": 301
+    },
+    {
+      "source": "/star-island-boat-tour-miami.html",
+      "destination": "/destinations/star-island-boat-tour-miami",
+      "statusCode": 301
+    },
+    {
+      "source": "/star-island-boat-tour-miami",
+      "destination": "/destinations/star-island-boat-tour-miami",
+      "statusCode": 301
+    },
+    {
+      "source": "/yacht-rental-miami-beach.html",
+      "destination": "/destinations/yacht-rental-miami-beach",
+      "statusCode": 301
+    },
+    {
+      "source": "/yacht-rental-miami-beach",
+      "destination": "/destinations/yacht-rental-miami-beach",
+      "statusCode": 301
+    },
+    {
+      "source": "/south-beach-yacht-rental.html",
+      "destination": "/destinations/south-beach-yacht-rental",
+      "statusCode": 301
+    },
+    {
+      "source": "/south-beach-yacht-rental",
+      "destination": "/destinations/south-beach-yacht-rental",
+      "statusCode": 301
+    },
+    {
+      "source": "/yacht-rental-brickell.html",
+      "destination": "/destinations/yacht-rental-brickell",
+      "statusCode": 301
+    },
+    {
+      "source": "/yacht-rental-brickell",
+      "destination": "/destinations/yacht-rental-brickell",
+      "statusCode": 301
+    },
+    {
+      "source": "/art-basel-yacht-charter-miami.html",
+      "destination": "/events/art-basel-yacht-charter-miami",
+      "statusCode": 301
+    },
+    {
+      "source": "/art-basel-yacht-charter-miami",
+      "destination": "/events/art-basel-yacht-charter-miami",
+      "statusCode": 301
+    },
+    {
+      "source": "/new-years-eve-yacht-miami.html",
+      "destination": "/events/new-years-eve-yacht-miami",
+      "statusCode": 301
+    },
+    {
+      "source": "/new-years-eve-yacht-miami",
+      "destination": "/events/new-years-eve-yacht-miami",
+      "statusCode": 301
+    },
+    {
+      "source": "/spring-break-yacht-miami.html",
+      "destination": "/events/spring-break-yacht-miami",
+      "statusCode": 301
+    },
+    {
+      "source": "/spring-break-yacht-miami",
+      "destination": "/events/spring-break-yacht-miami",
+      "statusCode": 301
+    },
+    {
+      "source": "/miami-grand-prix-yacht-charter.html",
+      "destination": "/events/miami-grand-prix-yacht-charter",
+      "statusCode": 301
+    },
+    {
+      "source": "/miami-grand-prix-yacht-charter",
+      "destination": "/events/miami-grand-prix-yacht-charter",
+      "statusCode": 301
+    },
+    {
+      "source": "/boating-license-miami-boat-rental.html",
+      "destination": "/guides/boating-license-miami-boat-rental",
+      "statusCode": 301
+    },
+    {
+      "source": "/boating-license-miami-boat-rental",
+      "destination": "/guides/boating-license-miami-boat-rental",
+      "statusCode": 301
+    },
+    {
+      "source": "/what-to-bring-yacht-charter-miami.html",
+      "destination": "/guides/what-to-bring-yacht-charter-miami",
+      "statusCode": 301
+    },
+    {
+      "source": "/what-to-bring-yacht-charter-miami",
+      "destination": "/guides/what-to-bring-yacht-charter-miami",
+      "statusCode": 301
+    },
+    {
+      "source": "/miami-sandbar-guide.html",
+      "destination": "/guides/miami-sandbar-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/miami-sandbar-guide",
+      "destination": "/guides/miami-sandbar-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/best-time-yacht-charter-miami.html",
+      "destination": "/guides/best-time-yacht-charter-miami",
+      "statusCode": 301
+    },
+    {
+      "source": "/best-time-yacht-charter-miami",
+      "destination": "/guides/best-time-yacht-charter-miami",
+      "statusCode": 301
+    },
+    {
+      "source": "/miami-yacht-rental-prices.html",
+      "destination": "/prices",
+      "statusCode": 301
+    },
+    {
+      "source": "/miami-yacht-rental-prices",
+      "destination": "/prices",
+      "statusCode": 301
+    },
+    {
+      "source": "/boat-rental-miami.html",
+      "destination": "/boat-rental-miami",
+      "statusCode": 301
+    },
+    {
+      "source": "/gallery.html",
+      "destination": "/gallery",
+      "statusCode": 301
+    },
+    {
+      "source": "/about.html",
+      "destination": "/about",
+      "statusCode": 301
+    },
+    {
+      "source": "/contact.html",
+      "destination": "/contact",
+      "statusCode": 301
+    },
+    {
+      "source": "/booking.html",
+      "destination": "/book",
+      "statusCode": 301
+    },
+    {
+      "source": "/booking",
+      "destination": "/book",
+      "statusCode": 301
+    },
+    {
+      "source": "/alquiler-de-yates-miami.html",
+      "destination": "/alquiler-de-yates-miami",
+      "statusCode": 301
+    },
+    {
+      "source": "/fiesta-en-yate-miami.html",
+      "destination": "/fiesta-en-yate-miami",
+      "statusCode": 301
+    },
+    {
+      "source": "/aluguel-de-iate-em-miami.html",
+      "destination": "/aluguel-de-iate-em-miami",
+      "statusCode": 301
+    },
+    {
+      "source": "/es",
+      "destination": "/alquiler-de-yates-miami",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt",
+      "destination": "/aluguel-de-iate-em-miami",
+      "statusCode": 301
     }
-  ]
+  ],
+  "cleanUrls": true,
+  "trailingSlash": false
 }
