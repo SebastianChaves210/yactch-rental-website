@@ -509,6 +509,7 @@ def shell(old, *, title, desc, body, lang="en", og_image=None, head_extra="", no
   <link href="/css/webflow.css" rel="stylesheet" type="text/css">
   <link href="/css/miami-yacht-collective.webflow.css" rel="stylesheet" type="text/css">
   <link href="/css/myc-theme.css" rel="stylesheet" type="text/css">
+  <link href="/css/myc-pages.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
   <link rel="preload" as="style" href="{FONTS}" onload="this.onload=null;this.rel='stylesheet'">

@@ -494,6 +494,12 @@ def main():
             css = css.rstrip() + "\n\n" + start + "\n" + block + "\n" + end + "\n"
         css_path.write_text(css, encoding="utf-8")
         report.append("css      theme block applied")
+        pages_css = (Path(__file__).parent / "ia_pages.css").read_text(encoding="utf-8")
+        pages_min = re.sub(r"/\*.*?\*/", "", pages_css, flags=re.S)
+        pages_min = re.sub(r"\s+", " ", pages_min).strip()
+        pages_min = re.sub(r"\s*([{};,>])\s*", r"\1", pages_min)
+        (REPO / "css/myc-pages.css").write_text("/* Source: seo-tools/ia_pages.css (minified on apply by ia_migrate.py) */\n" + pages_min + "\n", encoding="utf-8")
+        report.append("css      myc-pages.css written")
     print("\n".join(report))
     print(f"{'WROTE' if WRITE else 'DRY RUN'}: {len(report)} actions")
 
