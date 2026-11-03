@@ -425,7 +425,7 @@ def card(b, lang="en", heading="h3", show_blurb=True):
     meta = f'{b["length"]} ft &middot; {b["type"]}' + (f' &middot; {b["feature"]}' if b.get("feature") else "")
     name = NAMES.get(lang, {}).get(b["old"], b["name"])
     blurb = f'<p class="myc-card-blurb">{esc(b["blurb"])}</p>' if show_blurb and lang == "en" else ""
-    return f'''<article class="myc-card" data-length="{b["length"]}" data-price="{b["price"]}" data-feature="{esc((b.get("feature") or "").lower())}">
+    return f'''<article class="myc-card" data-yacht="{esc(b["name"])}" data-length="{b["length"]}" data-price="{b["price"]}" data-feature="{esc((b.get("feature") or "").lower())}">
   <a class="myc-card-media" href="{url_of(b["old"])}" tabindex="-1" aria-hidden="true"><img src="/{src}" width="{w}" height="{h}" alt="{esc(name)}" loading="lazy" decoding="async"></a>
   <div class="myc-card-body">
     <{heading} class="myc-card-title"><a href="{url_of(b["old"])}">{esc(name)}</a></{heading}>
@@ -467,6 +467,7 @@ def shell(old, *, title, desc, body, lang="en", og_image=None, head_extra="", no
     if hreflang:
         hl = "".join(f'\n  <link rel="alternate" hreflang="{code}" href="{abs_url(slug)}">' for code, slug in hreflang)
     alt = og_alt or f"{H.unescape(title).split('|')[0].strip()} — Miami Yacht Collective"
+    body_attrs = f' data-yacht="{esc(yacht["name"])}"' if yacht else ""  # read by js/tracking.js (yacht_name param)
     wf = ""
     if webflow:
         wf = '\n  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=69ae24c3024e541e58b603ce" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>\n  <script src="/js/webflow.js" type="text/javascript"></script>'
@@ -521,7 +522,7 @@ def shell(old, *, title, desc, body, lang="en", og_image=None, head_extra="", no
   <script defer src="/_vercel/insights/script.js"></script>
 {head_extra}
 </head>
-<body class="{body_class}">
+<body class="{body_class}"{body_attrs}>
   <div class="page-wrapper">
     <div class="global-scripts w-embed w-script">
       <style>

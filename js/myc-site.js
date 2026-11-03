@@ -184,9 +184,15 @@
       if (yacht && yacht.value && msg.indexOf(yacht.value) === -1 && !/\{yacht\}/.test(form.getAttribute('data-wa-template') || '')) {
         msg = msg.replace(/^Hi!/, 'Hi! I\'m interested in the ' + yacht.value + '.');
       }
-      if (typeof gtag === 'function') gtag('event', 'whatsapp_click', { page_name: location.pathname, cta_location: 'widget', transport_type: 'beacon' });
-      var win = window.open(WA + encodeURIComponent(msg), '_blank', 'noopener');
-      if (!win) location.href = WA + encodeURIComponent(msg);
+      var url = WA + encodeURIComponent(msg);
+      var win = window.open(url, '_blank', 'noopener');
+      // GA4 whatsapp_click for forms that compose a WhatsApp message (handler in /js/tracking.js)
+      if (window.mycTrack) window.mycTrack('whatsapp_click', {
+        link_location: form.closest('.myc-fallback') ? 'booking_form' : 'booking_widget',
+        link_url: url,
+        yacht_name: yacht && /^\d{2}' /.test(yacht.value) ? yacht.value : undefined  // fleet names only, not "right yacht for my group"
+      }, form);
+      if (!win) location.href = url;
     });
   });
   var dateInputs = document.querySelectorAll('input[type="date"][data-min-today]');
