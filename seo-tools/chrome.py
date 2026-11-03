@@ -22,7 +22,7 @@ T = {
                tagline="Private yacht charters in Miami with captain and crew included. One dock on the Miami River, nine yachts from 25 to 90 feet, booked direct.",
                fleet="Fleet", exp_dest="Experiences &amp; Destinations", company="Company", all_yachts="All yachts &amp; prices",
                events="Miami events", gallery="Gallery", faq="FAQ", addons="Add-ons", book_short="Book a yacht",
-               privacy="Privacy", terms="Terms", cancel="Cancellation Policy", book_now="Book now", view="View yacht",
+               book_now="Book now", view="View yacht",
                breadcrumb="Breadcrumb", dock="Departs 668 NW N River Dr, Miami River"),
     "es": dict(boats="Alquiler de lanchas", skip="Saltar al contenido", home="Inicio", yachts="Yates", experiences="Experiencias", destinations="Destinos",
                prices="Precios", guides="Guías", about="Nosotros", contact="Contacto", book="Reservar un yate", call="Llamar",
@@ -34,7 +34,7 @@ T = {
                tagline="Alquiler de yates privados en Miami con capitán y tripulación incluidos. Un muelle en el río Miami, nueve yates de 25 a 90 pies, reserva directa.",
                fleet="Flota", exp_dest="Experiencias y destinos", company="Empresa", all_yachts="Todos los yates y precios",
                events="Eventos en Miami", gallery="Galería", faq="Preguntas frecuentes", addons="Extras", book_short="Reservar",
-               privacy="Privacidad", terms="Términos", cancel="Política de cancelación", book_now="Reservar", view="Ver yate",
+               book_now="Reservar", view="Ver yate",
                breadcrumb="Ruta de navegación", dock="Sale de 668 NW N River Dr, río Miami"),
     "pt-BR": dict(boats="Aluguel de lanchas", skip="Pular para o conteúdo", home="Início", yachts="Iates", experiences="Experiências", destinations="Destinos",
                prices="Preços", guides="Guias", about="Sobre", contact="Contato", book="Reservar um iate", call="Ligar",
@@ -46,7 +46,7 @@ T = {
                tagline="Aluguel de iates privativos em Miami com capitão e tripulação inclusos. Um píer no Miami River, nove iates de 25 a 90 pés, reserva direta.",
                fleet="Frota", exp_dest="Experiências e destinos", company="Empresa", all_yachts="Todos os iates e preços",
                events="Eventos em Miami", gallery="Galeria", faq="Perguntas frequentes", addons="Extras", book_short="Reservar",
-               privacy="Privacidade", terms="Termos", cancel="Política de cancelamento", book_now="Reservar", view="Ver iate",
+               book_now="Reservar", view="Ver iate",
                breadcrumb="Navegação", dock="Sai de 668 NW N River Dr, Miami River"),
 }
 
@@ -255,11 +255,6 @@ def footer(old, lang="en"):
       </div>
       <div class="myc-wrap myc-footer-bottom">
         <p class="myc-footer-copy">&copy; {YEAR} Miami Yacht Collective</p>
-        <ul class="myc-footer-legal">
-          <li><a href="{url_of("privacy-policy")}">{t["privacy"]}</a></li>
-          <li><a href="{url_of("terms")}">{t["terms"]}</a></li>
-          <li><a href="{url_of("cancellation-policy")}">{t["cancel"]}</a></li>
-        </ul>
         <ul class="myc-footer-langs">
 {chr(10).join(langs)}
         </ul>
