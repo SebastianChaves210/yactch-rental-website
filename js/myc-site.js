@@ -162,6 +162,39 @@
   }
 
   /* ---------------- WhatsApp booking forms ---------------- */
+  // Forms marked data-lead (/book, /contact) are also e-mailed to the owner through formsubmit.co before
+  // WhatsApp opens. The POST is fire-and-forget (keepalive) so a slow or failed request never blocks WhatsApp.
+  var LEAD_ENDPOINT = 'https://formsubmit.co/ajax/sebastian.chaves2021@gmail.com';
+  var LEAD_LABELS = { yacht: 'Yacht', date: 'Date', guests: 'Guests', name: 'Name', contact: 'Phone or email', email: 'Email', phone: 'Phone', duration: 'Duration', message: 'Message' };
+  function fmtDate(v) {
+    var d = new Date(v + 'T12:00:00');
+    return isNaN(d) ? v : d.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' });
+  }
+  function sendLead(form, data, msg) {
+    if (!window.fetch) return;
+    var payload = {
+      _subject: 'New charter request - miamiyachtcollective.com',
+      _template: 'table',
+      _captcha: 'false',
+      Page: (form.getAttribute('data-page') || document.title) + ' (' + location.pathname + ')'
+    };
+    data.forEach(function (v, k) {
+      if (k === 'company') return;  // honeypot
+      v = String(v).trim();
+      if (k === 'date' && v) v = fmtDate(v);
+      payload[LEAD_LABELS[k] || k] = v;
+    });
+    var contact = payload['Phone or email'] || payload.Email || '';
+    if (/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(contact)) payload._replyto = contact;
+    payload['WhatsApp message'] = msg;
+    try {
+      fetch(LEAD_ENDPOINT, {
+        method: 'POST', mode: 'cors', keepalive: true,
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(payload)
+      }).catch(function () { /* WhatsApp already opened; nothing else to do */ });
+    } catch (err) { /* same */ }
+  }
   document.querySelectorAll('form[data-wa-form]').forEach(function (form) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
@@ -173,10 +206,7 @@
       var parts = [];
       msg = msg.replace(/\{(\w+)\}/g, function (_, k) {
         var v = (data.get(k) || '').toString().trim();
-        if (k === 'date' && v) {
-          var d = new Date(v + 'T12:00:00');
-          if (!isNaN(d)) v = d.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' });
-        }
+        if (k === 'date' && v) v = fmtDate(v);
         return v;
       });
       msg = msg.replace(/\s{2,}/g, ' ').replace(/\s([.,])/g, '$1').trim();
@@ -185,7 +215,13 @@
         msg = msg.replace(/^Hi!/, 'Hi! I\'m interested in the ' + yacht.value + '.');
       }
       var url = WA + encodeURIComponent(msg);
-      var win = window.open(url, '_blank', 'noopener');
+      if (form.hasAttribute('data-lead')) sendLead(form, data, msg);
+      // No 'noopener' feature here: with it window.open() always returns null (per spec), which made the
+      // fallback below also navigate this tab to WhatsApp. Sever the opener by hand instead.
+      var win = window.open(url, '_blank');
+      if (win) { try { win.opener = null; } catch (err) { /* cross-origin: already detached */ } }
+      var ok = form.querySelector('.myc-form-ok');
+      if (ok) ok.textContent = form.getAttribute('data-ok') || "Got it, we'll reply shortly.";
       // GA4 whatsapp_click for forms that compose a WhatsApp message (handler in /js/tracking.js)
       if (window.mycTrack) window.mycTrack('whatsapp_click', {
         link_location: form.closest('.myc-fallback') ? 'booking_form' : 'booking_widget',

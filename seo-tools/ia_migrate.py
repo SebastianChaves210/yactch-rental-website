@@ -8,6 +8,7 @@ Idempotent: a page that has already been migrated (new chrome present) is only r
 Pages that are rebuilt from scratch (yacht pages, hubs, legal, FAQ, 404, book) are produced by
 build_site.py; this script only removes their legacy source files once the new file exists.
 """
+import html as H
 import json, re, subprocess, sys
 from pathlib import Path
 
@@ -15,6 +16,8 @@ sys.path.insert(0, str(Path(__file__).parent))
 import ia
 from ia import PAGES, FLEET, SITE, REPO, rewrite_links, wa_for, og_card
 import chrome
+
+FLEET_BY_NAME = {b["name"]: b for b in FLEET}
 
 WRITE = "--write" in sys.argv
 TODAY = "2026-10-28"
@@ -35,6 +38,24 @@ WEBFLOW_RE = re.compile(r'\s*<script src="https://d3e54v103j8qbb\.cloudfront\.ne
 TRACK_RE = re.compile(r'<script src="/?js/tracking\.js"></script>')
 NEW_HEADER_RE = re.compile(r'<a class="myc-skip".*?</header>', re.S)
 NEW_FOOTER_RE = re.compile(r'<footer class="myc-footer".*?</footer>', re.S)
+CARDS_RE = re.compile(r'<div class="myc-cards">\n(?:<article class="myc-card".*?</article>\n)+</div>', re.S)
+WEBFLOW_SYNC_RE = re.compile(r'<script src="(https://d3e54v103j8qbb\.cloudfront\.net/js/jquery[^"]*|/js/webflow\.js)"')
+REVIEWS_RE = re.compile(r'[ \t]*<section class="myc-reviews".*?</section>\n', re.S)
+LEAD_RE = re.compile(r'[ \t]*<section class="myc-section myc-section-ivory myc-lead-section".*?</section>\n', re.S)
+
+
+def refresh_cards(s, lang):
+    """Re-render every fleet-card block from chrome.card() so label/price/photo edits propagate to migrated pages."""
+    def rerender(m):
+        arts = re.findall(r'<article class="myc-card".*?</article>', m.group(0), re.S)
+        olds = []
+        for a in arts:
+            slug = re.search(r'href="/yachts/([a-z0-9-]+)"', a)
+            if not slug or slug.group(1) not in ia.FLEET_BY_SLUG:
+                return m.group(0)
+            olds.append(ia.FLEET_BY_SLUG[slug.group(1)]["old"])
+        return chrome.cards(olds, lang) if olds else m.group(0)
+    return CARDS_RE.sub(rerender, s)
 
 
 def sh(*cmd):
@@ -126,6 +147,9 @@ def transform(old, s):
         s = patch_landing(old, s)
     if PAGES[old]["section"] == "guides" and old != "guides":
         s = patch_guide(old, s)
+    s = refresh_cards(s, lang)
+    # jQuery / webflow.js are only needed after parse: defer them (they keep their relative order)
+    s = WEBFLOW_SYNC_RE.sub(r'<script defer src="\1"', s)
     return s
 
 
@@ -143,6 +167,10 @@ def patch_index(s):
                       '<h2>Explore the Fleet &amp; Experiences</h2>\n          <p>Choose by place on the <a href="/destinations">destinations</a> pages &mdash; the sandbar, Star Island, Miami Beach, South Beach and Brickell &mdash; or by date on the <a href="/events">Miami event weeks</a> pages. Questions first? The <a href="/faq">FAQ</a> answers the ones we hear most, and <a href="/book">booking</a> takes one message.</p>', 1)
     if "TODO(owner): reviews" not in s:
         s = s.replace('<section class="testimonial-section">', '<!-- TODO(owner): reviews — the testimonials below predate this rebuild; confirm they are real guests, or replace with Google reviews / a Google Business Profile link. Never fabricate reviews or ratings. -->\n      <section class="testimonial-section">', 1)
+    # Google reviews (verbatim, from chrome.REVIEWS) right after the fleet grid; re-rendered on every run
+    block = "      " + chrome.reviews_block().replace("\n", "\n      ") + "\n"
+    s = REVIEWS_RE.sub("", s)
+    s = s.replace('      <section class="home-explore-section">', block + '      <section class="home-explore-section">', 1)
     return s
 
 
@@ -205,9 +233,27 @@ def patch_about_headings(s):
     return patch_about(s)
 
 
+CONTACT_TPL = "Hi! I'm {name}. I'd like to book a private yacht in Miami on {date} for {guests} guests. You can reach me at {contact}."
+
+
+def contact_lead_section():
+    return ('      <section class="myc-section myc-section-ivory myc-lead-section" id="request" aria-labelledby="myc-lead-h">\n'
+            '        <div class="myc-wrap">\n'
+            '          <div class="myc-lead">\n'
+            '            <h2 id="myc-lead-h">Send us your date</h2>\n'
+            '            <p class="myc-lead-p">Four details and we reply by WhatsApp or phone &mdash; usually in minutes &mdash; with the yachts available for your group.</p>\n'
+            '            ' + chrome.lead_form("contact", prefix="c", page="Contact", template=CONTACT_TPL).replace("\n", "\n            ") + '\n'
+            '          </div>\n'
+            '        </div>\n'
+            '      </section>\n')
+
+
 def patch_contact(s):
     s = _demote_hidden(s, "contact-details-section-legacy")
     s = re.sub(r'<h5(\s[^>]*)?>(Easy to reach|When you book|On the day)</h5>', lambda m: f'<h3{m.group(1) or ""}>{m.group(2)}</h3>', s)  # inline styles keep the look
+    # lead-capture form between the phone display and the (hidden) legacy details; re-rendered on every run
+    s = LEAD_RE.sub("", s)
+    s = s.replace('      <section class="contact-details-section-legacy"', contact_lead_section() + '      <section class="contact-details-section-legacy"', 1)
     return s
 
 

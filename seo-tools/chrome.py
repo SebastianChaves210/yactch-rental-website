@@ -22,7 +22,7 @@ T = {
                tagline="Private yacht charters in Miami with captain and crew included. One dock on the Miami River, nine yachts from 25 to 90 feet, booked direct.",
                fleet="Fleet", exp_dest="Experiences &amp; Destinations", company="Company", all_yachts="All yachts &amp; prices",
                events="Miami events", gallery="Gallery", faq="FAQ", addons="Add-ons", book_short="Book a yacht",
-               book_now="Book now", view="View yacht",
+               book_now="Check availability", view="View yacht", reviews="Read our Google reviews",
                breadcrumb="Breadcrumb", dock="Departs 668 NW N River Dr, Miami River"),
     "es": dict(boats="Alquiler de lanchas", skip="Saltar al contenido", home="Inicio", yachts="Yates", experiences="Experiencias", destinations="Destinos",
                prices="Precios", guides="Guías", about="Nosotros", contact="Contacto", book="Reservar un yate", call="Llamar",
@@ -34,7 +34,7 @@ T = {
                tagline="Alquiler de yates privados en Miami con capitán y tripulación incluidos. Un muelle en el río Miami, nueve yates de 25 a 90 pies, reserva directa.",
                fleet="Flota", exp_dest="Experiencias y destinos", company="Empresa", all_yachts="Todos los yates y precios",
                events="Eventos en Miami", gallery="Galería", faq="Preguntas frecuentes", addons="Extras", book_short="Reservar",
-               book_now="Reservar", view="Ver yate",
+               book_now="Ver disponibilidad", view="Ver yate", reviews="Lee nuestras reseñas en Google",
                breadcrumb="Ruta de navegación", dock="Sale de 668 NW N River Dr, río Miami"),
     "pt-BR": dict(boats="Aluguel de lanchas", skip="Pular para o conteúdo", home="Início", yachts="Iates", experiences="Experiências", destinations="Destinos",
                prices="Preços", guides="Guias", about="Sobre", contact="Contato", book="Reservar um iate", call="Ligar",
@@ -46,7 +46,7 @@ T = {
                tagline="Aluguel de iates privativos em Miami com capitão e tripulação inclusos. Um píer no Miami River, nove iates de 25 a 90 pés, reserva direta.",
                fleet="Frota", exp_dest="Experiências e destinos", company="Empresa", all_yachts="Todos os iates e preços",
                events="Eventos em Miami", gallery="Galeria", faq="Perguntas frequentes", addons="Extras", book_short="Reservar",
-               book_now="Reservar", view="Ver iate",
+               book_now="Ver disponibilidade", view="Ver iate", reviews="Leia nossas avaliações no Google",
                breadcrumb="Navegação", dock="Sai de 668 NW N River Dr, Miami River"),
 }
 
@@ -84,6 +84,71 @@ ICON_CHEVRON = '<svg class="myc-chev" width="12" height="12" viewBox="0 0 12 12"
 ICON_PHONE = '<svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.51 13.21l-2.51-2.51c-.9-.9-2.42-.54-2.78.63-.27.8-1.17 1.25-1.97 1.07-1.8-.45-4.22-2.78-4.66-4.66-.27-.81.27-1.7 1.07-1.97 1.17-.36 1.53-1.88.63-2.78l-2.51-2.51c-.72-.63-1.8-.63-2.42 0L.81 2.18c-1.7 1.79.18 6.55 4.4 10.76 4.21 4.21 8.97 6.19 10.76 4.4l1.7-1.7c.63-.72.63-1.79 0-2.42z"/></svg>'
 ICON_WA = '<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.5-.5.1-.2.2-.3.3-.5.1-.2 0-.4-.1-.6-.1-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4s-1.1 1-1.1 2.5 1.1 2.9 1.3 3.1c.2.2 2.2 3.3 5.3 4.6 2.5 1 3 .8 3.6.8.6 0 1.8-.7 2-1.5.3-.7.3-1.4.2-1.5-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.7.4 3.4 1.3 4.9L2 22l5.3-1.4c1.4.8 3.1 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>'
 ICON_IG = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>'
+ICON_STAR = '<svg class="myc-star" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 2.5l2.95 6.3 6.85.78-5.07 4.7 1.37 6.77L12 17.6l-6.1 3.45 1.37-6.77L2.2 9.58l6.85-.78z"/></svg>'
+
+# ---------------------------------------------------------------- Google reviews (verbatim, owner-supplied 2026-11-04)
+# Attributed only as "Google review" by owner instruction. Never edit the text; never add a review that is not on the profile.
+REVIEWS = [
+    "Booked this for a day with some friends and it ended up being the highlight of the weekend. The captain was really cool and knew all the good spots around the bay. The boat was clean and had plenty of space. Would 100% do it again.",
+    "Super smooth experience from start to finish. Communication was good, the boat showed up right on time, and everything was exactly how it was described. Really fun day out on the water.",
+    "we had a great experience with them. The boats were clean and up to date. Great Service too",
+    "Jonathan is the best host ever . I had the greatest time super safe and fun !!!",
+]
+REVIEWS_RATING = "5.0 on Google"
+
+
+def stars(label="5 out of 5 stars"):
+    return f'<span class="myc-stars" role="img" aria-label="{esc(label)}">{ICON_STAR * 5}</span>'
+
+
+def reviews_block(lang="en"):
+    """Compact 'Google reviews' section: rating, link to the profile, the verbatim reviews."""
+    t = T[lang]
+    items = "\n".join(
+        f'      <li class="myc-review">{stars()}<blockquote><p>&ldquo;{esc(r)}&rdquo;</p></blockquote><p class="myc-review-src">Google review</p></li>'
+        for r in REVIEWS)
+    return f'''<section class="myc-reviews" aria-labelledby="myc-reviews-h">
+  <div class="myc-wrap">
+    <div class="myc-reviews-head">
+      <div>
+        <h2 id="myc-reviews-h">Google reviews</h2>
+        <p class="myc-reviews-score">{stars("5.0 out of 5 stars")}<strong>{REVIEWS_RATING}</strong></p>
+      </div>
+      <a class="myc-link" href="{MAPS_URL}" target="_blank" rel="noopener">{t["reviews"]} <span aria-hidden="true">&rarr;</span></a>
+    </div>
+    <ul class="myc-reviews-list">
+{items}
+    </ul>
+  </div>
+</section>'''
+
+
+# ---------------------------------------------------------------- lead form (/book, /contact)
+LEAD_OK = "Got it, we'll reply shortly."
+
+
+def lead_form(old, *, prefix, page, template, yacht_options=None, button="Send on WhatsApp"):
+    """Trimmed booking request form: [yacht] date, guests, name, phone-or-email.
+
+    Submit (js/myc-site.js): POST the fields to formsubmit.co, open WhatsApp with the composed message,
+    show LEAD_OK inline. `data-lead` marks the forms that are e-mailed; the yacht-page widgets are not.
+    """
+    p = prefix
+    yacht = ""
+    if yacht_options:
+        yacht = (f'\n  <label for="{p}-yacht">Yacht</label>\n  <select id="{p}-yacht" name="yacht">\n'
+                 f'    <option value="right yacht for my group">Recommend one for my group</option>\n{yacht_options}\n  </select>')
+    return f'''<form class="myc-lead-form" data-wa-form data-lead data-page="{esc(page)}" data-ok="{esc(LEAD_OK)}" data-wa-template="{esc(template)}">{yacht}
+  <div class="myc-grid2">
+    <div><label for="{p}-date">Date</label><input type="date" id="{p}-date" name="date" required data-min-today></div>
+    <div><label for="{p}-guests">Guests</label><input type="number" id="{p}-guests" name="guests" min="1" inputmode="numeric" placeholder="8" required></div>
+  </div>
+  <label for="{p}-name">Name</label><input type="text" id="{p}-name" name="name" autocomplete="name" required>
+  <label for="{p}-contact">Phone or email</label><input type="text" id="{p}-contact" name="contact" autocomplete="on" placeholder="So we can reply" required>
+  <label class="myc-hp" for="{p}-company">Leave this field empty<input type="text" id="{p}-company" name="company" tabindex="-1" autocomplete="off"></label>
+  <button type="submit" class="myc-btn myc-btn-wa">{ICON_WA}{button}</button>
+  <p class="myc-form-ok" role="status" aria-live="polite"></p>
+</form>'''
 
 
 def esc(s):
@@ -215,11 +280,12 @@ def footer(old, lang="en"):
           <a href="{url_of(lang_target(old, lang)) if lang != "en" else "/"}" class="myc-footer-logo" aria-label="Miami Yacht Collective"><img src="{LOGO}" width="420" height="420" alt="Miami Yacht Collective" loading="lazy" decoding="async"></a>
           <p class="myc-footer-tagline">{t["tagline"]}</p>
           <address class="myc-footer-address">
-            <a href="{MAPS_URL}" target="_blank" rel="noopener">{ADDRESS_LINE}<br>{ADDRESS_CITY}</a>
+            <span>{ADDRESS_LINE}<br>{ADDRESS_CITY}</span>
             <a href="{TEL}">{PHONE_DISPLAY}</a>
             <a href="{wa}" target="_blank" rel="noopener">WhatsApp</a>
             <a href="mailto:{EMAIL}">{EMAIL}</a>
             <!-- TODO(owner): a branded @miamiyachtcollective.com address is recommended over the current one -->
+            <a href="{MAPS_URL}" target="_blank" rel="noopener" class="myc-footer-reviews">{ICON_STAR}{t["reviews"]}</a>
           </address>
         </div>
         <nav class="myc-footer-col" aria-labelledby="myc-f-fleet">
@@ -247,7 +313,6 @@ def footer(old, lang="en"):
             <li><a href="{url_of("gallery")}">{t["gallery"]}</a></li>
             <li><a href="{url_of("faq")}">{t["faq"]}</a></li>
             <li><a href="{url_of("add-ons")}">{t["addons"]}</a></li>
-            <!-- TODO(owner): Reviews page link goes here once real reviews or a Google Business Profile URL are supplied -->
             <li><a href="{url_of("contact")}">{t["contact"]}</a></li>
             <li><a href="{url_of("booking")}">{t["book_short"]}</a></li>
           </ul>
@@ -470,7 +535,7 @@ def shell(old, *, title, desc, body, lang="en", og_image=None, head_extra="", no
     body_attrs = f' data-yacht="{esc(yacht["name"])}"' if yacht else ""  # read by js/tracking.js (yacht_name param)
     wf = ""
     if webflow:
-        wf = '\n  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=69ae24c3024e541e58b603ce" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>\n  <script src="/js/webflow.js" type="text/javascript"></script>'
+        wf = '\n  <script defer src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=69ae24c3024e541e58b603ce" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>\n  <script defer src="/js/webflow.js" type="text/javascript"></script>'
     return f'''<!DOCTYPE html>
 <html lang="{lang}">
 <head>

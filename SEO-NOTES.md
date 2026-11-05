@@ -4,6 +4,21 @@ Running log so future sessions build on this instead of repeating it. One lesson
 
 ---
 
+## 2026-11-04 session (Claude, content/perf review pass — branch `ia-overhaul-2026-10`, not committed)
+
+### Summary
+Pricing on the nine yacht pages went from three cards (4h price, "6 hours Ask for quote", "8 hours Ask for quote") to one price card plus "Longer charters available, ask for a quote" — no 6h/8h figures exist anywhere in the site data, so the placeholders came out rather than being filled. Every "Book now" label became "Check availability" (chrome `T["book_now"]`, homepage cards, sticky bar; ES/PT "Ver disponibilidad"/"Ver disponibilidade"). The homepage got the missing 25' Yamaha 255XD card and each card's "Luxury yacht in Miami, NNft" subtitle became one concrete detail from `FLEET` amenities. Mobile speed: jQuery/webflow.js are `defer` on the pages that still load them, yacht pages preload their first gallery photo, About/Gallery preload the CSS hero photo, the three autoplay videos inside About's hidden legacy section no longer download, the Gallery hero video is `preload="none"`.
+
+### Lesson: landing-page fleet cards were inserted once and never refreshed
+`patch_landing()` only inserted `chrome.cards()` when the page had none, so the 23 landing pages kept whatever `card()` rendered on 2026-10-28 (no `data-yacht`, old label). `ia_migrate.py` now re-renders every `myc-cards` block from the boat links inside it; label/price/photo edits propagate on the next `--write`.
+
+### Flagged, not changed (needs the owner)
+- Homepage Webflow "Club / Fishing / Diving / Tours / Sailing" cards were template filler claiming services MYC does not offer; the section is now `hidden` with a TODO comment, not deleted.
+- Homepage headings still carry template copy ("Crafting unforgettable journeys at sea with unmatched elegance…", "Your journey, your way — from bespoke menus to custom itineraries…" — catering is unconfirmed). Headings are not changed without instruction.
+- The four homepage testimonials remain unverified (existing TODO).
+- `about.html` shows the full-size `deepblue-1.jpg` (408 KB) below the fold; an 800px copy exists but `src` paths are not changed without instruction.
+- Party photos (`photos/party/`) are Pinterest/Instagram sourced (existing OWNER-TODO entry) and some filenames contain other businesses' names and URL-unsafe characters.
+
 ## 2026-10-28 session (Claude, information-architecture rebuild — branch `ia-overhaul-2026-10`, local dev server only, not pushed)
 
 ### Summary

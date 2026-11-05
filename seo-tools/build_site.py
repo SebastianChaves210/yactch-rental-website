@@ -108,7 +108,11 @@ def yacht_page(b):
     trail = section_crumb(old)
     gallery = c["gallery"]
     n = len(gallery)
-    lede = H.unescape(c["summary"]) if c.get("summary") else (b["blurb"] if b["blurb"].endswith(".") else b["blurb"] + ".")
+    # Lede: the boat's own blurb plus what is on board (from FLEET amenities). The old fleet_content "summary"
+    # was the same "Experience luxury aboard … perfect for unforgettable Miami charters" sentence on every page.
+    blurb = b["blurb"] if b["blurb"].endswith(".") else b["blurb"] + "."
+    first_two = [a[0].lower() + a[1:] for a in b["amenities"][:2]]
+    lede = f"{blurb} On board: {' and '.join(first_two)}."
     if old == "yamaha-255xd":
         lede = "The smallest, quickest boat in the fleet: a 25-foot jet boat built for speed, spray and sandbar time, with your captain included."
 
@@ -207,7 +211,10 @@ def yacht_page(b):
                                {"@type": "PropertyValue", "name": "Crew", "value": f"Licensed captain + {b['crew']} crew"},
                                {"@type": "PropertyValue", "name": "Departure", "value": "668 NW N River Dr, Miami, FL 33136"}],
     }
-    head_extra = "\n".join([jsonld(service), breadcrumb_jsonld(trail), faq_jsonld(faq), org_jsonld()])
+    # the first gallery photo is the page's hero image: preload it so it is not queued behind the CSS
+    first_thumb, _ = thumb(gallery[0]["src"])
+    preload = f'<link rel="preload" as="image" href="/{first_thumb}" fetchpriority="high">'
+    head_extra = "\n".join([preload, jsonld(service), breadcrumb_jsonld(trail), faq_jsonld(faq), org_jsonld()])
 
     wa_tpl = f"Hi! I'd like to book the {name} on {{date}} for {{guests}} guests, {{duration}}. Is it available?"
     wa_tpl2 = f"Hi! I'm {{name}}. I'd like to book the {name} on {{date}} for {{guests}} guests. Email: {{email}}. Phone: {{phone}}. {{message}}"
@@ -235,12 +242,11 @@ def yacht_page(b):
           </section>
           <section id="pricing">
             <h2>Pricing</h2>
-            <div class="myc-tiers">
-              <div class="myc-tier is-main"><span class="d">4 hours</span><span class="p">{price}</span><span class="n">Standard private charter, captain and crew included</span></div>
-              <div class="myc-tier"><span class="d">6 hours</span><span class="p">Ask for quote</span><span class="n">Longer days are quoted on request</span></div>
-              <div class="myc-tier"><span class="d">8 hours</span><span class="p">Ask for quote</span><span class="n">Longer days are quoted on request</span></div>
+            <div class="myc-tiers is-single">
+              <div class="myc-tier is-main"><span class="d">4 hours</span><span class="p">{price}</span><span class="n">Private charter, captain and crew included</span></div>
             </div>
-            <!-- TODO(owner): confirm 6-hour and 8-hour rates for the {esc(name)} (only the 4-hour rate exists today) -->
+            <p class="myc-tier-more">Longer charters available, ask for a quote.</p>
+            <!-- TODO(owner): only the 4-hour rate exists today; add 6-hour / 8-hour tiers here once the rates are confirmed -->
             <h3>What the price includes</h3>
             <ul class="myc-check">
 {inc_html}
@@ -293,8 +299,7 @@ def yacht_page(b):
                 <div><label for="w-duration">Duration</label>
                   <select id="w-duration" name="duration">
                     <option value="4 hours">4 hours — {price}</option>
-                    <option value="6 hours (please quote)">6 hours — ask for quote</option>
-                    <option value="8 hours (please quote)">8 hours — ask for quote</option>
+                    <option value="longer than 4 hours (please quote)">Longer charter — ask for a quote</option>
                   </select>
                 </div>
               </div>
@@ -736,8 +741,7 @@ def book_page():
     check_lengths(title, desc)
     trail = section_crumb(old)
     opts = "\n".join(f'<option value="{esc(b["name"])}">{esc(b["name"])} — {price_str(b)} / 4 h</option>' for b in FLEET)
-    tpl = "Hi! I'd like to book the {yacht} on {date} for {guests} guests, {duration}. Is it available?"
-    tpl2 = "Hi! I'm {name}. I'd like to book the {yacht} on {date} for {guests} guests. Email: {email}. Phone: {phone}. {message}"
+    tpl = "Hi! I'm {name}. I'd like to book the {yacht} on {date} for {guests} guests. You can reach me at {contact}. Is it available?"
     body = f'''
       <section class="myc-yhero">
         <div class="myc-wrap">
@@ -768,6 +772,7 @@ def book_page():
             {cards(["isabella", "deep-blue", "azimut-lchaim"])}
             <p style="margin-top:18px"><a class="myc-link" href="/yachts">Compare all nine yachts <span aria-hidden="true">&rarr;</span></a> &nbsp;&middot;&nbsp; <a class="myc-link" href="/prices">See every price</a></p>
           </section>
+          {chrome.reviews_block()}
           <section id="faq">
             {faq_block([
                 ("How fast do you confirm?", "Most charters are confirmed in under 10 minutes by phone or WhatsApp. We check availability live, match the yacht to your group and hold the date before the call ends."),
@@ -779,49 +784,10 @@ def book_page():
         <aside class="myc-yaside" aria-label="Booking request">
           <div class="myc-widget">
             <div class="myc-widget-head"><span class="price" style="font-size:1.5rem">Request a date</span></div>
-            <p class="inc">Opens WhatsApp with your details filled in</p>
-            <form data-wa-form data-wa-template="{esc(tpl)}">
-              <label for="b-yacht">Yacht</label>
-              <select id="b-yacht" name="yacht">
-                <option value="right yacht for my group">Recommend one for my group</option>
-{opts}
-              </select>
-              <label for="b-date">Date</label>
-              <input type="date" id="b-date" name="date" required data-min-today>
-              <div class="myc-grid2">
-                <div><label for="b-guests">Guests</label><input type="number" id="b-guests" name="guests" min="1" inputmode="numeric" placeholder="8" required></div>
-                <div><label for="b-duration">Duration</label>
-                  <select id="b-duration" name="duration">
-                    <option value="4 hours">4 hours</option>
-                    <option value="6 hours (please quote)">6 hours — ask for quote</option>
-                    <option value="8 hours (please quote)">8 hours — ask for quote</option>
-                  </select>
-                </div>
-              </div>
-              <button type="submit" class="myc-btn myc-btn-wa">{ICON_WA}Send on WhatsApp</button>
-            </form>
+            <p class="inc">We get your details by email and WhatsApp opens with the message ready to send</p>
+            {chrome.lead_form(old, prefix="b", page="Book", template=tpl, yacht_options=opts)}
             <a class="myc-btn myc-btn-ink" href="{TEL}">{ICON_PHONE}Call {PHONE_DISPLAY}</a>
             <p class="myc-widget-note">Lines open 24 hours, 7 days a week. English and Spanish.</p>
-            <details class="myc-fallback">
-              <summary>Prefer to send your details?</summary>
-              <!-- TODO(owner): there is no form handler on this site; this form composes a WhatsApp message until one is connected -->
-              <form data-wa-form data-wa-template="{esc(tpl2)}">
-                <label for="f-name">Name</label><input type="text" id="f-name" name="name" autocomplete="name" required>
-                <label for="f-email">Email</label><input type="email" id="f-email" name="email" autocomplete="email" required>
-                <label for="f-phone">Phone</label><input type="tel" id="f-phone" name="phone" autocomplete="tel" required>
-                <label for="f-yacht">Yacht</label>
-                <select id="f-yacht" name="yacht"><option value="right yacht for my group">Recommend one for my group</option>
-{opts}
-                </select>
-                <div class="myc-grid2">
-                  <div><label for="f-date">Date</label><input type="date" id="f-date" name="date" required data-min-today></div>
-                  <div><label for="f-guests">Guests</label><input type="number" id="f-guests" name="guests" min="1" required></div>
-                </div>
-                <label for="f-message">Message</label><textarea id="f-message" name="message" rows="3" placeholder="Occasion, start time, anything we should know"></textarea>
-                <label class="myc-hp" for="f-company">Leave this field empty<input type="text" id="f-company" name="company" tabindex="-1" autocomplete="off"></label>
-                <button type="submit" class="myc-btn myc-btn-ink">Send via WhatsApp</button>
-              </form>
-            </details>
           </div>
         </aside>
       </div>

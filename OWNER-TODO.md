@@ -12,7 +12,7 @@ The site was restructured on branch `ia-overhaul-2026-10` (not pushed, not live)
 - [ ] **Reviews.** No reviews page or ratings were created because there is no verified source. Send real guest reviews or your Google Business Profile URL and `/reviews`, a reviews block on the homepage and yacht pages, and the footer link go in. The four homepage testimonials (Ariana Del Toro, Jake Holloway, Sofia Castaneda, Ethan Calloway) predate this work: confirm they are real guests or they should come down.
 
 ### Facts missing from the yacht pages (every yacht shows "ask us" until supplied)
-- [ ] **6-hour and 8-hour rates** per yacht (the pricing block shows 4 hours with the price, 6h and 8h as "Ask for quote").
+- [ ] **6-hour and 8-hour rates** per yacht. Since 2026-11-04 the pricing block shows only the 4-hour price plus "Longer charters available, ask for a quote"; the booking widgets offer "Longer charter — ask for a quote". Send the 6h/8h figures and the tiers go back in.
 - [ ] **What is not included**: fuel, gratuity, dockage, water toys. The pages only say the 4-hour rate is the same on every date.
 - [ ] **Builder, model, year, cabins and heads** per yacht for the Specifications list (only what the photos show is published; the Isabella, L'chaim and Deep Blue cabin lines come from the existing "On board" copy).
 - [ ] **Maximum guests per yacht.** The stat strip says "Based on your needs", the booking widget's guest field is uncapped and the fleet filter has no "guests" option until you supply the numbers (CLAUDE.md still forbids numeric capacities).
