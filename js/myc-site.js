@@ -273,4 +273,13 @@
     });
     apply();
   }
+
+  /* ---------------- flash deals popup loader (campaign ends 2026-11-10 23:30 ET) ---------------- */
+  if (location.pathname.indexOf('/pay') !== 0 && !document.querySelector('.myc-404') &&
+      Date.now() < new Date('2026-11-10T23:30:00-05:00').getTime()) {
+    var dealScript = document.createElement('script');
+    dealScript.src = '/js/deal-popup.js';
+    dealScript.defer = true;
+    document.head.appendChild(dealScript);
+  }
 })();
