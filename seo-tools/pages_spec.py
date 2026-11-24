@@ -10,7 +10,7 @@ BOATS = {
     "anvera":        ("62' Anvera", "$1,700 / 4 hours"),
     "azimut":        ("55' Azimut", "$1,600 / 4 hours"),
     "isabella":      ("48' Isabella with Jet Ski", "$1,499 / 4 hours"),
-    "maxum":         ("46' Maxum", "$1,000 / 4 hours"),
+    "maxum":         ("46' Maxum", "$1,500 / 4 hours"),
     "axopar-brabus": ("28' Axopar Brabus", "$1,200 / 4 hours"),
     "yamaha-255xd":  ("25' Yamaha 255XD", "$1,000 / 4 hours"),
 }
@@ -21,7 +21,7 @@ BOATS_ES = {
     "anvera":        ("Anvera de 62'", "$1,700 / 4 horas"),
     "azimut":        ("Azimut de 55'", "$1,600 / 4 horas"),
     "isabella":      ("Isabella de 48' con jet ski", "$1,499 / 4 horas"),
-    "maxum":         ("Maxum de 46'", "$1,000 / 4 horas"),
+    "maxum":         ("Maxum de 46'", "$1,500 / 4 horas"),
     "axopar-brabus": ("Axopar Brabus de 28'", "$1,200 / 4 horas"),
     "yamaha-255xd":  ("Yamaha 255XD de 25'", "$1,000 / 4 horas"),
 }
@@ -32,7 +32,7 @@ BOATS_PT = {
     "anvera":        ("Anvera de 62 pés", "$1,700 / 4 horas"),
     "azimut":        ("Azimut de 55 pés", "$1,600 / 4 horas"),
     "isabella":      ("Isabella de 48 pés com jet ski", "$1,499 / 4 horas"),
-    "maxum":         ("Maxum de 46 pés", "$1,000 / 4 horas"),
+    "maxum":         ("Maxum de 46 pés", "$1,500 / 4 horas"),
     "axopar-brabus": ("Axopar Brabus de 28 pés", "$1,200 / 4 horas"),
     "yamaha-255xd":  ("Yamaha 255XD de 25 pés", "$1,000 / 4 horas"),
 }
@@ -138,7 +138,7 @@ PAGES.append(dict(
     gallery=["lchaim_fisher", "lchaim_bow", "anvera_brickell", "isabella_bow"],
     table=[("isabella", "Flybridge views and a jet ski at the swim stop"), ("axopar-brabus", "Fast sport boat for a couple or small group"), ("maxum", "Best-value yacht for the islands loop"), ("azimut-lchaim", "Three decks for a group that wants the full cruise"), ("deep-blue", "The 90-foot superyacht with a jacuzzi on deck")],
     faq=[
-        ("How much does a private Star Island boat tour cost?", "From $1,000 for 4 hours on the 46' Maxum or the 25' Yamaha 255XD, with a licensed captain and crew included. The 48' Isabella with a jet ski is $1,499 for 4 hours, and the fleet runs up to the 90' Deep Blue at $4,999."),
+        ("How much does a private Star Island boat tour cost?", "From $1,000 for 4 hours on the 25' Yamaha 255XD, with a licensed captain and crew included. The 46' Maxum is $1,500, the 48' Isabella with a jet ski is $1,499 for 4 hours, and the fleet runs up to the 90' Deep Blue at $4,999."),
         ("Can you see the celebrity homes from the boat?", "Yes. The homes on Star, Palm and Hibiscus Islands face the water, so a boat is the only way to see them up close. Your captain runs the loop at a slow pace so you can take it in."),
         ("How long is the tour?", "Every charter is 4 hours. The Star Island loop takes a fraction of that, so the rest of the time is yours: cruise the skyline, swim off the boat, or time the return for sunset."),
         ("Where does the boat leave from?", "Our dock on the Miami River at 668 NW N River Dr, about 10 minutes from Brickell and 15 from Miami Beach. Star Island is a short cruise from the river mouth."),
@@ -220,7 +220,7 @@ PAGES.append(dict(
     body=f"""
 <h2>Basel week on the water</h2>
 <p>For one week in December the whole art world is in Miami Beach, and the best seat in the city is on a boat. A private yacht gives your group a few hours away from the fair crowds, with the skyline, the islands and the sunset as the backdrop. Collectors use it to host clients, galleries use it to entertain, and groups of friends use it to turn an afternoon off into the best day of the trip.</p>
-<p>We do not add an event surcharge. Art Basel week is priced like any other week: every charter is 4 hours with a licensed captain and crew included, from $1,000 on the 46' Maxum to $4,999 on the 90' Deep Blue with its jacuzzi.</p>
+<p>We do not add an event surcharge. Art Basel week is priced like any other week: every charter is 4 hours with a licensed captain and crew included, from $1,000 on the 25' Yamaha 255XD ($1,500 on the 46' Maxum) to $4,999 on the 90' Deep Blue with its jacuzzi.</p>
 
 <h2>Art Basel Miami Beach 2026 dates</h2>
 <ul>
@@ -275,7 +275,7 @@ PAGES.append(dict(
     body=f"""
 <h2>Your own boat, your own countdown</h2>
 <p>New Year's Eve in Miami means ticketed cruises that sell hundreds of seats and sell out early. A private charter is the opposite: one yacht, your group, your music, and a crew whose only job that night is you. The skyline, the causeway lights and the bay are the same view the big boats sell by the seat, and you get the deck to yourselves.</p>
-<p>We charge the same price on December 31 as on any other night: every charter is 4 hours with a licensed captain and crew included, from $1,000 on the 46' Maxum to $4,999 on the 90' Deep Blue with Jacuzzi.</p>
+<p>We charge the same price on December 31 as on any other night: every charter is 4 hours with a licensed captain and crew included, from $1,000 on the 25' Yamaha 255XD ($1,500 on the 46' Maxum) to $4,999 on the 90' Deep Blue with Jacuzzi.</p>
 
 <h2>Two ways to spend the night</h2>
 <ul>
@@ -330,7 +330,7 @@ PAGES.append(dict(
     body=f"""
 <h2>Your spring break boat, not a ticket</h2>
 <p>Every March the party boats in Miami sell tickets by the hundred. A private charter is a different day: one yacht, your group, your playlist on the speakers, a swim stop at the sandbar and a licensed captain and crew who handle everything else. You split the cost of the boat across the group rather than paying per head, and nobody you did not invite is on board.</p>
-<p>Same price as any other week. Every charter is 4 hours with captain and crew included, from $1,000 on the 46' Maxum or 25' Yamaha 255XD to $4,999 on the 90' Deep Blue.</p>
+<p>Same price as any other week. Every charter is 4 hours with captain and crew included, from $1,000 on the 25' Yamaha 255XD ($1,500 on the 46' Maxum) to $4,999 on the 90' Deep Blue.</p>
 
 <h2>The March calendar</h2>
 <ul>
@@ -723,7 +723,7 @@ PAGES.append(dict(
     body=f"""
 <h2>Su fiesta, su yate, su gente</h2>
 <p>Una fiesta en yate en Miami no tiene que ser un barco con boletos y cien desconocidos. Con nosotros el yate es suyo: su grupo, su música en los altavoces, su ruta por la bahía de Biscayne y un capitán y tripulación con licencia que se ocupan del barco. Usted celebra; nosotros navegamos.</p>
-<p>Reservamos y atendemos en español. Todos los paseos son de 4 horas con capitán y tripulación incluidos, desde $1,000 en el Maxum de 46' hasta $4,999 en el Deep Blue de 90' con jacuzzi.</p>
+<p>Reservamos y atendemos en español. Todos los paseos son de 4 horas con capitán y tripulación incluidos, desde $1,000 en el Yamaha 255XD de 25' ($1,500 en el Maxum de 46') hasta $4,999 en el Deep Blue de 90' con jacuzzi.</p>
 
 <h2>Celebraciones que organizamos</h2>
 <ul>

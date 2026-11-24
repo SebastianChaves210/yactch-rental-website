@@ -75,7 +75,7 @@ PAGES = {
     "anvera": ("anvera", "62 ft · Luxury yacht", "62' Anvera", "From $1,700 / 4 hours  ·  " + STD),
     "azimut": ("azimut", "55 ft · Motor yacht", "55' Azimut", "From $1,600 / 4 hours  ·  " + STD),
     "isabella": ("isabella", "48 ft · Jet ski included", "48' Isabella with Jet\u00a0Ski", "From $1,499 / 4 hours  ·  " + STD),
-    "maxum": ("maxum", "46 ft · Motor yacht", "46' Maxum", "From $1,000 / 4 hours  ·  " + STD),
+    "maxum": ("maxum", "46 ft · Motor yacht", "46' Maxum", "From $1,500 / 4 hours  ·  " + STD),
     "28-axopar-brabus": ("axopar", "28 ft · Brabus Edition", "28' Axopar Brabus", "From $1,200 / 4 hours  ·  " + STD),
     "25-yamaha-255xd": ("yamaha", "25 ft · Jet boat", "25' Yamaha 255XD", "From $1,000 / 4 hours  ·  " + STD),
     # occasions
