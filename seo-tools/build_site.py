@@ -357,7 +357,7 @@ def fleet_hub():
     faq = [
         ("How much does it cost to rent a yacht in Miami?", "Our private charters start at $1,000 for 4 hours on the 25' Yamaha 255XD, and the 46' Maxum is $1,500. Mid-size 55–62 ft yachts run $1,600–$1,700 for 4 hours, 65–75 ft yachts are $3,000, and the 90-foot Deep Blue with Jacuzzi is $4,999 for 4 hours — captain and crew always included. See the <a href=\"/prices\">full price guide</a>."),
         ("What's included in the price?", "Every charter includes the yacht, a licensed captain and professional crew. You never drive the boat yourself, and nobody in your group needs a boating license."),
-        ("Which yacht is right for my group?", "Small, fast groups take the 25' Yamaha 255XD or the 28' Axopar Brabus. Birthdays and bachelorettes usually land on the 46' Maxum, the 48' Isabella with Jet Ski or the 55' Azimut. Milestone celebrations and client days go to the 62' Anvera, the 65' Azimut L'chaim and the 75' Ferretti, and once-only events to the 90' Deep Blue. Tell us the occasion and we'll match the boat."),
+        ("Which yacht is right for my group?", "Small, fast groups take the 25' Yamaha 255XD or the 28' Axopar Brabus. Birthdays and bachelorettes usually land on the 46' Maxum, the 48' Isabella with Jet Ski or the 55' Azimut. Milestone celebrations and client days go to the 62' Anvera, the 65' Azimut L'chaim and the 75' Aicon, and once-only events to the 90' Deep Blue. Tell us the occasion and we'll match the boat."),
         ("Where do charters depart from?", f"From our dock at {DOCK_LONG}. From there you cruise down the river into Biscayne Bay."),
     ]
     table_rows = "\n".join(
@@ -414,7 +414,7 @@ def fleet_hub():
           <h2>How to choose</h2>
           <p><strong>Fast and small.</strong> The <a href="/yachts/25-yamaha-255xd">25' Yamaha 255XD</a> and the <a href="/yachts/28-axopar-brabus">28' Axopar Brabus Edition</a> are day boats for couples and small groups who want speed, spray and shallow sandbar spots the big yachts pass by.</p>
           <p><strong>The classic yacht day.</strong> The <a href="/yachts/46-maxum">46' Maxum</a> is a $1,500 open-deck yacht for groups, the <a href="/yachts/48-isabella">48' Isabella</a> brings a jet ski along, and the <a href="/yachts/55-azimut">55' Azimut</a> and <a href="/yachts/62-anvera">62' Anvera</a> add Italian lines and a sportier ride. These are the boats most birthdays, bachelorettes and sunset cruises book.</p>
-          <p><strong>When the occasion matters.</strong> The <a href="/yachts/65-azimut-lchaim">65' Azimut L'chaim</a> and the <a href="/yachts/75-ferretti">75' Ferretti</a> give a group three decks and real yacht presence at $3,000. The <a href="/yachts/90-deep-blue">90' Deep Blue with Jacuzzi</a> is the headline boat for corporate events, big birthdays and once-only celebrations.</p>
+          <p><strong>When the occasion matters.</strong> The <a href="/yachts/65-azimut-lchaim">65' Azimut L'chaim</a> and the <a href="/yachts/75-aicon">75' Aicon</a> give a group three decks and real yacht presence at $3,000. The <a href="/yachts/90-deep-blue">90' Deep Blue with Jacuzzi</a> is the headline boat for corporate events, big birthdays and once-only celebrations.</p>
           <p>Not sure? Tell us the date, the group and the occasion on <a href="{wa_for(old)}" target="_blank" rel="noopener">WhatsApp</a> or by phone and we'll recommend the boat. Browse by occasion on the <a href="/experiences">experiences</a> pages or by where you want to go on the <a href="/destinations">destinations</a> pages.</p>
           {faq_block(faq)}
           {cta_band("Not sure which yacht? Ask us.", "Call or WhatsApp with your date and group size &mdash; we check live availability and match the boat to the occasion, 24/7.", old)}
@@ -543,7 +543,7 @@ def events_hub():
       <section class="myc-section myc-section-ivory">
         <div class="myc-wrap">
           <div class="myc-section-head"><h2>The yachts groups book for event weeks</h2><a class="myc-link" href="/yachts">See the full fleet <span aria-hidden="true">&rarr;</span></a></div>
-          {cards(["deep-blue", "ferretti", "azimut-lchaim", "isabella"])}
+          {cards(["deep-blue", "aicon", "azimut-lchaim", "isabella"])}
         </div>
       </section>
       <section class="myc-section">
@@ -590,8 +590,8 @@ def faq_page():
             ("What happens if the weather turns?", "Your captain makes the call on the day based on the forecast and conditions on the bay. Ask us about rescheduling terms when you book. <!-- TODO(owner): confirm the weather / rescheduling policy -->"),
         ]),
         ("fleet", "The fleet", [
-            ("Which yacht is right for my group?", "Small, fast groups take the 25' Yamaha 255XD or the 28' Axopar Brabus. Birthdays and bachelorettes usually land on the 46' Maxum, the 48' Isabella with Jet Ski or the 55' Azimut. Milestone celebrations and client days go to the 62' Anvera, the 65' Azimut L'chaim and the 75' Ferretti, and once-only events to the 90' Deep Blue with Jacuzzi. Browse <a href=\"/yachts\">all nine yachts</a>."),
-            ("Is there a bathroom on board?", "The 48' Isabella, 65' Azimut L'chaim, 75' Ferretti and 90' Deep Blue have a bathroom below deck. Ask when you book and we will match the boat to your group."),
+            ("Which yacht is right for my group?", "Small, fast groups take the 25' Yamaha 255XD or the 28' Axopar Brabus. Birthdays and bachelorettes usually land on the 46' Maxum, the 48' Isabella with Jet Ski or the 55' Azimut. Milestone celebrations and client days go to the 62' Anvera, the 65' Azimut L'chaim and the 75' Aicon, and once-only events to the 90' Deep Blue with Jacuzzi. Browse <a href=\"/yachts\">all nine yachts</a>."),
+            ("Is there a bathroom on board?", "The 48' Isabella, 65' Azimut L'chaim and 90' Deep Blue have a bathroom below deck. Ask when you book and we will match the boat to your group."),
             ("Which yacht comes with a jet ski?", "The <a href=\"/yachts/48-isabella\">48' Isabella</a>. The jet ski is included in the $1,499 charter, so half the group can be on the water while the other half holds the deck."),
             ("Which yacht has the Jacuzzi?", "The <a href=\"/yachts/90-deep-blue\">90' Deep Blue</a>, the largest yacht in the fleet, at $4,999 for 4 hours."),
             ("How many guests can each yacht take?", "Tell us your group size when you book and we'll match the right yacht to it. <!-- TODO(owner): publish the maximum guest count per yacht when confirmed -->"),

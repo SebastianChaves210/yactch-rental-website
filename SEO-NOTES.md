@@ -26,7 +26,7 @@ The flat Webflow export (every page a root `.html`) became a sectioned site with
 
 ### URL map (old → final)
 - `/` stays. `yacht.html` → `/yachts`. `services.html` → `/experiences` (`services.html#events` → `/events`). `guides.html` → `/guides`.
-- Yachts: `deep-blue` → `/yachts/90-deep-blue`, `ferretti` → `/yachts/75-ferretti`, `azimut-lchaim` → `/yachts/65-azimut-lchaim`, `anvera` → `/yachts/62-anvera`, `azimut` → `/yachts/55-azimut`, `isabella` → `/yachts/48-isabella`, `maxum` → `/yachts/46-maxum`, `axopar-brabus` → `/yachts/28-axopar-brabus`, `yamaha-255xd` → `/yachts/25-yamaha-255xd`.
+- Yachts: `deep-blue` → `/yachts/90-deep-blue`, `aicon` → `/yachts/75-aicon` (was `ferretti` → `/yachts/75-ferretti` until 2026-11-27), `azimut-lchaim` → `/yachts/65-azimut-lchaim`, `anvera` → `/yachts/62-anvera`, `azimut` → `/yachts/55-azimut`, `isabella` → `/yachts/48-isabella`, `maxum` → `/yachts/46-maxum`, `axopar-brabus` → `/yachts/28-axopar-brabus`, `yamaha-255xd` → `/yachts/25-yamaha-255xd`.
 - Experiences (slug kept, nested): birthday, bachelorette, bachelor, quinceañera, yacht-party, party-boat-rental, proposal, wedding, private-sunset-cruise, corporate, family, yacht-photoshoot, yacht-charter-before-cruise → `/experiences/<slug>`.
 - Destinations: sandbar-yacht-charter-miami, star-island-boat-tour-miami, yacht-rental-miami-beach, south-beach-yacht-rental, yacht-rental-brickell → `/destinations/<slug>` (breadcrumbs and BreadcrumbList now say Destinations, not Experiences).
 - Events: art-basel, new-years-eve, spring-break, miami-grand-prix → `/events/<slug>`.

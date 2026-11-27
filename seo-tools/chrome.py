@@ -74,9 +74,9 @@ DEST_LABELS = {
 EXP_TARGET = {"es": {"yacht-party-miami": "fiesta-en-yate-miami"}}
 # yacht names in the ES / PT menus
 NAMES = {
-    "es": {"deep-blue": "Deep Blue de 90' con jacuzzi", "ferretti": "Ferretti de 75'", "azimut-lchaim": "Azimut L'chaim de 65'", "anvera": "Anvera de 62'",
+    "es": {"deep-blue": "Deep Blue de 90' con jacuzzi", "aicon": "Aicon de 75'", "azimut-lchaim": "Azimut L'chaim de 65'", "anvera": "Anvera de 62'",
            "azimut": "Azimut de 55'", "isabella": "Isabella de 48' con jet ski", "maxum": "Maxum de 46'", "axopar-brabus": "Axopar Brabus de 28'", "yamaha-255xd": "Yamaha 255XD de 25'"},
-    "pt-BR": {"deep-blue": "Deep Blue de 90 pés com jacuzzi", "ferretti": "Ferretti de 75 pés", "azimut-lchaim": "Azimut L'chaim de 65 pés", "anvera": "Anvera de 62 pés",
+    "pt-BR": {"deep-blue": "Deep Blue de 90 pés com jacuzzi", "aicon": "Aicon de 75 pés", "azimut-lchaim": "Azimut L'chaim de 65 pés", "anvera": "Anvera de 62 pés",
            "azimut": "Azimut de 55 pés", "isabella": "Isabella de 48 pés com jet ski", "maxum": "Maxum de 46 pés", "axopar-brabus": "Axopar Brabus de 28 pés", "yamaha-255xd": "Yamaha 255XD de 25 pés"},
 }
 

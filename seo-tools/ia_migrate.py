@@ -357,10 +357,11 @@ def write_vercel():
         "/blog/how-much-does-yacht-rental-miami-cost": "miami-yacht-rental-prices", "/blog/how-to-plan-a-yacht-party-miami": "yacht-party-miami",
         "/blog/miami-bachelorette-yacht-party": "bachelorette-yacht-party-miami", "/blog/best-places-to-anchor-biscayne-bay": "miami-sandbar-guide",
         "/blog/miami-yacht-charter-vs-boat-rental": "yacht", "/acgua-alberti": "deep-blue",
+        "/ferretti": "aicon", "/yachts/75-ferretti": "aicon",  # 75' Ferretti replaced by the 75' Aicon (2026-11-27)
     }
     for src, tgt in legacy.items():
         add(src + ".html", PAGES[tgt]["url"]); add(src, PAGES[tgt]["url"])
-    add("/pay/acgua-alberti.html", "/pay/deep-blue"); add("/pay/acgua-alberti-deposit-1000.html", "/pay/deep-blue-deposit-1000")
+    add("/pay/acgua-alberti.html", "/pay/deep-blue"); add("/pay/ferretti.html", "/pay/aicon-75"); add("/pay/ferretti", "/pay/aicon-75"); add("/pay/acgua-alberti-deposit-1000.html", "/pay/deep-blue-deposit-1000")
     # every page: old .html and old extensionless slug -> final URL
     for old, p in PAGES.items():
         if p["new"] or old in ("index", "404"):

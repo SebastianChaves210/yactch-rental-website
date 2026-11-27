@@ -203,8 +203,38 @@
       "statusCode": 301
     },
     {
+      "source": "/ferretti.html",
+      "destination": "/yachts/75-aicon",
+      "statusCode": 301
+    },
+    {
+      "source": "/ferretti",
+      "destination": "/yachts/75-aicon",
+      "statusCode": 301
+    },
+    {
+      "source": "/yachts/75-ferretti.html",
+      "destination": "/yachts/75-aicon",
+      "statusCode": 301
+    },
+    {
+      "source": "/yachts/75-ferretti",
+      "destination": "/yachts/75-aicon",
+      "statusCode": 301
+    },
+    {
       "source": "/pay/acgua-alberti.html",
       "destination": "/pay/deep-blue",
+      "statusCode": 301
+    },
+    {
+      "source": "/pay/ferretti.html",
+      "destination": "/pay/aicon-75",
+      "statusCode": 301
+    },
+    {
+      "source": "/pay/ferretti",
+      "destination": "/pay/aicon-75",
       "statusCode": 301
     },
     {
@@ -248,13 +278,13 @@
       "statusCode": 301
     },
     {
-      "source": "/ferretti.html",
-      "destination": "/yachts/75-ferretti",
+      "source": "/aicon.html",
+      "destination": "/yachts/75-aicon",
       "statusCode": 301
     },
     {
-      "source": "/ferretti",
-      "destination": "/yachts/75-ferretti",
+      "source": "/aicon",
+      "destination": "/yachts/75-aicon",
       "statusCode": 301
     },
     {

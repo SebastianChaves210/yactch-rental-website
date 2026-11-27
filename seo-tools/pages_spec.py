@@ -5,7 +5,7 @@ SITE = "https://miamiyachtcollective.com/"
 
 BOATS = {
     "deep-blue":     ("90' Deep Blue with Jacuzzi", "$4,999 / 4 hours"),
-    "ferretti":      ("75' Ferretti", "$3,000 / 4 hours"),
+    "aicon":      ("75' Aicon", "$3,000 / 4 hours"),
     "azimut-lchaim": ("65' Azimut L'chaim", "$3,000 / 4 hours"),
     "anvera":        ("62' Anvera", "$1,700 / 4 hours"),
     "azimut":        ("55' Azimut", "$1,600 / 4 hours"),
@@ -16,7 +16,7 @@ BOATS = {
 }
 BOATS_ES = {
     "deep-blue":     ("Deep Blue de 90' con jacuzzi", "$4,999 / 4 horas"),
-    "ferretti":      ("Ferretti de 75'", "$3,000 / 4 horas"),
+    "aicon":      ("Aicon de 75'", "$3,000 / 4 horas"),
     "azimut-lchaim": ("Azimut L'chaim de 65'", "$3,000 / 4 horas"),
     "anvera":        ("Anvera de 62'", "$1,700 / 4 horas"),
     "azimut":        ("Azimut de 55'", "$1,600 / 4 horas"),
@@ -27,7 +27,7 @@ BOATS_ES = {
 }
 BOATS_PT = {
     "deep-blue":     ("Deep Blue de 90 pés com jacuzzi", "$4,999 / 4 horas"),
-    "ferretti":      ("Ferretti de 75 pés", "$3,000 / 4 horas"),
+    "aicon":      ("Aicon de 75 pés", "$3,000 / 4 horas"),
     "azimut-lchaim": ("Azimut L'chaim de 65 pés", "$3,000 / 4 horas"),
     "anvera":        ("Anvera de 62 pés", "$1,700 / 4 horas"),
     "azimut":        ("Azimut de 55 pés", "$1,600 / 4 horas"),
@@ -58,9 +58,9 @@ P = {
     "deepblue_2": ("photos/deep-blue-90/deepblue-2-800.webp", "90-foot Deep Blue superyacht in Miami"),
     "deepblue_10": ("photos/deep-blue-90/deepblue-10-800.webp", "Deck of the 90-foot Deep Blue yacht with Jacuzzi"),
     "deepblue_16": ("photos/deep-blue-90/deepblue-16-800.webp", "Interior salon of the Deep Blue 90 yacht"),
-    "ferretti_bay": ("photos/ferretti-75/img-20240905-wa0032-800.webp", "Ferretti 75 yacht cruising Biscayne Bay in Miami"),
-    "ferretti_fly": ("photos/ferretti-75/img-20240905-wa0034-800.webp", "Flybridge lounge with round table on the Ferretti 75 yacht"),
-    "ferretti_table": ("photos/ferretti-75/img-20250613-wa0054-800.webp", "Champagne and appetizers on the Ferretti 75 aft deck table"),
+    "aicon_bay": ("photos/aicon-75/aicon75-01-800.webp", "75' Aicon motor yacht on Biscayne Bay with the Miami skyline behind"),
+    "aicon_fly": ("photos/aicon-75/aicon75-05-800.webp", "Flybridge lounge with orange cushions on the 75' Aicon"),
+    "aicon_table": ("photos/aicon-75/aicon75-10-800.webp", "Dining table in the salon of the 75' Aicon beside the helm seats"),
     "anvera_skyline": ("photos/anvera-62/anveras-9-800.webp", "Aerial view of the 62-foot Anvera with the Miami skyline behind"),
     "anvera_brickell": ("photos/anvera-62/anveras-41-800.webp", "Anvera 62 running through downtown Miami near Brickell"),
     "anvera_loungers": ("photos/anvera-62/anveras-12-800.webp", "Aft sun loungers on the 62-foot Anvera yacht"),
@@ -235,7 +235,7 @@ PAGES.append(dict(
 
 <h2>Three ways to do Basel on a yacht</h2>
 <ul>
-<li><strong>Client hospitality:</strong> A <a href="corporate-yacht-charter-miami.html">corporate charter</a> on the 65' Azimut L'chaim, 75' Ferretti or 90' Deep Blue: the aft deck for conversation, the flybridge for the view, and a dock 15 minutes from the fair.</li>
+<li><strong>Client hospitality:</strong> A <a href="corporate-yacht-charter-miami.html">corporate charter</a> on the 65' Azimut L'chaim, 75' Aicon or 90' Deep Blue: the aft deck for conversation, the flybridge for the view, and a dock 15 minutes from the fair.</li>
 <li><strong>The sunset escape:</strong> A late-afternoon slot so the last hour runs the <a href="private-sunset-cruise-miami.html">skyline at sunset</a> before the night's events.</li>
 <li><strong>The daytime reset:</strong> Star Island, Fisher Island and a swim at Nixon's Sandbar on the 48' Isabella or 62' Anvera, back in time for the evening openings.</li>
 </ul>
@@ -247,12 +247,12 @@ PAGES.append(dict(
 {{TABLE}}
 <p>Browse the <a href="yacht.html">full 9-yacht fleet</a> or compare every rate on the <a href="miami-yacht-rental-prices.html">price guide</a>.</p>
 """,
-    gallery=["deepblue_aft", "ferretti_table", "lchaim_aft", "anvera_skyline"],
-    table=[("deep-blue", "The superyacht with a jacuzzi for hosting"), ("ferretti", "Flybridge lounge and a dining table on the aft deck"), ("azimut-lchaim", "Three decks for a larger group"), ("anvera", "Sleek open-deck Italian design"), ("isabella", "Flybridge yacht with a jet ski")],
+    gallery=["deepblue_aft", "aicon_table", "lchaim_aft", "anvera_skyline"],
+    table=[("deep-blue", "The superyacht with a jacuzzi for hosting"), ("aicon", "Flybridge lounge and a salon dining table"), ("azimut-lchaim", "Three decks for a larger group"), ("anvera", "Sleek open-deck Italian design"), ("isabella", "Flybridge yacht with a jet ski")],
     faq=[
         ("Are prices higher during Art Basel?", "No. Our prices are the same every week of the year: from $1,000 for 4 hours with captain and crew included."),
         ("How far is the dock from the Miami Beach Convention Center?", "About 15 minutes by car. Our dock is at 668 NW N River Dr on the Miami River."),
-        ("Can we host clients on board?", "Yes. The 65' Azimut L'chaim, 75' Ferretti and 90' Deep Blue all have an aft deck with a table and a flybridge with a view, and the crew looks after your guests."),
+        ("Can we host clients on board?", "Yes. The 65' Azimut L'chaim, 75' Aicon and 90' Deep Blue all have a flybridge with a view and a table to gather around, and the crew looks after your guests."),
         ("When should we book for Basel week?", "As early as you can. The fair draws a crowd that books boats, and the first weekend of December fills first."),
     ],
     cta=("Lock in your Basel week slot", "December 4 to 6 fills early. Call or WhatsApp and we'll hold the yacht for your date today."),
@@ -302,8 +302,8 @@ PAGES.append(dict(
 {{TABLE}}
 <p>Browse the <a href="yacht.html">full 9-yacht fleet</a> or compare every rate on the <a href="miami-yacht-rental-prices.html">price guide</a>. Planning a full <a href="yacht-party-miami.html">yacht party</a>? That page covers the music, the route and the boats.</p>
 """,
-    gallery=["lchaim_crew", "deepblue_16", "ferretti_table", "lchaim_dining"],
-    table=[("azimut-lchaim", "Three decks and a salon for a group celebration"), ("deep-blue", "Superyacht with a jacuzzi and a full salon"), ("ferretti", "Flybridge lounge and aft deck dining"), ("isabella", "Flybridge yacht for a smaller group"), ("maxum", "Best-value yacht for the night")],
+    gallery=["lchaim_crew", "deepblue_16", "aicon_table", "lchaim_dining"],
+    table=[("azimut-lchaim", "Three decks and a salon for a group celebration"), ("deep-blue", "Superyacht with a jacuzzi and a full salon"), ("aicon", "Flybridge lounge and salon dining"), ("isabella", "Flybridge yacht for a smaller group"), ("maxum", "Best-value yacht for the night")],
     faq=[
         ("Is there a surcharge for New Year's Eve?", "No. Our prices are the same on December 31 as any other night: from $1,000 for 4 hours with captain and crew included."),
         ("Can we see the fireworks from the boat?", "Miami's public fireworks are launched from Bayfront Park downtown and from the Miami Beach oceanfront at midnight. Whether a charter can be on the water at that time depends on the slot, so tell us your plan when you call and we will be straight with you about what is possible."),
@@ -401,7 +401,7 @@ PAGES.append(dict(
 {STEPS_EN}
 
 <h2>For clients and teams</h2>
-<p>Hosting during Grand Prix week? The 65' Azimut L'chaim, 75' Ferretti and 90' Deep Blue all have an aft deck with a dining table, a flybridge with the view and a crew to look after your guests. See the <a href="corporate-yacht-charter-miami.html">corporate charter page</a> for how we run client days.</p>
+<p>Hosting during Grand Prix week? The 65' Azimut L'chaim, 75' Aicon and 90' Deep Blue all have a dining table, a flybridge with the view and a crew to look after your guests. See the <a href="corporate-yacht-charter-miami.html">corporate charter page</a> for how we run client days.</p>
 
 <h2>Fast boats, big boats</h2>
 {{GALLERY}}
@@ -410,8 +410,8 @@ PAGES.append(dict(
 {{TABLE}}
 <p>Browse the <a href="yacht.html">full 9-yacht fleet</a> or compare every rate on the <a href="miami-yacht-rental-prices.html">price guide</a>.</p>
 """,
-    gallery=["anvera_skyline", "axopar_speed", "deepblue_10", "ferretti_bay"],
-    table=[("deep-blue", "Superyacht with a jacuzzi for hosting"), ("anvera", "The fastest-looking yacht in the fleet"), ("axopar-brabus", "Brabus-edition sport boat, twin outboards"), ("ferretti", "Flybridge lounge and aft deck dining"), ("azimut-lchaim", "Three decks for a bigger group")],
+    gallery=["anvera_skyline", "axopar_speed", "deepblue_10", "aicon_bay"],
+    table=[("deep-blue", "Superyacht with a jacuzzi for hosting"), ("anvera", "The fastest-looking yacht in the fleet"), ("axopar-brabus", "Brabus-edition sport boat, twin outboards"), ("aicon", "Flybridge lounge and salon dining"), ("azimut-lchaim", "Three decks for a bigger group")],
     faq=[
         ("Do prices go up for Grand Prix weekend?", "No. Our prices are the same every week: from $1,000 for 4 hours with captain and crew included."),
         ("Can we charter by the hour or for a full day?", "Every charter is 4 hours. Book two slots on different days if you want the water twice over the weekend."),
@@ -585,7 +585,7 @@ PAGES.append(dict(
         ("Are children allowed on the charter?", "Yes. Children are welcome on every boat in the fleet."),
         ("Do you have life jackets for kids?", "Yes. Children's life jackets are on board. Tell us the ages of the children when you book so the crew has the right ones ready."),
         ("Is the water rough?", "Charters run on Biscayne Bay, which is sheltered from the open ocean by Miami Beach and Key Biscayne. The captain picks the route for the day's conditions."),
-        ("Is there a bathroom on board?", "The 48' Isabella, 65' Azimut L'chaim, 75' Ferretti and 90' Deep Blue have a bathroom below deck. Ask when you book and we will match the boat to your group."),
+        ("Is there a bathroom on board?", "The 48' Isabella, 65' Azimut L'chaim and 90' Deep Blue have a bathroom below deck. Ask when you book and we will match the boat to your group."),
         ("How much does a family charter cost?", "From $1,000 for 4 hours with captain and crew included, for the whole boat rather than per person."),
     ],
     cta=("Plan the family's boat day", "Tell us the date and the ages of the kids. Call or WhatsApp and we'll match the boat and hold it today."),
@@ -603,7 +603,7 @@ PAGES.append(dict(
     crumb="Weddings",
     lede="Say it on the water. Ceremonies on board are welcome, with the Miami skyline, Star Island or the open bay behind you and a crew to handle everything but the vows. From $1,000 for 4 hours.",
     facts=[("Starting at", "$1,000 / 4 hrs"), ("Ceremonies", "Welcome on board"), ("Booking", "Call or WhatsApp, 24/7")],
-    og=P["ferretti_table"][0],
+    og=P["aicon_table"][0],
     wa="Hi! I'd like to plan a wedding ceremony on a yacht in Miami. Our date:",
     body=f"""
 <h2>A wedding with the city as the backdrop</h2>
@@ -624,7 +624,7 @@ PAGES.append(dict(
 <h2>Picking the boat</h2>
 <ul>
 <li><strong>Elopement or vow renewal:</strong> The 48' Isabella or 62' Anvera for a couple and a few witnesses.</li>
-<li><strong>Small wedding:</strong> The 65' Azimut L'chaim or 75' Ferretti, with an aft deck table and a flybridge for the ceremony.</li>
+<li><strong>Small wedding:</strong> The 65' Azimut L'chaim or 75' Aicon, with a flybridge for the ceremony.</li>
 <li><strong>The statement:</strong> The 90' Deep Blue, with a jacuzzi on deck, a salon, a formal dining table and cabins below.</li>
 </ul>
 <p>Just proposing for now? Start with the <a href="proposal-yacht-charter-miami.html">proposal and anniversary page</a>.</p>
@@ -636,8 +636,8 @@ PAGES.append(dict(
 {{TABLE}}
 <p>Browse the <a href="yacht.html">full 9-yacht fleet</a> or compare every rate on the <a href="miami-yacht-rental-prices.html">price guide</a>.</p>
 """,
-    gallery=["ferretti_table", "lchaim_aft", "deepblue_16", "isabella_bow"],
-    table=[("deep-blue", "Jacuzzi, salon, dining table and cabins"), ("ferretti", "Flybridge lounge and aft deck dining"), ("azimut-lchaim", "Three decks and a wide bow for the ceremony"), ("anvera", "Open deck for an intimate ceremony"), ("isabella", "Flybridge yacht for an elopement")],
+    gallery=["aicon_table", "lchaim_aft", "deepblue_16", "isabella_bow"],
+    table=[("deep-blue", "Jacuzzi, salon, dining table and cabins"), ("aicon", "Flybridge lounge and salon dining"), ("azimut-lchaim", "Three decks and a wide bow for the ceremony"), ("anvera", "Open deck for an intimate ceremony"), ("isabella", "Flybridge yacht for an elopement")],
     faq=[
         ("Can we hold the ceremony on the yacht?", "Yes. Ceremonies on board are welcome. You arrange the officiant; we provide the yacht, captain and crew."),
         ("How much does a yacht wedding in Miami cost?", "The boat is priced like any charter: from $1,000 for 4 hours with captain and crew included, up to $4,999 for the 90' Deep Blue."),
@@ -682,7 +682,7 @@ PAGES.append(dict(
 <h2>Picking the yacht for a quince</h2>
 <ul>
 <li><strong>65' Azimut L'chaim:</strong> Three decks, an aft deck dining table in the shade and a wide bow sunpad for the dress photos.</li>
-<li><strong>75' Ferretti:</strong> A flybridge lounge around a round table and a covered aft deck for the family.</li>
+<li><strong>75' Aicon:</strong> A flybridge lounge with orange cushions, a teak salon and cabins below deck for the family.</li>
 <li><strong>90' Deep Blue:</strong> The superyacht: a jacuzzi on deck, a formal dining table and a salon for the toast.</li>
 <li><strong>48' Isabella:</strong> A flybridge with wraparound seating and a jet ski for the cousins.</li>
 </ul>
@@ -694,10 +694,10 @@ PAGES.append(dict(
 {{TABLE}}
 <p>Browse the <a href="yacht.html">full 9-yacht fleet</a>, compare every rate on the <a href="miami-yacht-rental-prices.html">price guide</a>, or read the <a href="birthday-yacht-party-miami.html">birthday yacht party page</a>. Prefiere español? Vea <a href="fiesta-en-yate-miami.html">fiestas en yate en Miami</a>.</p>
 """,
-    gallery=["lchaim_bow", "ferretti_fly", "lchaim_dining", "deepblue_10"],
-    table=[("azimut-lchaim", "Three decks and a bow for the photos"), ("ferretti", "Flybridge lounge and covered aft deck"), ("deep-blue", "Jacuzzi, salon and dining table"), ("isabella", "Flybridge yacht with a jet ski"), ("maxum", "Best-value yacht for a smaller family")],
+    gallery=["lchaim_bow", "aicon_fly", "lchaim_dining", "deepblue_10"],
+    table=[("azimut-lchaim", "Three decks and a bow for the photos"), ("aicon", "Flybridge lounge and teak salon"), ("deep-blue", "Jacuzzi, salon and dining table"), ("isabella", "Flybridge yacht with a jet ski"), ("maxum", "Best-value yacht for a smaller family")],
     faq=[
-        ("How much does a quinceañera yacht party cost in Miami?", "From $1,000 for 4 hours for the whole boat with captain and crew included. The 65' Azimut L'chaim and 75' Ferretti are $3,000 and the 90' Deep Blue is $4,999 for 4 hours."),
+        ("How much does a quinceañera yacht party cost in Miami?", "From $1,000 for 4 hours for the whole boat with captain and crew included. The 65' Azimut L'chaim and 75' Aicon are $3,000 and the 90' Deep Blue is $4,999 for 4 hours."),
         ("Do you speak Spanish?", "Yes. Our team books and runs charters in Spanish and English. Call or WhatsApp in either language."),
         ("Can we bring a photographer and decorations for the photos?", "Photo and video on board are welcome and the captain positions the boat for the shots. Tell us what you plan to bring when you book and we will confirm what works on the boat you choose."),
         ("Can we play our own music?", "Yes. The charter is private, so the speakers are yours for the 4 hours."),
@@ -753,7 +753,7 @@ PAGES.append(dict(
 <p>Vea la <a href="yacht.html">flota completa de 9 yates</a>, compare precios en la <a href="miami-yacht-rental-prices.html">guía de precios</a> o lea sobre el <a href="alquiler-de-yates-miami.html">alquiler de yates en Miami</a> en español.</p>
 """,
     gallery=["lchaim_crew", "isabella_jetski", "lchaim_dining", "deepblue_aft"],
-    table=[("isabella", "Jet ski incluido para la parada en el sandbar"), ("azimut-lchaim", "Tres cubiertas para el grupo grande"), ("ferretti", "Flybridge con mesa redonda y popa techada"), ("deep-blue", "Jacuzzi en cubierta, salón y comedor"), ("maxum", "El yate de mejor precio para empezar")],
+    table=[("isabella", "Jet ski incluido para la parada en el sandbar"), ("azimut-lchaim", "Tres cubiertas para el grupo grande"), ("aicon", "Flybridge con cojines naranja y salón de teca"), ("deep-blue", "Jacuzzi en cubierta, salón y comedor"), ("maxum", "El yate de mejor precio para empezar")],
     faq=[
         ("¿Cuánto cuesta una fiesta en yate en Miami?", "Desde $1,000 por 4 horas por el yate completo, con capitán y tripulación incluidos. El Isabella de 48' con jet ski cuesta $1,499, el Azimut L'chaim de 65' $3,000 y el Deep Blue de 90' con jacuzzi $4,999, siempre por 4 horas."),
         ("¿Atienden en español?", "Sí. Reservamos y atendemos en español y en inglés, por llamada o WhatsApp, las 24 horas."),
@@ -813,7 +813,7 @@ PAGES.append(dict(
 <p>Veja a <a href="yacht.html">frota completa</a> e a <a href="miami-yacht-rental-prices.html">tabela de preços</a> (em inglês). Prefere espanhol? Veja <a href="alquiler-de-yates-miami.html">alquiler de yates en Miami</a>.</p>
 """,
     gallery=["lchaim_fisher", "isabella_jetski", "deepblue_aft", "anvera_skyline"],
-    table=[("deep-blue", "Superiate com jacuzzi no convés"), ("ferretti", "Flybridge com lounge e mesa na popa"), ("azimut-lchaim", "Três conveses para grupos grandes"), ("anvera", "Convés aberto, design italiano"), ("azimut", "Flybridge com teto rígido"), ("isabella", "Flybridge e jet ski incluso"), ("maxum", "O iate de melhor custo-benefício"), ("axopar-brabus", "Lancha esportiva edição Brabus"), ("yamaha-255xd", "Lancha a jato para grupos pequenos")],
+    table=[("deep-blue", "Superiate com jacuzzi no convés"), ("aicon", "Flybridge com almofadas laranja e salão de teca"), ("azimut-lchaim", "Três conveses para grupos grandes"), ("anvera", "Convés aberto, design italiano"), ("azimut", "Flybridge com teto rígido"), ("isabella", "Flybridge e jet ski incluso"), ("maxum", "O iate de melhor custo-benefício"), ("axopar-brabus", "Lancha esportiva edição Brabus"), ("yamaha-255xd", "Lancha a jato para grupos pequenos")],
     faq=[
         ("Quanto custa alugar um iate em Miami?", "A partir de $1,000 por 4 horas com capitão e tripulação inclusos. O Isabella de 48 pés com jet ski custa $1,499, o Azimut L'chaim de 65 pés $3,000 e o Deep Blue de 90 pés com jacuzzi $4,999, sempre por 4 horas."),
         ("Vocês falam português?", "A equipe atende em inglês e espanhol. Pode escrever no WhatsApp em português que respondemos em inglês ou espanhol."),
